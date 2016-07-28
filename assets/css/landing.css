@@ -308,3 +308,18 @@ footer a:hover {
 .crossed {
     text-decoration: line-through;
 }
+
+footer > .row {
+    position: relative;
+}
+
+.bk-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bk-link img {
+    width: 80px;
+    margin-top: -8px;
+}

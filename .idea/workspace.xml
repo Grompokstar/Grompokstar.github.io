@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="229" column="83" selection-start-line="229" selection-start-column="83" selection-end-line="229" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.5304948">
+              <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="landing.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/landing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9217491">
-              <caret line="308" column="33" selection-start-line="308" selection-start-column="33" selection-end-line="308" selection-end-column="33" />
+            <state vertical-scroll-proportion="-28.192308">
+              <caret line="323" column="18" selection-start-line="323" selection-start-column="18" selection-end-line="323" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/landing.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -314,14 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -330,18 +322,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/landing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="229" column="83" selection-start-line="229" selection-start-column="83" selection-end-line="229" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9217491">
-          <caret line="308" column="33" selection-start-line="308" selection-start-column="33" selection-end-line="308" selection-end-column="33" />
+        <state vertical-scroll-proportion="-28.192308">
+          <caret line="323" column="18" selection-start-line="323" selection-start-column="18" selection-end-line="323" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5304948">
+          <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
           <folding />
         </state>
       </provider>
