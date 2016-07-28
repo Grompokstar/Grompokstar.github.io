@@ -304,3 +304,7 @@ footer a {
 footer a:hover {
     color: #d56d6e;
 }
+
+.crossed {
+    text-decoration: line-through;
+}
