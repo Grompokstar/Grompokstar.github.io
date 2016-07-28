@@ -217,7 +217,7 @@ nav.tariffs a img {
 }
 
 .tariff {
-    background-image: url("img/velo.png");
+    background-image: url("../img/velo.png");
     background-repeat: no-repeat;
     background-position: 98% 100%;
 }
