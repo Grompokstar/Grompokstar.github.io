@@ -1,0 +1,306 @@
+
+@font-face {
+    font-family: CRC25;
+    src: url(../fonts/CRC25.otf);
+}
+
+@font-face {
+    font-family: CRC35;
+    src: url(../fonts/CRC35.otf);
+}
+
+@font-face {
+    font-family: CRC75;
+    src: url(../fonts/CRC75.otf);
+}
+
+body {
+    font-family: CRC35, Verdana, sans-serif;
+    color: black;
+}
+
+.extra-bold {
+    font-family: CRC75, Verdana, sans-serif;
+}
+
+.main-header {
+    font-size: 52px;
+    line-height: 58px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    padding-right: 50px;
+}
+
+#main-navigation {
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+#main-navigation nav ul {
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+#main-navigation .nav a {
+    color: black;
+}
+
+#main-navigation .navbar-right a {
+    color: #3ac0a2;
+}
+
+#main-navigation .navbar-right a:hover, #main-navigation .navbar-right a:focus {
+    color: #3ac0a2 !important;
+    text-decoration: underline;
+}
+
+.nav li a:hover, .nav li a:focus {
+    background-color: inherit;
+    color: #cd6666 !important;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+.main-logo {
+    margin-top: -10px;
+}
+
+@media (max-width: 1199px) {
+    .main-header {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .slide-text {
+        font-size: 24px;
+        line-height: 40px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-logo {
+        margin-top: 15px;
+    }
+
+    .main-header {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .slide-text {
+        font-size: 20px;
+        line-height: 30px !important;
+    }
+}
+
+.navbar-nav > li > a {
+    padding: 10px;
+}
+
+.header-row {
+    margin-top: 50px;
+}
+
+.navbar-header button {
+    border: 1px solid #000;
+}
+
+.navbar-header .icon-bar {
+    background-color: black;
+}
+
+.slide-text {
+    font-family: CRC25, Verdana, sans-serif;
+    line-height: 48px;
+    margin-top: -5px;
+}
+
+.section {
+    margin-top: 130px;
+}
+
+.section img {
+    max-width: 100%;
+    border: 1px solid #e0e0e0
+}
+
+.section .img-header {
+    height: 30px;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    background-color: #f9f9f9;
+}
+
+.section .img-header .img-header-circle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.section .img-header .img-header-circle:first-child {
+    margin-left: 10px;
+}
+
+.try-free-btn {
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #ce6667;
+    color: white;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.try-free-btn:hover {
+    background-color: #d56d6e;
+}
+
+.try-free-btn .try-free-main-text {
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+.try-free-btn .btn-text-container {
+    padding: 120px 60px;
+}
+
+.section-title {
+    margin-top: 140px;
+    font-size: 80px;
+}
+
+nav.tariffs {
+    font-size: 30px;
+}
+
+nav.tariffs a {
+    color: black;
+    padding: 15px 25px;
+}
+
+nav.tariffs li:first-child a {
+    color: black;
+}
+
+nav.tariffs a img {
+    margin-top: -17px;
+    margin-left: 10px;
+}
+
+.tariff {
+   border-bottom: 5px solid #d56d6e;
+}
+
+.tariff-img img {
+    max-width: 100%;
+
+}
+
+
+.tariff-title {
+    font-size: 50px;
+}
+
+.tariff {
+    background-image: url("img/velo.png");
+    background-repeat: no-repeat;
+    background-position: 98% 100%;
+}
+
+.tariff-description {
+    font-size: 30px;
+}
+
+.strong {
+    font-family: CRC75, Verdana, sans-serif;
+}
+
+.tariff-functionality {
+    background-color: #fdf7f7;
+    padding: 30px;
+    color: #0b0505;
+    position: relative;
+}
+
+.second-row {
+    margin-top: 30px;
+}
+
+.tariff-price {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #3ac0a2;
+    position: absolute;
+    right: -90px;
+    bottom: -90px;
+}
+
+.tariff-price-text {
+    font-size: 30px;
+    color: white;
+    padding: 70px 15px;
+    text-decoration: underline;
+}
+
+.rub {
+    display: inline-block;
+    border-bottom: 2px solid;
+    line-height: 0;
+    width: 13px;
+    height: 5px;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+.regular-text {
+    font-size: 30px;
+}
+
+.security-section {
+    margin-top: 80px;
+}
+
+.security-section img {
+    display: block;
+    height: 200px;
+}
+
+
+.security-title {
+    font-size: 50px;
+    display: block;
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 5px solid #d56d6e;
+    padding: 30px 0;
+    font-family: Verdana, sans-serif;
+    line-height: 25px;
+}
+
+footer a {
+    color: #3ac0a2;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #d56d6e;
+}

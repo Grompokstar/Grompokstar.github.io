@@ -1,128 +1,346 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="ru">
 <head>
-    <title>Chervontsev Roman</title>
-    <script type="text/javascript" src="./libs/three.min.js"></script>
-    <script type="text/javascript" src="./libs/dat.gui.js"></script>
-    <script type="text/javascript" src="./libs/TrackballControls.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MyObject.ru &mdash; информационная платформа управления промышленной безопасностью</title>
+
+    <!-- Mobile metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <!-- Google metadata -->
+    <meta name="google-site-verification" content="-WlQtHrSBCA0qt0LVWNcIOawzxPtW3yrfCqXANqMO0A"/>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/landing.css" rel="stylesheet" type="text/css">
+
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="assets/js/landing.js"></script>
+    <script type="text/javascript" src="libs/collapse.js"></script>
 </head>
 <body>
-<div id="logo">
-    <img src="./assets/imgs/octabrain_logo.svg">
+<header>
+    <div class="container">
+        <div id="main-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8">
+                        <nav class="navbar" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Меню</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/">Управление</a></li>
+                                    <li><a href="/">Учет</a></li>
+                                    <li><a href="/">Проверки</a></li>
+                                    <li><a href="/">Инциденты</a></li>
+                                    <li><a href="/">Отчеты</a></li>
+                                    <li><a href="/">Тарифы</a></li>
+                                    <li><a href="/">Безопасность</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right" style="margin-right: 0">
+                                    <li><a href="#" data-toggle="modal" data-target="#authWindow">Вход в myObject</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row header-row">
+            <div class="col-xs-4 main-logo">
+                <a href="https://www.myobject.ru" target="_blank"><img class="logo" src="assets/img/mo-logo-2.png"
+                                                                       alt="myObject"></a>
+            </div>
+            <div class="col-xs-8">
+                <h1 class="extra-bold main-header">Программа для автоматизации систем промышленной безопасности</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="content">
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="slide-text">
+                        Обеспечит пошаговое планирование и прозрачный контроль мероприятий промбезопасности с учетом
+                        масштаба и специфики предприятия
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="img-header">
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                    </div>
+                    <img alt="" src="assets/img/1.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="slide-text">
+                        Объединит данные о состоянии объектов, зданий и устройств, результатах проверок и экспертиз,
+                        предписаниях и инцидентах
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="img-header">
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                    </div>
+                    <img alt="" src="assets/img/2.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="slide-text">
+                        <p>Облегчит контроль внутренних проверок и предписаний Ростехнадзора.</p>
+                        <p>Напомнит о будущих мероприятиях по почте
+                            и СМС</p>
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="img-header">
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                    </div>
+                    <img alt="" src="assets/img/3.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="slide-text">
+                        Поможет быстро
+                        и правильно оформить инцидент или несчастный случай, принять меры
+                        по нейтрализации последствий
+                        и проконтролировать
+                        их исполнение
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="img-header">
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                    </div>
+                    <img alt="" src="assets/img/4.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="slide-text">
+                        <p>Cформирует отчёт в Ростехнадзор за один клик на основании накопленной за год информации.</p>
+                        <p>Данные из предыдущих отчётов можно загрузить в систему</p>
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="img-header">
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                        <div class="img-header-circle"></div>
+                    </div>
+                    <img alt="" src="assets/img/5.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="try-free-btn">
+            <div class="btn-text-container">
+                <span class="try-free-main-text extra-bold">
+                Попробовать бесплатно
+            </span><br>
+            <span class="try-free-second-text">
+                и получить 2 недели бесплатной поддержки и приглашение на вебинар
+            </span>
+            </div>
+        </div>
+
+        <div class="section-title extra-bold">
+            Тарифы и цены
+        </div>
+        <div class="row">
+            <nav class="navbar tariffs" role="navigation">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Пробный</a></li>
+                        <li><a href="/">1<img src="assets/img/object.png"></a></li>
+                        <li><a href="/">5<img src="assets/img/object.png"></a></li>
+                        <li><a href="/">10<img src="assets/img/object.png"></a></li>
+                        <li><a href="/">Безлимит</a></li>
+                        <li><a href="/">Локальный</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row tariff">
+            <div class="col-md-8 col-md-push-4">
+                <div class="tariff-text">
+                    <span class="extra-bold tariff-title">Пробный</span><br>
+                    <span class="tariff-description">
+                        Тестовый доступ для предприятий любого размера и любой принадлежности
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/proba.png"></div>
+        </div>
+        <div class="tariff-functionality row">
+            <div class="row">
+                <div class="col-md-4">
+                    <p><span class="strong">Управление</span> внутренними проверками;</p>
+                    <p>аттестациями;</p>
+                    <p>Правами доступа пользователей</p>
+                    <p>Планирование мероприятий промбезопасности</p>
+                </div>
+                <div class="col-md-4">
+                    <p><span class="strong">Хранение</span> данных об объектах</p>
+                    <p>Файлов проектной, исполнительной
+                        и эксплуатационной документации</p>
+                    <p>Фотографий дефектов</p>
+                </div>
+                <div class="col-md-4">
+                    <p><span class="strong">Безопасность данных:</span></p>
+                    <p>Облачный доступ через Интернет</p>
+                    <p>Размещение на локальном сервере</p>
+                </div>
+            </div>
+
+            <div class="row second-row">
+                <div class="col-md-4">
+                    <p><span class="strong">Ограничения по тарифу:</span></p>
+                    <p>До 3 пользователей, Неограниченное количество ТУ</p>
+                    <p>3 ГБ памяти для хранения файлов приложений</p>
+                    <p>Поддержка филиалов организации</p>
+                    <p>Печать информации из сервиса</p>
+                    <p>Техподдержка в HelpDesk</p>
+                    <p>Поддержка самостоятельной идентификации ОПО</p>
+                </div>
+                <div class="col-md-4">
+                    <p><span class="strong">Учет и контроль</span> персонала ОПО;</p>
+                    <p>объектов и планов;</p>
+                    <p>предписаний и мероприятий;</p>
+                    <p>инцидентов и несчастных случаев;</p>
+                </div>
+                <div class="col-md-4">
+                    <p><span class="strong">Автоматическое создание отчетов в Ростехнадзор:</span></p>
+                    <p>Комплект для регистационных действий с ОПО —
+                        заявление, сведения, карта ОПО, XML-файл;</p>
+                    <p>Сведения о производственном контроле по 25 приказу Ростехнадзора - XLS-файл, XML-файл</p>
+                </div>
+            </div>
+
+            <div class="tariff-price">
+                <div class="tariff-price-text">
+                    3500 <span class="rub">Р</span>/мес
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title extra-bold">
+            Безопасность данных
+        </div>
+        <div class="regular-text">
+            важна для наших клиентов. Поэтому мы разделяем серверы обработки и хранения данных, еженедельно создаем резервную копию базы и не храним пароли в системе.
+        </div>
+
+        <div class="row security-section">
+            <div class="col-md-6">
+                <img src="assets/img/cloud.png">
+                <span class="extra-bold security-title">Размещение в облаке</span>
+                <p class="regular-text">Данные защищены надежнее, чем
+                    в большинстве офисных компьютеров
+                    и корпоративных сетей</p>
+                <p><span class="strong">Постоянный доступ</span>
+                    к программе с любого компьютера, планшета или смартфона.
+                </p>
+                <p>Файлы хранятся на серверах российских дата-центров уровня <span class="strong">Tier-3:</span>
+                    c круглосуточным видеонаблюдением, вооруженной охраной и автоматической системой пожаротушения.
+                </p>
+                <p><span class="strong">Все данные шифруются</span> при хранении и во время передачи
+                    по открытым сетям
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/hdd_space.png">
+                <span class="extra-bold security-title">Локальная версия</span>
+                <p class="regular-text">Подойдет предприятиям с повышенным режимом секретности</p>
+                <p><span class="strong">Все файлы</span> хранятся на арендованом или собственном сервере предприятия
+                </p>
+                <p>Доступы только через <span class="strong">защищенные каналы</span> интерента
+                </p>
+                <p><span class="strong">Бесплатные обновления</span> в течение года
+                </p>
+                <p>Самостоятельное управление защитой данных
+                </p>
+            </div>
+        </div>
+
+        <div class="try-free-btn">
+            <div class="btn-text-container">
+                <span class="try-free-main-text extra-bold">
+                Попробовать бесплатно
+            </span><br>
+            <span class="try-free-second-text">
+                и получить 2 недели бесплатной поддержки и приглашение на вебинар
+            </span>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="extra-bold">myObject 2016</span><br>
+                            <a href="https://www.myobject.ru">www.myobject.ru</a><br>
+                            г. Казань, ул. Сулеймановойб д.5<br><br>
+                            <span class="extra-bold">+7 (843) 225-05-40</span><br>
+                            <a href="">заказать звонок</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="extra-bold">Обучение и помощь</span><br>
+                            <a href="https://www.myobject.ru">Руководство пользователя</a><br>
+                            <a href="https://www.myobject.ru">Техподдержка и сообщество</a><br>
+                            <a href="https://www.myobject.ru">Условия использования</a><br>
+                            <a href="https://www.myobject.ru">Вебинары</a><br>
+                            <a href="https://www.myobject.ru">База знаний</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                </div>
+            </div>
+
+        </footer>
+    </div>
 </div>
 
-<div id="WebGL-output"></div>
 
-<script type="text/javascript">
-    function init() {
-        var scene = new THREE.Scene(),
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000),
-            renderer = new THREE.WebGLRenderer();
-
-        renderer.setClearColor(new THREE.Color(0xE5E5E5, 1.0));
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.shadowMapEnabled = true;
-
-        var sphereGeometry = new THREE.SphereGeometry(3, 40, 40);
-        var sphereMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
-        var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-
-        sphere.position.x = 20;
-        sphere.position.y = 0;
-        sphere.position.z = 0;
-        scene.add(sphere);
-
-        camera.position.x = -30;
-        camera.position.y = 40;
-        camera.position.z = 30;
-        camera.lookAt(scene.position);
-
-        var ambientLight = new THREE.AmbientLight(0x0c0c0c);
-        scene.add(ambientLight);
-
-        var spotLight = new THREE.SpotLight(0xffffff);
-        spotLight.position.set(-40, 60, -10);
-        spotLight.castShadow = true;
-        scene.add(spotLight);
-
-        document.getElementById("WebGL-output").appendChild(renderer.domElement);
-
-        window.addEventListener( 'resize', onWindowResize, false );
-
-        var cameraControls = new THREE.TrackballControls( camera, renderer.domElement );
-        cameraControls.minDistance = 20;
-        cameraControls.maxDistance = 400.0;
-        cameraControls.dynamicDampingFactor = 0.5;
-
-        var controls = new function () {
-            this.rotationSpeed = 0.02;
-            this.bouncingSpeed = 0.03;
-
-            this.removeCube = function() {
-                var allChildren = scene.children;
-                var lastObject = allChildren[allChildren.length-1];
-                if (lastObject instanceof THREE.Mesh) {
-                    scene.remove(lastObject);
-                }
-            };
-
-            this.addCube = function() {
-                var cubeSize = Math.ceil((Math.random() * 3));
-                var cubeGeometry = new THREE.CubeGeometry(cubeSize,cubeSize,cubeSize);
-                var cubeMaterial = new THREE.MeshLambertMaterial({color:  Math.random() * 0xffffff });
-                var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-                cube.name = "cube-" + scene.children.length;
-
-                cube.position.x= -20 + Math.round((Math.random() * 20));
-                cube.position.y= Math.round((Math.random() * 20));
-                cube.position.z= Math.round((Math.random() * 20));
-
-                scene.add(cube);
-            };
-        };
-
-        var gui = new dat.GUI();
-        gui.add(controls, 'rotationSpeed', 0, 0.5);
-        gui.add(controls, 'bouncingSpeed', 0, 0.5);
-        gui.add(controls, 'addCube');
-        gui.add(controls, 'removeCube');
-
-        var step = 0;
-
-        render();
-
-        function render() {
-            animation();
-            requestAnimationFrame(render);
-            cameraControls.update();
-            renderer.render(scene, camera);
-        }
-
-        function animation() {
-            step += controls.bouncingSpeed;
-
-            sphere.position.x = 20 * Math.cos(step);
-            sphere.position.y = 20 * Math.sin(step);
-
-            scene.traverse(function(e) {
-                if (e instanceof THREE.Mesh) {
-                    e.rotation.x+=controls.rotationSpeed;
-                    e.rotation.y+=controls.rotationSpeed;
-                }
-            });
-        }
-
-        function onWindowResize() {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize( window.innerWidth, window.innerHeight );
-        }
-    }
-    window.onload = init();
-
-</script>
 </body>
 </html>
