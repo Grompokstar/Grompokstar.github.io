@@ -18,8 +18,8 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="assets/js/landing.js"></script>
     <script type="text/javascript" src="libs/collapse.js"></script>
+    <script type="text/javascript" src="assets/js/landing.js"></script>
 </head>
 <body>
 <header>
@@ -189,28 +189,42 @@
             <nav class="navbar tariffs" role="navigation">
                 <div>
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Пробный</a></li>
-                        <li><a href="/">1<img src="assets/img/object.png"></a></li>
-                        <li><a href="/">5<img src="assets/img/object.png"></a></li>
-                        <li><a href="/">10<img src="assets/img/object.png"></a></li>
-                        <li><a href="/">Безлимит</a></li>
-                        <li><a href="/">Локальный</a></li>
+                        <li data-tariff-id="1" class="active">Пробный</li>
+                        <li data-tariff-id="2">1<img src="assets/img/object.png"></li>
+                        <li data-tariff-id="3">5<img src="assets/img/object.png"></li>
+                        <li data-tariff-id="4">10<img src="assets/img/object.png"></li>
+                        <li data-tariff-id="5">Безлимит</li>
+                        <li data-tariff-id="6">Локальный</li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="row tariff">
-            <div class="col-md-8 col-md-push-4">
-                <div class="tariff-text">
-                    <span class="extra-bold tariff-title">Пробный</span><br>
+        <div class="tariff-wrap">
+            <div id="tariff-1" class="row tariff-block">
+                <div class="col-md-8 col-md-push-4">
+                    <div class="tariff-text">
+                        <span class="extra-bold tariff-title">Пробный</span><br>
                     <span class="tariff-description">
                         Тестовый доступ для предприятий любого размера и любой принадлежности
                     </span>
+                    </div>
                 </div>
+                <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/proba.png"></div>
             </div>
-            <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/proba.png"></div>
+            <div id="tariff-2" class="row tariff-block">
+                <div class="col-md-8 col-md-push-4">
+                    <div class="tariff-text">
+                        <span class="extra-bold tariff-title">1 объект</span><br>
+                    <span class="tariff-description">
+                        Для предприятий с одним ОПО III или IV класса опасности - подъёмным краном или котельной
+                    </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/crane.png"></div>
+            </div>
         </div>
-        <div class="tariff-functionality row">
+
+        <div class="tariff-functionality">
             <div class="row">
                 <div class="col-md-4">
                     <p><span class="strong">Управление</span> внутренними проверками;</p>

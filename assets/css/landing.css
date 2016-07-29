@@ -98,6 +98,10 @@ header .navbar {
         font-size: 20px;
         line-height: 30px !important;
     }
+
+    .tariff-img {
+        position: relative !important;
+    }
 }
 
 .navbar-nav > li > a {
@@ -188,42 +192,78 @@ nav.tariffs {
     font-size: 30px;
 }
 
-nav.tariffs a {
-    color: black;
+nav.tariffs li {
     padding: 15px 25px;
+    cursor: pointer;
 }
 
-nav.tariffs li:first-child a {
-    color: black;
+nav.tariffs li:hover {
+    color: #ce6667;
 }
 
-nav.tariffs a img {
+nav.tariffs li.active {
+    color: #ce6667;
+    text-decoration: underline;
+}
+
+nav.tariffs li:first-child {
+    padding-left: 15px;
+}
+
+nav.tariffs li img {
     margin-top: -17px;
     margin-left: 10px;
 }
 
-.tariff {
+.tariff-wrap {
    border-bottom: 5px solid #d56d6e;
+    position: relative;
+}
+
+.tariff-block {
+    transition: all 2s ease;
+}
+
+.hidden {
+    display: none;
+}
+.visuallyhidden {
+    opacity: 0;
+}
+
+.tariff-wrap > .row {
+    position: relative;
 }
 
 .tariff-img img {
     max-width: 100%;
-
 }
 
+.tariff-img {
+    position: absolute;
+    bottom: 0;
+}
 
 .tariff-title {
-    font-size: 50px;
+    font-size: 40px;
 }
 
-.tariff {
+#tariff-1 {
     background-image: url("../img/velo.png");
     background-repeat: no-repeat;
-    background-position: 98% 100%;
+    background-position: 97% 100%;
+}
+
+#tariff-2 {
+    background-image: url("../img/moped.png");
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
 }
 
 .tariff-description {
     font-size: 30px;
+    display: block;
+    padding-bottom: 50px;
 }
 
 .strong {
