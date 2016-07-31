@@ -72,7 +72,7 @@ header .navbar {
     margin-top: -10px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
     .main-header {
         font-size: 44px;
         line-height: 50px;
@@ -221,7 +221,8 @@ nav.tariffs li img {
 }
 
 .tariff-block {
-    transition: all 2s ease;
+    left: 0;
+    transition: left 1.5s ease;
 }
 
 .hidden {
@@ -229,6 +230,10 @@ nav.tariffs li img {
 }
 .visuallyhidden {
     opacity: 0;
+}
+
+.hidden-left {
+    left: 150%;
 }
 
 .tariff-wrap > .row {
@@ -260,6 +265,30 @@ nav.tariffs li img {
     background-position: 97% 100%;
 }
 
+#tariff-3 {
+    background-image: url("../img/truck.png");
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
+}
+
+#tariff-4 {
+    background-image: url("../img/checkpoint.png");
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
+}
+
+#tariff-5 {
+    background-image: url("../img/train.png");
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
+}
+
+#tariff-6 {
+    background-image: url("../img/cars.png");
+    background-repeat: no-repeat;
+    background-position: 97% 100%;
+}
+
 .tariff-description {
     font-size: 30px;
     display: block;
@@ -275,6 +304,7 @@ nav.tariffs li img {
     padding: 30px;
     color: #0b0505;
     position: relative;
+    transition: opacity 1.5s ease;
 }
 
 .second-row {
