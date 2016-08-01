@@ -38,7 +38,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1001;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: -30px;
 }
 
@@ -69,12 +69,16 @@ header .navbar {
 }
 
 .main-logo {
-    margin-top: -10px;
+    margin-top: -33px;
 }
 
 @media (max-width: 1399px) {
+    .main-logo {
+        margin-top: 15px;
+    }
+
     .main-header {
-        font-size: 44px;
+        font-size: 40px;
         line-height: 50px;
     }
 
@@ -86,7 +90,7 @@ header .navbar {
 
 @media (max-width: 991px) {
     .main-logo {
-        margin-top: 15px;
+        margin-top: 22px;
     }
 
     .main-header {
@@ -109,7 +113,7 @@ header .navbar {
 }
 
 .header-row {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .navbar-header button {
@@ -122,7 +126,7 @@ header .navbar {
 
 .slide-text {
     font-family: CRC25, Verdana, sans-serif;
-    line-height: 48px;
+    line-height: 44px;
     margin-top: -5px;
 }
 
@@ -171,12 +175,17 @@ header .navbar {
 }
 
 .try-free-btn:hover {
-    background-color: #d56d6e;
+    background-color: #b23e3f;
 }
 
 .try-free-btn .try-free-main-text {
     font-size: 48px;
+    line-height: 63px;
     text-decoration: underline;
+}
+
+.try-free-second-text {
+    margin-bottom: -4px;
 }
 
 .try-free-btn .btn-text-container {
@@ -307,6 +316,10 @@ nav.tariffs li img {
     transition: opacity 1.5s ease;
 }
 
+.tariff-functionality p {
+    margin: 10px 0;
+}
+
 .second-row {
     margin-top: 30px;
 }
@@ -317,15 +330,25 @@ nav.tariffs li img {
     border-radius: 50%;
     background-color: #3ac0a2;
     position: absolute;
-    right: -90px;
+    right: -30px;
     bottom: -90px;
+    cursor: pointer;
+}
+
+.tariff-price:hover {
+    background-color: #0ba885;
 }
 
 .tariff-price-text {
     font-size: 30px;
+    line-height: 32px;
     color: white;
-    padding: 70px 15px;
-    text-decoration: underline;
+    margin: 70px 15px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+
+
 }
 
 .rub {
@@ -336,11 +359,11 @@ nav.tariffs li img {
     height: 5px;
     font-size: 30px;
     box-sizing: border-box;
-    text-decoration: underline;
 }
 
 .regular-text {
     font-size: 30px;
+    line-height: 45px;
 }
 
 .security-section {
@@ -350,6 +373,12 @@ nav.tariffs li img {
 .security-section img {
     display: block;
     height: 200px;
+}
+
+#cloud-img {
+    margin-left: -33px;
+    margin-bottom: -40px;
+    height: 240px;
 }
 
 
@@ -386,7 +415,7 @@ footer > .row {
 .bk-link {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 15px;
 }
 
 .bk-link img {
