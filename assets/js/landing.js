@@ -51,6 +51,83 @@ $(function(){
                 targetFunctionality.removeClass('visuallyhidden');
             }, 20);
         }
-    })
+    });
+
+    var slides = $('.section');
+    slides.addClass('hidden');
+    slides.addClass('visuallyhidden');
+
+    var activeSlide = $('#slide-1');
+
+    activeSlide.addClass('current');
+    activeSlide.removeClass('hidden');
+    setTimeout(function () {
+        activeSlide.removeClass('visuallyhidden');
+    }, 20);
+
+    var lastAnimation = 0;
+
+    function init_scroll(event, delta,  currentSlide, currentSlideId) {
+        var deltaOfInterest = delta,
+            timeNow = new Date().getTime(),
+            quietPeriod = 500;
+
+        if(timeNow - lastAnimation < quietPeriod + 1200) {
+            event.preventDefault();
+            return;
+        }
+
+        var targetSlide = $('#slide-' + (parseInt(currentSlideId) + 1));
+
+        if (deltaOfInterest < 0) {
+            if (currentSlideId >= 1 && currentSlideId < 5) {
+                currentSlide.removeClass('current');
+                currentSlide.addClass('visuallyhidden');
+                currentSlide.one('transitionend', function (e) {
+                    currentSlide.addClass('hidden');
+                });
+
+                setTimeout(function () {
+                    targetSlide.removeClass('hidden');
+                }, 950);
+                setTimeout(function () {
+                    targetSlide.removeClass('visuallyhidden');
+                }, 970);
+
+                targetSlide.addClass('current');
+            }
+        } else {
+            if (currentSlideId >= 2 && currentSlideId <= 5) {
+                targetSlide = $('#slide-' + (parseInt(currentSlideId) - 1));
+                currentSlide.removeClass('current');
+                currentSlide.addClass('visuallyhidden');
+                currentSlide.one('transitionend', function (e) {
+                    currentSlide.addClass('hidden');
+                });
+
+                setTimeout(function () {
+                    targetSlide.removeClass('hidden');
+                }, 950);
+                setTimeout(function () {
+                    targetSlide.removeClass('visuallyhidden');
+                }, 970);
+                targetSlide.addClass('current');
+            }
+        }
+
+
+        lastAnimation = timeNow;
+    }
+
+    $(document).bind('mousewheel DOMMouseScroll', function(event) {
+        var currentSlide = $('.section.current');
+        var currentSlideId = currentSlide.attr('id').substr(6, 1);
+
+        if (currentSlideId < 5) {
+            event.preventDefault();
+            var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+            init_scroll(event, delta, currentSlide, currentSlideId);
+        }
+    });
 
 });

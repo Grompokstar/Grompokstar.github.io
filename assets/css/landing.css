@@ -130,8 +130,14 @@ header .navbar {
     margin-top: -5px;
 }
 
+.section-wrap {
+    position: relative;
+}
+
 .section {
     margin-top: 130px;
+    transition: all 1s ease;
+    position: relative;
 }
 
 .section img {
@@ -210,6 +216,10 @@ nav.tariffs li:hover {
     color: #ce6667;
 }
 
+.icon {
+    height: 36px;
+}
+
 nav.tariffs li.active {
     color: #ce6667;
     text-decoration: underline;
@@ -220,8 +230,18 @@ nav.tariffs li:first-child {
 }
 
 nav.tariffs li img {
-    margin-top: -17px;
+    margin-top: -22px;
     margin-left: 10px;
+}
+
+.icon {
+    margint-top: -12px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #ce6667;
 }
 
 .tariff-wrap {
