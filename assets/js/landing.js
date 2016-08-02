@@ -101,9 +101,9 @@ $(function(){
     function init_scroll(event, delta,  currentSlide, currentSlideId) {
         var deltaOfInterest = delta,
             timeNow = new Date().getTime(),
-            quietPeriod = 500;
+            quietPeriod = 1700;
 
-        if(timeNow - lastAnimation < quietPeriod + 1200) {
+        if(timeNow - lastAnimation < quietPeriod) {
             event.preventDefault();
             return;
         }
@@ -125,7 +125,14 @@ $(function(){
                     targetSlide.removeClass('visuallyhidden');
                 }, 970);
 
+                if (currentSlideId == 4) {
+                    setTimeout(function () {
+                        $('.section-wrap').addClass('finish');
+                    }, 2000);
+                }
+
                 targetSlide.addClass('current');
+
             }
         } else {
             if (currentSlideId >= 2 && currentSlideId <= 5) {
@@ -154,7 +161,7 @@ $(function(){
         var currentSlide = $('.section.current');
         var currentSlideId = currentSlide.attr('id').substr(6, 1);
 
-        if (currentSlideId < 5) {
+        if (!$('.section-wrap').hasClass('finish')) {
             event.preventDefault();
             var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
             init_scroll(event, delta, currentSlide, currentSlideId);
