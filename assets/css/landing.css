@@ -140,9 +140,8 @@ header .navbar {
     position: relative;
 }
 
-.section img {
-    max-width: 100%;
-    border: 1px solid #e0e0e0
+.slide-video  {
+    border: 1px solid #e0e0e0;
 }
 
 .section .img-header {
