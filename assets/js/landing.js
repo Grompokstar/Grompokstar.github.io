@@ -53,6 +53,16 @@ $(function(){
         }
     });
 
+    var video = $('.slide-video');
+
+    video.on('mouseenter', function(e) {
+        this.play();
+    });
+
+    video.on('mouseleave', function(e) {
+        this.pause();
+    });
+
     var slides = $('.section');
     slides.addClass('hidden');
     slides.addClass('visuallyhidden');
@@ -129,5 +139,7 @@ $(function(){
             init_scroll(event, delta, currentSlide, currentSlideId);
         }
     });
+
+
 
 });
