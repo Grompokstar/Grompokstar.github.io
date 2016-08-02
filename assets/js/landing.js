@@ -1,5 +1,26 @@
 $(function(){
 
+    $(document).ready(function() {
+        var windowHeight = $(window).height(),
+            sectionHeight = parseInt($('#slide-1').height()),
+            headerHeight = parseInt($('header').height()),
+            margin = windowHeight - sectionHeight - headerHeight;
+
+        $('header').css('margin-bottom', margin);
+
+        $(window).resize(function(){
+            var windowHeight = $(window).height(),
+                sectionHeight = parseInt($('#slide-1').height()),
+                headerHeight = parseInt($('header').height()),
+                margin = windowHeight - sectionHeight - headerHeight;
+
+            $('header').css('margin-bottom', margin);
+        });
+    });
+
+
+
+
     var tariffs =  $('.tariff-block');
     var functionality =  $('.tariff-functionality');
     tariffs.addClass('hidden');

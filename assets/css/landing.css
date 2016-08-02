@@ -28,6 +28,10 @@ body {
     line-height: 60px;
 }
 
+header {
+    margin-bottom: 100px;
+}
+
 .logo {
     width: 100%;
     height: auto;
@@ -152,7 +156,6 @@ header .navbar {
 }
 
 .section {
-    margin-top: 130px;
     transition: all 1s ease;
     position: relative;
 }
