@@ -205,6 +205,7 @@ header .navbar {
 
 nav.tariffs {
     font-size: 30px;
+    position: relative;
 }
 
 nav.tariffs li {
@@ -212,17 +213,49 @@ nav.tariffs li {
     cursor: pointer;
 }
 
+nav.tariffs li.with-icon {
+    top: -2px;
+}
+
+.object-icon {
+    position: relative;
+    margin-left: 7px;
+    height: 32px;
+    width: 30px;
+    display: inline-block;
+    background-image: url("../img/object-sprite.png");
+}
+
+.object-icon:after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 34px;
+    left: -7px;
+    right: 0;
+    border: 1px solid #ce6667;
+    z-index: 2;
+}
+
 nav.tariffs li:hover {
     color: #ce6667;
 }
 
-.icon {
-    height: 36px;
+nav.tariffs li:hover .object-icon {
+    background-position: 30px 0;
+}
+
+nav.tariffs li.active .object-icon:after {
+    display: block;
 }
 
 nav.tariffs li.active {
     color: #ce6667;
     text-decoration: underline;
+}
+
+nav.tariffs li.active .object-icon {
+    background-position: 30px 0;
 }
 
 nav.tariffs li:first-child {
