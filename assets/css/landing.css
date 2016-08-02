@@ -64,6 +64,23 @@ body {
     color: #cd6666 !important;
 }
 
+.nav li.active a {
+    color: #cd6666 !important;
+}
+
+.nav li.active .nav-text{
+    border: none !important;
+}
+
+.nav li a:hover .nav-text, .nav li a:focus .nav-text{
+    border-bottom: 1px dashed #cd6666;
+}
+
+.nav-text {
+    display: inline-block;
+    border-bottom: 1px dashed #000;
+}
+
 header .navbar {
     margin-bottom: 0;
 }

@@ -41,14 +41,13 @@
 
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-right: 0">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="/" style="padding-left: 0">Управление</a></li>
-                                    <li><a href="/">Учет</a></li>
-                                    <li><a href="/">Проверки</a></li>
-                                    <li><a href="/">Инциденты</a></li>
-                                    <li><a href="/">Отчеты</a></li>
-                                    <li><a href="/">Тарифы</a></li>
-                                    <li><a href="/">Безопасность</a></li>
-                                    <li id="showScroll"></li>
+                                    <li class="active"><a href="/" style="padding-left: 0"><span class="nav-text">Управление</span></a></li>
+                                    <li><a href="/"><span class="nav-text">Учет</span></a></li>
+                                    <li><a href="/"><span class="nav-text">Проверки</span></a></li>
+                                    <li><a href="/"><span class="nav-text">Инциденты</span></a></li>
+                                    <li><a href="/"><span class="nav-text">Отчеты</span></a></li>
+                                    <li><a href="#tariffs"><span class="nav-text">Тарифы</span></a></li>
+                                    <li><a href="#security"><span class="nav-text">Безопасность</span></a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right" style="margin-right: 0">
                                     <li><a href="#" data-toggle="modal" data-target="#authWindow" style="padding-right: 0">Вход в myObject</a>
@@ -195,7 +194,7 @@
             </div>
         </div>
 
-        <div class="section-title extra-bold">
+        <div id=tariffs class="section-title extra-bold">
             Тарифы и цены
         </div>
         <div class="row">
@@ -617,7 +616,7 @@
             </div>
         </div>
 
-        <div class="section-title extra-bold">
+        <div id=security class="section-title extra-bold">
             Безопасность данных
         </div>
         <div class="regular-text">

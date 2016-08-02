@@ -140,6 +140,13 @@ $(function(){
         }
     });
 
+    var $nav = $('#main-navigation li');
+
+    $nav.on('click', function() {
+        $nav.removeClass('active');
+        $(this).addClass('active');
+    })
+
 
 
 });
