@@ -222,7 +222,10 @@ nav.tariffs li.with-icon {
     height: 32px;
     width: 30px;
     display: inline-block;
-    background-image: url("../img/object-sprite.png");
+}
+
+.object-icon svg {
+    fill: black;
 }
 
 .object-icon:after {
@@ -240,21 +243,21 @@ nav.tariffs li:hover {
     color: #ce6667;
 }
 
-nav.tariffs li:hover .object-icon {
-    background-position: 30px 0;
+nav.tariffs li:hover .object-icon svg {
+    fill: #ce6667;
 }
 
 nav.tariffs li.active .object-icon:after {
     display: block;
 }
 
+nav.tariffs li.active .object-icon svg {
+    fill: #ce6667;
+}
+
 nav.tariffs li.active {
     color: #ce6667;
     text-decoration: underline;
-}
-
-nav.tariffs li.active .object-icon {
-    background-position: 30px 0;
 }
 
 nav.tariffs li:first-child {
