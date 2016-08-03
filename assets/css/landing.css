@@ -17,6 +17,7 @@
 body {
     font-family: CRC35, Verdana, sans-serif;
     color: black;
+    overflow: hidden;
 }
 
 .extra-bold {
@@ -159,7 +160,18 @@ header .navbar {
     transition: all 1s ease;
     position: relative;
     left: 0;
-    right: 500px;
+}
+
+.section-img {
+    transition: all 1s ease;
+    position: relative;
+    left: 0;
+}
+
+.section-text {
+    transition: all 1s ease;
+    position: relative;
+    right: 0;
 }
 
 .slide-video  {
@@ -319,11 +331,11 @@ nav.tariffs li img {
 }
 
 .hidden-left {
-    left: 150%;
+    left: 120%;
 }
 
 .hidden-right {
-    right: 150%;
+    right: 120%;
 }
 
 .tariff-wrap > .row {

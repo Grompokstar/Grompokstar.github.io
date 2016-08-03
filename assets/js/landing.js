@@ -1,6 +1,6 @@
 $(function(){
 
-    $(document).ready(function() {
+    $(window).ready(function() {
         var windowHeight = $(window).height(),
             sectionHeight = parseInt($('#slide-1').height()),
             headerHeight = parseInt($('header').height()),
@@ -84,21 +84,29 @@ $(function(){
         this.pause();
     });
 
-    var slides = $('.section');
+    var slides = $('.section'),
+        slidesImg = $('.section-img'),
+        slidesText = $('.section-text');
     slides.addClass('hidden');
-    slides.addClass('hidden-left');
+    slidesImg.addClass('hidden-left');
+    slidesText.addClass('hidden-right');
 
-    var activeSlide = $('#slide-1');
+    var activeSlide = $('#slide-1'),
+        activeSlideImg = activeSlide.find('.section-img'),
+        activeSlideText = activeSlide.find('.section-text');
 
     activeSlide.addClass('current');
     activeSlide.removeClass('hidden');
     setTimeout(function () {
-        activeSlide.removeClass('hidden-left');
+        activeSlideImg.removeClass('hidden-left');
+        activeSlideText.removeClass('hidden-right');
     }, 20);
 
     var lastAnimation = 0;
 
     function init_scroll(event, delta,  currentSlide, currentSlideId) {
+        var currentSlideImg = currentSlide.find('.section-img'),
+            currentSlideText = currentSlide.find('.section-text');
         var deltaOfInterest = delta,
             timeNow = new Date().getTime(),
             quietPeriod = 1700;
@@ -108,13 +116,16 @@ $(function(){
             return;
         }
 
-        var targetSlide = $('#slide-' + (parseInt(currentSlideId) + 1));
+        var targetSlide = $('#slide-' + (parseInt(currentSlideId) + 1)),
+            targetSlideImg = targetSlide.find('.section-img'),
+            targetSlideText = targetSlide.find('.section-text');
 
         if (deltaOfInterest < 0) {
             if (currentSlideId >= 1 && currentSlideId < 5) {
                 currentSlide.removeClass('current');
-                currentSlide.addClass('hidden-left');
-                currentSlide.one('transitionend', function (e) {
+                currentSlideImg.addClass('hidden-left');
+                currentSlideText.addClass('hidden-right');
+                currentSlideImg.one('transitionend', function (e) {
                     currentSlide.addClass('hidden');
                 });
 
@@ -122,13 +133,15 @@ $(function(){
                     targetSlide.removeClass('hidden');
                 }, 950);
                 setTimeout(function () {
-                    targetSlide.removeClass('hidden-left');
+                    targetSlideImg.removeClass('hidden-left');
+                    targetSlideText.removeClass('hidden-right');
                 }, 970);
 
                 if (currentSlideId == 4) {
                     setTimeout(function () {
                         $('.section-wrap').addClass('finish');
-                    }, 2000);
+                        $(document.body).css('overflow', 'auto');
+                    }, 1900);
                 }
 
                 targetSlide.addClass('current');
@@ -137,9 +150,12 @@ $(function(){
         } else {
             if (currentSlideId >= 2 && currentSlideId <= 5) {
                 targetSlide = $('#slide-' + (parseInt(currentSlideId) - 1));
+                targetSlideImg = targetSlide.find('.section-img');
+                targetSlideText = targetSlide.find('.section-text');
                 currentSlide.removeClass('current');
-                currentSlide.addClass('hidden-left');
-                currentSlide.one('transitionend', function (e) {
+                currentSlideImg.addClass('hidden-left');
+                currentSlideText.addClass('hidden-right');
+                currentSlideImg.one('transitionend', function (e) {
                     currentSlide.addClass('hidden');
                 });
 
@@ -147,7 +163,8 @@ $(function(){
                     targetSlide.removeClass('hidden');
                 }, 950);
                 setTimeout(function () {
-                    targetSlide.removeClass('hidden-left');
+                    targetSlideImg.removeClass('hidden-left');
+                    targetSlideText.removeClass('hidden-right');
                 }, 970);
                 targetSlide.addClass('current');
             }
