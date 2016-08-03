@@ -273,6 +273,21 @@ nav.tariffs li.with-icon {
     z-index: 2;
 }
 
+.red-crossed {
+    display: inline-block;
+    position: relative;
+}
+
+.red-crossed:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    border: 1px solid #ff0000;
+    z-index: 2;
+}
+
 nav.tariffs li:hover {
     color: #ce6667;
 }
