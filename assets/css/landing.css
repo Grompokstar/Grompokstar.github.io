@@ -158,6 +158,8 @@ header .navbar {
 .section {
     transition: all 1s ease;
     position: relative;
+    left: 0;
+    right: 500px;
 }
 
 .slide-video  {
@@ -318,6 +320,10 @@ nav.tariffs li img {
 
 .hidden-left {
     left: 150%;
+}
+
+.hidden-right {
+    right: 150%;
 }
 
 .tariff-wrap > .row {

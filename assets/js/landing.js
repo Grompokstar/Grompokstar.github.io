@@ -86,14 +86,14 @@ $(function(){
 
     var slides = $('.section');
     slides.addClass('hidden');
-    slides.addClass('visuallyhidden');
+    slides.addClass('hidden-left');
 
     var activeSlide = $('#slide-1');
 
     activeSlide.addClass('current');
     activeSlide.removeClass('hidden');
     setTimeout(function () {
-        activeSlide.removeClass('visuallyhidden');
+        activeSlide.removeClass('hidden-left');
     }, 20);
 
     var lastAnimation = 0;
@@ -113,7 +113,7 @@ $(function(){
         if (deltaOfInterest < 0) {
             if (currentSlideId >= 1 && currentSlideId < 5) {
                 currentSlide.removeClass('current');
-                currentSlide.addClass('visuallyhidden');
+                currentSlide.addClass('hidden-left');
                 currentSlide.one('transitionend', function (e) {
                     currentSlide.addClass('hidden');
                 });
@@ -122,7 +122,7 @@ $(function(){
                     targetSlide.removeClass('hidden');
                 }, 950);
                 setTimeout(function () {
-                    targetSlide.removeClass('visuallyhidden');
+                    targetSlide.removeClass('hidden-left');
                 }, 970);
 
                 if (currentSlideId == 4) {
@@ -138,7 +138,7 @@ $(function(){
             if (currentSlideId >= 2 && currentSlideId <= 5) {
                 targetSlide = $('#slide-' + (parseInt(currentSlideId) - 1));
                 currentSlide.removeClass('current');
-                currentSlide.addClass('visuallyhidden');
+                currentSlide.addClass('hidden-left');
                 currentSlide.one('transitionend', function (e) {
                     currentSlide.addClass('hidden');
                 });
@@ -147,7 +147,7 @@ $(function(){
                     targetSlide.removeClass('hidden');
                 }, 950);
                 setTimeout(function () {
-                    targetSlide.removeClass('visuallyhidden');
+                    targetSlide.removeClass('hidden-left');
                 }, 970);
                 targetSlide.addClass('current');
             }
