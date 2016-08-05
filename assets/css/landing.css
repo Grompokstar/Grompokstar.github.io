@@ -41,9 +41,8 @@ header {
 
 #main-navigation {
     position: fixed;
-    top: 0;
+    top: 40px;
     z-index: 1001;
-    margin-top: 40px;
     margin-left: -30px;
 }
 
@@ -163,13 +162,18 @@ header .navbar {
 }
 
 .section-img {
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     position: relative;
     left: 0;
 }
 
+.section-img img {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
 .section-text {
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     position: relative;
     right: 0;
 }
@@ -232,7 +236,7 @@ header .navbar {
 }
 
 .section-title {
-    margin-top: 140px;
+    margin-top: 110px;
     font-size: 80px;
 }
 
@@ -529,4 +533,8 @@ footer > .row {
 .bk-link img {
     width: 80px;
     margin-top: -8px;
+}
+
+#tariffs, #security {
+    padding-top: 30px;
 }
