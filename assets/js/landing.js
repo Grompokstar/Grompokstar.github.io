@@ -7,6 +7,7 @@ $(function(){
 
     $(window).ready(function() {
         var windowHeight = $(window).height(),
+            windowWidth = $(window).width(),
             header = $('header'),
             sectionHeight = parseInt($('#slide-1').height()),
             headerHeight = parseInt(header.height()),
@@ -21,6 +22,34 @@ $(function(){
                 margin = windowHeight - sectionHeight - headerHeight;
 
             header.css('margin-bottom', margin);
+        });
+
+        var sectionImages = $('.section-img img'),
+            sectionImageBlock = $('.section-img'),
+            sectionImgWidth = parseInt($('#slide-1 img').width()),
+            containerWidth = parseInt($('.container').width());
+
+        var marginRight = (windowWidth - containerWidth)/2;
+        var marginTop = marginRight * sectionHeight / sectionImgWidth;
+
+        sectionImages.mouseenter(function() {
+            $(this).animate({
+                width: (sectionImgWidth + marginRight) + 'px'
+            }, 500);
+
+            $(this).parent('.section-img').animate({
+                top: "-=" + marginTop + 'px'
+            }, 500);
+        });
+
+        sectionImages.mouseleave(function() {
+            $(this).animate({
+                width: sectionImgWidth + 'px'
+            }, 500);
+
+            $(this).parent('.section-img').animate({
+                top: 0
+            }, 500);
         });
     });
 
