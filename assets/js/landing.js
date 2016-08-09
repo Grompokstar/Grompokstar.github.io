@@ -13,44 +13,48 @@ $(function(){
             headerHeight = parseInt(header.height()),
             margin = windowHeight - sectionHeight - headerHeight;
 
-        header.css('margin-bottom', margin);
-
-        $(window).resize(function(){
-            var windowHeight = $(window).height(),
-                sectionHeight = parseInt($('#slide-1').height()),
-                headerHeight = parseInt($('header').height()),
-                margin = windowHeight - sectionHeight - headerHeight;
-
+        if (parseInt(windowWidth) >= 768) {
             header.css('margin-bottom', margin);
-        });
 
-        var sectionImages = $('.section-img img'),
-            sectionImageBlock = $('.section-img'),
-            sectionImgWidth = parseInt($('#slide-1 img').width()),
-            containerWidth = parseInt($('.container').width());
+            $(window).resize(function(){
+                var windowHeight = $(window).height(),
+                    sectionHeight = parseInt($('#slide-1').height()),
+                    headerHeight = parseInt($('header').height()),
+                    margin = windowHeight - sectionHeight - headerHeight;
 
-        var marginRight = (windowWidth - containerWidth)/2;
-        var marginTop = marginRight * sectionHeight / sectionImgWidth;
+                header.css('margin-bottom', margin);
+            });
 
-        sectionImages.mouseenter(function() {
-            $(this).animate({
-                width: (sectionImgWidth + marginRight) + 'px'
-            }, 500);
+            var sectionImages = $('.section-img img'),
+                sectionImageBlock = $('.section-img'),
+                sectionImgWidth = parseInt($('#slide-1 img').width()),
+                containerWidth = parseInt($('.container').width());
 
-            $(this).parent('.section-img').animate({
-                top: "-=" + marginTop + 'px'
-            }, 500);
-        });
+            var marginRight = (windowWidth - containerWidth)/2;
+            var marginTop = marginRight * sectionHeight / sectionImgWidth;
 
-        sectionImages.mouseleave(function() {
-            $(this).animate({
-                width: sectionImgWidth + 'px'
-            }, 500);
+            sectionImages.mouseenter(function() {
+                $(this).animate({
+                    width: (sectionImgWidth + marginRight) + 'px'
+                }, 500);
 
-            $(this).parent('.section-img').animate({
-                top: 0
-            }, 500);
-        });
+                $(this).parent('.section-img').animate({
+                    top: "-=" + marginTop + 'px'
+                }, 500);
+            });
+
+            sectionImages.mouseleave(function() {
+                $(this).animate({
+                    width: sectionImgWidth + 'px'
+                }, 500);
+
+                $(this).parent('.section-img').animate({
+                    top: 0
+                }, 500);
+            });
+        }
+
+
     });
 
     var h_hght = 40; // высота шапки
@@ -137,7 +141,7 @@ $(function(){
         }
     });
 
-    var video = $('.slide-video');
+    /*var video = $('.slide-video');
 
     video.on('mouseenter', function(e) {
         this.play();
@@ -145,14 +149,20 @@ $(function(){
 
     video.on('mouseleave', function(e) {
         this.pause();
-    });
+    });*/
 
-    var slides = $('.section'),
-        slidesImg = $('.section-img'),
-        slidesText = $('.section-text');
-    slides.addClass('hidden');
-    slidesImg.addClass('hidden-left');
-    slidesText.addClass('hidden-right');
+    var windowWidth = $(window).width();
+
+    if (parseInt(windowWidth) >= 768) {
+        var slides = $('.section'),
+            slidesImg = $('.section-img'),
+            slidesText = $('.section-text');
+        slides.addClass('hidden');
+        slidesImg.addClass('hidden-left');
+        slidesText.addClass('hidden-right');
+    }
+
+
 
     var activeSlide = $('#slide-1'),
         activeSlideImg = activeSlide.find('.section-img'),
