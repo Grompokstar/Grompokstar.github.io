@@ -138,6 +138,10 @@ header .navbar {
     .logo {
         width: 50%;
     }
+
+    .section-img img {
+        margin-bottom: 70px;
+    }
 }
 
 .navbar-nav > li > a {
@@ -182,7 +186,6 @@ header .navbar {
 .section-img img {
     width: 100%;
     border: 1px solid #e0e0e0;
-    margin-bottom: 100px;
 }
 
 .section-text {
