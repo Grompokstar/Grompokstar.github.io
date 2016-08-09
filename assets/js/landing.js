@@ -9,21 +9,13 @@ $(function(){
         var windowHeight = $(window).height(),
             windowWidth = $(window).width(),
             header = $('header'),
+            sectionWrap = $('.section-wrap'),
             sectionHeight = parseInt($('#slide-1').height()),
             headerHeight = parseInt(header.height()),
             margin = windowHeight - sectionHeight - headerHeight;
 
         if (parseInt(windowWidth) >= 768) {
-            header.css('margin-bottom', margin);
-
-            $(window).resize(function(){
-                var windowHeight = $(window).height(),
-                    sectionHeight = parseInt($('#slide-1').height()),
-                    headerHeight = parseInt($('header').height()),
-                    margin = windowHeight - sectionHeight - headerHeight;
-
-                header.css('margin-bottom', margin);
-            });
+            sectionWrap.css('margin-bottom', margin);
 
             var sectionImages = $('.section-img img'),
                 sectionImageBlock = $('.section-img'),
@@ -33,25 +25,7 @@ $(function(){
             var marginRight = (windowWidth - containerWidth)/2;
             var marginTop = marginRight * sectionHeight / sectionImgWidth;
 
-            sectionImages.mouseenter(function() {
-                $(this).animate({
-                    width: (sectionImgWidth + marginRight) + 'px'
-                }, 500);
-
-                $(this).parent('.section-img').animate({
-                    top: "-=" + marginTop + 'px'
-                }, 500);
-            });
-
-            sectionImages.mouseleave(function() {
-                $(this).animate({
-                    width: sectionImgWidth + 'px'
-                }, 500);
-
-                $(this).parent('.section-img').animate({
-                    top: 0
-                }, 500);
-            });
+            sectionImages.css('width', sectionImgWidth + marginRight - 10);
         }
 
 

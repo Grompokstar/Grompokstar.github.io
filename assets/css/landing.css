@@ -30,7 +30,7 @@ body {
 }
 
 .header-row {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     border-bottom: 5px solid #ce6667;
 }
 
@@ -100,8 +100,8 @@ header .navbar {
     }
 
     .main-header {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 46px;
+        line-height: 56px;
     }
 
     .slide-text {
@@ -110,7 +110,7 @@ header .navbar {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1079px) {
     .main-logo {
         margin-top: 22px;
     }
@@ -182,7 +182,7 @@ header .navbar {
 .section-img img {
     width: 100%;
     border: 1px solid #e0e0e0;
-    transition: width 0.5s;
+    margin-bottom: 100px;
 }
 
 .section-text {
