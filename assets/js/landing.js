@@ -160,6 +160,7 @@ $(function(){
         slides.addClass('hidden');
         slidesImg.addClass('hidden-left');
         slidesText.addClass('hidden-right');
+        $(document).bind('mousewheel DOMMouseScroll', initMouseWheel);
     }
 
 
@@ -279,7 +280,7 @@ $(function(){
         }
     };
 
-    $(document).bind('mousewheel DOMMouseScroll', initMouseWheel);
+
 
     $nav.on('click', function() {
         var targetSlideId = $(this).attr('data-slide-id');
