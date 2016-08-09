@@ -160,7 +160,6 @@ $(function(){
         slides.addClass('hidden');
         slidesImg.addClass('hidden-left');
         slidesText.addClass('hidden-right');
-        $(document).bind('mousewheel DOMMouseScroll', initMouseWheel);
     }
 
 
@@ -279,6 +278,10 @@ $(function(){
             init_scroll(event, delta, currentSlide, currentSlideId);
         }
     };
+
+    if (parseInt(windowWidth) >= 768) {
+        $(document).bind('mousewheel DOMMouseScroll', initMouseWheel);
+    }
 
 
 
