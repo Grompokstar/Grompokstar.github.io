@@ -29,8 +29,9 @@ body {
     line-height: 60px;
 }
 
-header {
+.header-row {
     margin-bottom: 100px;
+    border-bottom: 5px solid #ce6667;
 }
 
 .logo {
@@ -65,11 +66,11 @@ header {
 
 .nav li a:hover, .nav li a:focus {
     background-color: inherit;
-    color: #cd6666 !important;
+    color: #ce6667 !important;
 }
 
 .nav li.active a {
-    color: #cd6666 !important;
+    color: #ce6667 !important;
 }
 
 .nav li.active .nav-text{
@@ -77,7 +78,7 @@ header {
 }
 
 .nav li a:hover .nav-text, .nav li a:focus .nav-text{
-    border-bottom: 1px dashed #cd6666;
+    border-bottom: 1px dashed #ce6667;
 }
 
 .nav-text {
@@ -129,6 +130,16 @@ header .navbar {
     }
 }
 
+@media (max-width: 768px) {
+    body {
+        overflow: auto !important;
+    }
+
+    .logo {
+        width: 50%;
+    }
+}
+
 .navbar-nav > li > a {
     padding: 10px;
 }
@@ -164,12 +175,14 @@ header .navbar {
 .section-img {
     transition: all 0.7s ease;
     position: relative;
+    top: 0;
     left: 0;
 }
 
 .section-img img {
     width: 100%;
     border: 1px solid #e0e0e0;
+    transition: width 0.5s;
 }
 
 .section-text {
@@ -184,7 +197,6 @@ header .navbar {
 
 .section .img-header {
     height: 30px;
-    max-width: 100%;
     border: 1px solid #e0e0e0;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
@@ -323,7 +335,7 @@ nav.tariffs li img {
 }
 
 .tariff-wrap {
-   border-bottom: 5px solid #d56d6e;
+    border-bottom: 5px solid #ce6667;
     position: relative;
 }
 
@@ -435,6 +447,7 @@ nav.tariffs li img {
     right: -30px;
     bottom: -90px;
     cursor: pointer;
+    text-align: center;
 }
 
 .tariff-price:hover {
@@ -445,10 +458,12 @@ nav.tariffs li img {
     font-size: 30px;
     line-height: 32px;
     color: white;
-    margin: 70px 15px;
-    display: block;
+    margin-top: 70px;
+    display: inline-block;
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
@@ -491,7 +506,7 @@ nav.tariffs li img {
 
 footer {
     margin-top: 100px;
-    border-top: 5px solid #d56d6e;
+    border-top: 5px solid #ce6667;
     padding: 30px 0;
     font-family: Verdana, sans-serif;
     line-height: 25px;
@@ -503,7 +518,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #d56d6e;
+    color: #ce6667;
 }
 
 .crossed {
