@@ -11,12 +11,9 @@ $(function(){
             header = $('header'),
             sectionWrap = $('.section-wrap'),
             slidesMarginBottomBlock = $('#slides-margin-bottom'),
-            sectionHeight = parseInt($('#slide-1').height()),
-            headerHeight = parseInt(header.height()),
-            margin = windowHeight - sectionHeight - headerHeight;
+            headerHeight = parseInt(header.height());
 
         if (parseInt(windowWidth) >= 768) {
-            slidesMarginBottomBlock.css('height', margin);
 
             var sectionImages = $('.section-img img'),
                 sectionImgWidth = parseInt($('#slide-1 img').width()),
@@ -25,6 +22,11 @@ $(function(){
             var marginRight = (windowWidth - containerWidth)/2;
 
             sectionImages.css('width', sectionImgWidth + marginRight - 10);
+
+            var sectionHeight = parseInt($('#slide-1').height()),
+            margin = windowHeight - sectionHeight - headerHeight;
+
+            slidesMarginBottomBlock.css('height', margin);
         }
 
 
