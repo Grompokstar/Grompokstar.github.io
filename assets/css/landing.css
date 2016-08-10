@@ -25,8 +25,9 @@ body {
 }
 
 .main-header {
-    font-size: 54px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 62px;
+    margin-bottom: 0;
 }
 
 .header-row {
@@ -38,6 +39,7 @@ body {
     width: 100%;
     height: auto;
     padding-right: 50px;
+    margin-bottom: 20px;
 }
 
 #main-navigation {
