@@ -7,11 +7,11 @@ $(function(){
 
     function onScroll(){
         var scroll_top = $(document).scrollTop();
-        $('#main-navigation a').each(function(){
+        $('.main-menu a').each(function(){
             var hash = $(this).attr("href");
             var target = $(hash);
             if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
-                $('#main-navigation li.active').removeClass("active");
+                $('.main-menu li.active').removeClass("active");
                 $(this).parent('li').addClass("active");
             } else {
                 $(this).parent('li').removeClass("active");
