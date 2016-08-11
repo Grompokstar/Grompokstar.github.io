@@ -5,6 +5,20 @@ $(function(){
         e.preventDefault();
     });
 
+    function onScroll(){
+        var scroll_top = $(document).scrollTop();
+        $('#main-navigation a').each(function(){
+            var hash = $(this).attr("href");
+            var target = $(hash);
+            if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+                $('#main-navigation li.active').removeClass("active");
+                $(this).parent('li').addClass("active");
+            } else {
+                $(this).parent('li').removeClass("active");
+            }
+        });
+    }
+
     $(window).ready(function() {
         var windowHeight = $(window).height(),
             windowWidth = $(window).width(),
@@ -28,6 +42,8 @@ $(function(){
 
             slidesMarginBottomBlock.css('height', margin);
         }
+
+        $(document).on("scroll", onScroll);
 
 
     });
