@@ -24,24 +24,23 @@ $(function(){
             windowWidth = $(window).width(),
             header = $('header'),
             sectionWrap = $('.section-wrap'),
-            slidesMarginBottomBlock = $('#slides-margin-bottom'),
-            headerHeight = parseInt(header.height());
+            headerHeight = parseInt(header.height()),
+            sections = $('.section'),
+            imgHeaders = $('.img-header');
 
-        if (parseInt(windowWidth) >= 768) {
+        var sectionImages = $('.section-img img'),
+            sectionImgWidth = parseInt($('#slide-1 img').width()),
+            containerWidth = parseInt($('.container').width());
 
-            var sectionImages = $('.section-img img'),
-                sectionImgWidth = parseInt($('#slide-1 img').width()),
-                containerWidth = parseInt($('.container').width());
+        var marginRight = (windowWidth - containerWidth)/2;
 
-            var marginRight = (windowWidth - containerWidth)/2;
+        sectionImages.css('width', sectionImgWidth + marginRight - 10);
+        imgHeaders.css('width', sectionImgWidth + marginRight - 10);
 
-            sectionImages.css('width', sectionImgWidth + marginRight - 10);
+        var sectionHeight = parseInt($('#slide-1').height()),
+        margin = windowHeight - sectionHeight - headerHeight;
 
-            var sectionHeight = parseInt($('#slide-1').height()),
-            margin = windowHeight - sectionHeight - headerHeight;
-
-            slidesMarginBottomBlock.css('height', margin);
-        }
+        sections.css('margin-bottom', margin + 80);
 
         $(document).on("scroll", onScroll);
 
@@ -144,18 +143,18 @@ $(function(){
 
     var windowWidth = $(window).width();
 
-    if (parseInt(windowWidth) >= 768) {
+    /*if (parseInt(windowWidth) >= 768) {
         var slides = $('.section'),
             slidesImg = $('.section-img'),
             slidesText = $('.section-text');
         slides.addClass('hidden');
         slidesImg.addClass('hidden-left');
         slidesText.addClass('hidden-right');
-    }
+    }*/
 
 
 
-    var activeSlide = $('#slide-1'),
+    /*var activeSlide = $('#slide-1'),
         activeSlideImg = activeSlide.find('.section-img'),
         activeSlideText = activeSlide.find('.section-text');
 
@@ -272,7 +271,7 @@ $(function(){
 
     if (parseInt(windowWidth) >= 768) {
         $(document).bind('mousewheel DOMMouseScroll', initMouseWheel);
-    }
+    }*/
 
 
 

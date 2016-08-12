@@ -17,7 +17,6 @@
 body {
     font-family: CRC35, Verdana, sans-serif;
     color: black;
-    overflow: hidden;
 }
 
 .extra-bold {
@@ -31,8 +30,7 @@ body {
 }
 
 .header-row {
-    margin-bottom: 70px;
-    border-bottom: 5px solid #ce6667;
+    margin-bottom: 60px;
 }
 
 .logo {
@@ -140,10 +138,6 @@ header .navbar {
     .logo {
         width: 50%;
     }
-
-    .section-img img {
-        margin-bottom: 70px;
-    }
 }
 
 .navbar-nav > li > a {
@@ -173,9 +167,8 @@ header .navbar {
 }
 
 .section {
-    transition: all 1s ease;
     position: relative;
-    left: 0;
+    padding-top: 70px;
 }
 
 .section-img {
@@ -253,7 +246,6 @@ header .navbar {
 }
 
 .section-title {
-    margin-top: 110px;
     font-size: 80px;
 }
 
