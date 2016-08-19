@@ -275,7 +275,7 @@ $(function(){
 
 
 
-    $nav.on('click', function() {
+    /*$nav.on('click', function() {
         var targetSlideId = $(this).attr('data-slide-id');
         var currentSlide = $('.section.current');
         var currentSlideId = currentSlide.attr('id').substr(6, 1);
@@ -327,6 +327,6 @@ $(function(){
             $('.section-wrap').addClass('finish');
             $(document.body).css('overflow', 'auto');
         }
-    })
+    })*/
 
 });
