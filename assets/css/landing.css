@@ -444,13 +444,12 @@ nav.tariffs li img {
     position: absolute;
     right: -30px;
     bottom: -90px;
-    cursor: pointer;
     text-align: center;
 }
 
-.tariff-price:hover {
+/*.tariff-price:hover {
     background-color: #0ba885;
-}
+}*/
 
 .tariff-price-text {
     font-size: 30px;
@@ -540,4 +539,8 @@ footer > .row {
 
 #tariffs, #security {
     padding-top: 30px;
+}
+
+.site-section {
+    margin-top: 100px;
 }

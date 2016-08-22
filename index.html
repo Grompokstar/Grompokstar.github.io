@@ -48,6 +48,7 @@
                                     <li data-slide-id="4"><a href="#slide-4"><span class="nav-text">Инциденты</span></a></li>
                                     <li data-slide-id="5"><a href="#slide-5"><span class="nav-text">Отчеты</span></a></li>
                                     <li><a href="#tariffs"><span class="nav-text">Тарифы</span></a></li>
+                                    <li><a href="#introduction"><span class="nav-text">Внедрение</span></a></li>
                                     <li><a href="#security"><span class="nav-text">Безопасность</span></a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right" style="margin-right: 0">
@@ -185,7 +186,7 @@
             </div>
         </div>
 
-        <div id="tariffs">
+        <div id="tariffs" class="site-section">
             <div class="section-title extra-bold">
                 Тарифы и цены
             </div>
@@ -627,44 +628,42 @@
             </div>
         </div>
 
-
-        <div id="security">
+        <div id="introduction" class="site-section">
             <div class="section-title extra-bold">
-                Безопасность данных
-            </div>
-            <div class="regular-text">
-                важна для&nbsp;наших клиентов. Поэтому мы разделяем серверы обработки и&nbsp;хранения данных, еженедельно создаем резервную копию базы и&nbsp;не&nbsp;храним пароли в&nbsp;системе.
+                Два варианта внедрения
             </div>
 
             <div class="row security-section">
                 <div class="col-md-6">
                     <img id=cloud-img src="assets/img/cloud.png">
-                    <span class="extra-bold security-title">Размещение в облаке</span>
-                <span class="regular-text">Данные защищены надежнее, чем&nbsp;в&nbsp;большинстве офисных компьютеров
-                    и&nbsp;корпоративных сетей</span>
-                    <p><span class="strong">Постоянный доступ</span>
-                        к&nbsp;программе с&nbsp;любого компьютера, планшета или смартфона.
-                    </p>
-                    <p>Файлы хранятся на&nbsp;серверах российских дата-центров уровня <span class="strong">Tier-3:</span>
-                        c&nbsp;круглосуточным видеонаблюдением, вооруженной охраной и&nbsp;автоматической системой пожаротушения.
-                    </p>
-                    <p><span class="strong">Все данные шифруются</span> при хранении и&nbsp;во&nbsp;время передачи
-                        по&nbsp;открытым сетям
-                    </p>
+                    <span class="extra-bold security-title">Облако myObject.ru</span>
+                    <span class="regular-text">Простая регистрация на этом сайте и сразу можно работать.</span>
+                    <p>Никаких дополнительных закупок оборудования и&nbsp;ПО. Только <span class="strong">арендная</span> плата</p>
+                    <p>Всегда <span class="strong">самая новая</span> версия программы</p>
+                    <p>Данные <span class="strong">ащищены</span> значительно надежнее, чем в&nbsp;большинстве офисных компьютеров и&nbsp;корпоративных сетей.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="assets/img/hdd_space.png">
-                    <span class="extra-bold security-title">Локальная версия</span>
-                    <span class="regular-text">Подойдет предприятиям с&nbsp;повышенным режимом секретности</span>
-                    <p><span class="strong">Все файлы</span> хранятся на&nbsp;арендованом или собственном сервере предприятия
-                    </p>
-                    <p>Доступы только через <span class="strong">защищенные каналы</span> интерента
-                    </p>
-                    <p><span class="strong">Бесплатные обновления</span> в&nbsp;течение года
-                    </p>
-                    <p>Самостоятельное управление защитой данных
-                    </p>
+                    <span class="extra-bold security-title">Сервер предприятия</span>
+                    <span class="regular-text">Подойдет тем предприятиям, где использование интернета невозможно.</span>
+                    <p>Выгодно при внедрении на <span class="strong">большом</span> числе рабочих мест - вплоть до&nbsp;линейного персонала.</p>
+                    <p>Регулярные <span class="strong">обновления</span> программы</p>
+                    <p>Возможность <span class="strong">интеграции</span> с&nbsp;корпоративными информационными системами и&nbsp;адаптации к&nbsp;бизнес-процессам предпприятия.</p>
+                    <p><span class="strong">Самостоятельное</span> управление защитой данных</p>
                 </div>
+            </div>
+        </div>
+
+
+        <div id="security" class="site-section">
+            <div class="section-title extra-bold">
+                Безопасность данных
+            </div>
+            <div class="regular-text">
+                чрезвычайно важна для&nbsp;наших клиентов.<br>
+                Поэтому независимо от&nbsp;способа внедрения, мы предоставляем вам все инструменты управления правами
+                и&nbsp;доступом пользователей, не&nbsp;храним пароли в&nbsp;системе, разделяем серверы обработки и&nbsp;хранения данных,
+                ежедневно создаем резервные копии базы данных, шифруем данные при&nbsp;передаче и&nbsp;хранении.
             </div>
         </div>
 
@@ -688,10 +687,11 @@
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col-sm-6">
-                            <span class="extra-bold">myObject 2016</span><br>
-                            <a href="https://www.myobject.ru">www.myobject.ru</a><br>
-                            г. Казань, ул. Сулеймановой, д.5<br><br>
-                            <span class="extra-bold">+7 (843) 225-05-40</span><br>
+                            <span class="extra-bold">&copy; ООО &laquo;Ливинг коре&raquo;,  2016</span><br>
+                            г. Казань, ул. Сулеймановой, д.5<br>
+                            <a id="firmsonmap_biglink" href="http://maps.2gis.ru/#/?history=project/kazan/center/49.089640609253,55.813231010873/zoom/18/state/widget/id/2956016537084517/firms/2956016537084517">Смотреть на карте</a><br><br>
+                            <span class="extra-bold">8-800-500-35-67</span><br>
+                            (бесплатно по России) <br>
                             <a href="">заказать звонок</a>
                         </div>
                         <div class="col-sm-6">
