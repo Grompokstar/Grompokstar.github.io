@@ -23,24 +23,25 @@ $(function(){
         var windowHeight = $(window).height(),
             windowWidth = $(window).width(),
             header = $('header'),
-            sectionWrap = $('.section-wrap'),
             headerHeight = parseInt(header.height()),
             sections = $('.section'),
             imgHeaders = $('.img-header');
 
-        var sectionImages = $('.section-img img'),
-            sectionImgWidth = parseInt($('#slide-1 img').width()),
-            containerWidth = parseInt($('.container').width());
+        if (windowWidth >= 1200) {
+            var sectionImages = $('.section-img img'),
+                sectionImgWidth = parseInt($('#slide-1 img').width()),
+                containerWidth = parseInt($('.container').width());
 
-        var marginRight = (windowWidth - containerWidth)/2;
+            var marginRight = (windowWidth - containerWidth)/2;
 
-        sectionImages.css('width', sectionImgWidth + marginRight - 10);
-        imgHeaders.css('width', sectionImgWidth + marginRight - 10);
+            sectionImages.css('width', sectionImgWidth + marginRight - 10);
+            imgHeaders.css('width', sectionImgWidth + marginRight - 10);
 
-        var sectionHeight = parseInt($('#slide-1').height()),
-        margin = windowHeight - sectionHeight - headerHeight;
+            /*var sectionHeight = parseInt($('#slide-1').height()),
+                margin = windowHeight - sectionHeight - headerHeight;
 
-        sections.css('margin-bottom', margin + 80);
+            sections.css('margin-bottom', margin);*/
+        }
 
         $(document).on("scroll", onScroll);
 
