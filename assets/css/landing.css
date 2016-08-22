@@ -232,13 +232,25 @@ header .navbar {
 }
 
 .try-free-btn .try-free-main-text {
+    display: inline-block;
+    position: relative;
     font-size: 48px;
-    line-height: 63px;
-    text-decoration: underline;
+    line-height: 60px;
+}
+
+.try-free-main-text:after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    border: 1px solid #fff;
+    z-index: 0;
+
 }
 
 .try-free-second-text {
-    margin-bottom: -4px;
+    padding-top: 15px;
 }
 
 .try-free-btn .btn-text-container {
