@@ -64,7 +64,7 @@ body {
     text-decoration: underline;
 }
 
-.nav li a:hover, .nav li a:focus {
+.nav li a:hover {
     background-color: inherit;
     color: #ce6667 !important;
 }
@@ -77,7 +77,7 @@ body {
     border: none !important;
 }
 
-.nav li a:hover .nav-text, .nav li a:focus .nav-text{
+.nav li a:hover .nav-text {
     border-bottom: 1px dashed #ce6667;
 }
 
