@@ -45,6 +45,11 @@ $(function(){
 
         $(document).on("scroll", onScroll);
 
+        $('.try-free-btn').on('click', function() {
+            $('.registerWindow').modal();
+
+        })
+
 
     });
 

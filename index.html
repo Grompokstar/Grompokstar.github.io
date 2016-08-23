@@ -22,6 +22,121 @@
     <script type="text/javascript" src="assets/js/landing.js"></script>
 </head>
 <body>
+<div class="modal fade authWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="extra-bold" style="text-align: center; margin-bottom: 20px">Вход в myObject</h2>
+                <div class="alert alert-danger" style="display: none;"></div>
+                <form role="form" action="" method="post">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <label style="padding-top: 10px">Email</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" name="email" class="form-control" placeholder="example@example.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <label>Пароль</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="password" name="passwd" class="form-control" placeholder="********">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row" style="margin-top: 30px">
+                    <div class="col-sm-6 col-sm-offset-3 textCenter" style="margin-bottom: 50px">
+                        <button class="btn btn-default btn-lg btn-block authMe" type="button">Войти</button>
+                    </div>
+                </div>
+                <a class="passwordReset" href="/site/password">Восстановить пароль</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade registerWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="extra-bold" style="text-align: center; margin-bottom: 20px">Регистрация</h2>
+                <form class="registerForm" role="form" method="post" action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Форма организации <span class="red-text">*</span></label>
+                                <select name="orgForm" class="form-control">
+                                    <option selected value="org">Юридическое лицо</option>
+                                    <option value="ip">Индивидуальный предприниматель</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Название компании <span class="red-text">*</span></label>
+                                <input name="company" type="text" class="form-control" placeholder="ООО Название компании">
+                                <div class="error-msg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email <span class="red-text">*</span></label>
+                                <input name="email" type="email" class="form-control" placeholder="example@example.com">
+                                <div class="error-msg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Телефон <span class="red-text">*</span></label>
+                                <input id="register-phone" name="phone" class="form-control" placeholder="Введите № телефона">
+                                <div class="error-msg"></div>
+                                <div class="input-notification">
+                                    Телефон используется только для связи с вами и уведомлений в myObject. Никакого спама и рекламы.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Пароль <span class="red-text">*</span></label>
+                                <input name="password[0]" type="password" class="form-control" placeholder="Придумайте надежный пароль">
+                                <div class="error-msg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Повторите пароль <span class="red-text">*</span></label>
+                                <input name="password[1]" type="password" class="form-control" placeholder="Повторите пароль">
+                                <div class="error-msg"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Дополнительная информация</label><br>
+                                После регистрации Вам будет предоставлен бесплатный доступ к сервису по тарифу &laquo;<a href="/site/tariffs">Триал</a>&raquo; в течение 2 недель.
+                                Затем потребуется выбрать платный тариф.
+                            </div>
+                            <div class="form-group captcha-control">
+                        <span id="captcha-image-container">
+                            <img src="/site/captcha">
+                        </span>
+                                <a class="captcha-refresher"><span class="glyphicon glyphicon-refresh"></span></a>
+                                <input name="verifyCode" type="text" class="form-control" placeholder="Проверочное слово">
+                                <div class="error-msg"></div>
+                            </div>
+                            <div class="register-block">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Я согласен с <a href="/site/offer" target="_blank">условиями использования сервиса</a> <span class="red-text">*</span>
+                                    </label>
+                                </div>
+                                <button id="registerMe" type="button" class="btn btn-lg btn-success">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
 <div id='top'></div>
 <header>
     <div class="container">
@@ -52,7 +167,7 @@
                                     <li><a href="#security"><span class="nav-text">Безопасность</span></a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-                                    <li><a href="#" data-toggle="modal" data-target="#authWindow" style="padding-right: 0">Вход в myObject</a>
+                                    <li><a href="" data-toggle="modal" data-target=".authWindow" style="padding-right: 0">Вход в myObject</a>
                                     </li>
                                 </ul>
                             </div>
@@ -715,48 +830,5 @@
         </footer>
     </div>
 </div>
-
-<div id="authWindow" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="extra-bold" id="myModalLabel" style="text-align: center; margin-bottom: 20px">Вход в myObject</h2>
-                <div class="alert alert-danger" style="display: none;"></div>
-                        <form role="form" action="" method="post">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-2 col-sm-offset-1">
-                                        <label style="padding-top: 10px">Email</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="email" name="email" class="form-control" placeholder="example@example.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-2 col-sm-offset-1">
-                                        <label>Пароль</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" name="passwd" class="form-control" placeholder="********">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
-                <div class="row" style="margin-top: 30px">
-                    <div class="col-sm-6 col-sm-offset-3 textCenter" style="margin-bottom: 50px">
-                        <button class="btn btn-default btn-lg btn-block authMe" type="button">Войти</button>
-                    </div>
-                </div>
-                <a class="passwordReset" href="/site/password">Восстановить пароль</a>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-
 </body>
 </html>
