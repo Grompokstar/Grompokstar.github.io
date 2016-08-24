@@ -603,3 +603,12 @@ footer > .row {
     color: white;
     font-size: 26px;
 }
+
+.red-text {
+    color: red;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    padding-right: 10px;
+}
