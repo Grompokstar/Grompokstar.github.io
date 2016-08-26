@@ -17,6 +17,7 @@
 body {
     font-family: CRC35, Verdana, sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 .extra-bold {
@@ -24,8 +25,8 @@ body {
 }
 
 .main-header {
-    font-size: 58px;
-    line-height: 68px;
+    font-size: 62px;
+    line-height:74px;
     margin-bottom: 0;
 }
 
@@ -36,7 +37,7 @@ body {
 .logo {
     width: 100%;
     height: auto;
-    padding-right: 50px;
+    padding-right: 70px;
     margin-bottom: 20px;
 }
 
@@ -94,8 +95,12 @@ header .navbar {
     margin-bottom: 0;
 }
 
-.main-logo {
-    margin-top: -28px;
+.slide-text {
+    font-size: 34px;
+    font-family: CRC25, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-top: -5px;
+    padding-right: 70px;
 }
 
 @media (max-width: 1449px) {
@@ -104,13 +109,16 @@ header .navbar {
     }
 
     .main-header {
-        font-size: 56px;
-        line-height: 70px;
+        font-size: 54px;
+        line-height: 64px;
     }
 
     .slide-text {
-        font-size: 26px;
-        line-height: 36px !important;
+        font-size: 28px;
+    }
+
+    .section {
+        margin-bottom: 120px !important;
     }
 }
 
@@ -120,23 +128,30 @@ header .navbar {
     }
 
     .main-header {
-        font-size: 46px;
-        line-height: 56px;
+        font-size: 42px;
+        line-height: 52px;
     }
 
     .slide-text {
-        font-size: 24px;
-        line-height: 34px !important;
+        font-size: 26px;
     }
 
     .tariff-img {
         position: relative !important;
+    }
+
+    .section {
+        margin-bottom: 100px !important;
     }
 }
 
 @media (max-width: 991px) {
     .logo {
         width: 40%;
+    }
+
+    .section {
+        margin-bottom: 100px !important;
     }
 }
 
@@ -156,20 +171,14 @@ header .navbar {
     background-color: black;
 }
 
-.slide-text {
-    font-family: CRC25, Verdana, sans-serif;
-    line-height: 40px;
-    margin-top: -5px;
-}
-
 .section-wrap {
     position: relative;
 }
 
 .section {
     position: relative;
-    margin-bottom: 100px;
-    padding-top: 70px;
+    margin-bottom: 150px;
+    padding-top: 45px;
 }
 
 .section-img {
@@ -195,7 +204,7 @@ header .navbar {
 }
 
 .section .img-header {
-    height: 30px;
+    height: 40px;
     border: 1px solid #e0e0e0;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
@@ -204,16 +213,16 @@ header .navbar {
 
 .section .img-header .img-header-circle {
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     border: 1px solid #e0e0e0;
     border-radius: 50%;
     background-color: white;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .section .img-header .img-header-circle:first-child {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .try-free-btn {
@@ -242,10 +251,10 @@ header .navbar {
 .try-free-main-text:after {
     content: '';
     position: absolute;
-    top: 55px;
+    top: 57px;
     left: 0;
     right: 0;
-    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     z-index: 0;
 
 }
@@ -260,6 +269,7 @@ header .navbar {
 
 .section-title {
     font-size: 80px;
+    position: relative;
 }
 
 nav.tariffs {
@@ -575,6 +585,8 @@ footer > .row {
     border: none;
     box-shadow: none;
     border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    color: #333;
 }
 
 .form-control:focus {
@@ -612,3 +624,86 @@ input[type="checkbox"] {
     margin: 0;
     padding-right: 10px;
 }
+
+.error-msg {
+    color: red;
+}
+
+.captcha-refresher {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#zenbox_tab {
+    background-color: #3AC0A2 !important;
+    border: medium none !important;
+}
+
+#call {
+    background: rgba(0, 0, 0, 0) url("../img/telephone.svg") no-repeat scroll 0 0 / contain ;
+    border-radius: 50%;
+    bottom: 45px;
+    height: 90px;
+    position: fixed;
+    right: 45px;
+    width: 90px;
+    z-index: 9;
+}
+
+#call:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: -7px;
+    bottom: -7px;
+    right: -7px;
+    border-radius: 50%;
+    border: 2px solid #ea6667;
+    z-index: 2;
+}
+
+#call:hover:after {
+    border-color: #b23e3f;
+}
+
+#call:hover {
+    cursor: pointer;
+}
+
+.btn-primary-2 {
+    background-color: #3ac0a2;
+    color: white;
+}
+
+.btn-primary-2:hover {
+    color: white;
+    background-color: #3acaa2;
+}
+
+.offer .donwload-frame {
+    display: none;
+}
+
+.tariffs-link {
+    font-family: CRC35;
+    font-size: 16px;
+    color: #EA6667;
+    cursor: pointer;
+    position: relative;
+    top: -50px;
+    border-bottom: 1px dashed #EA6667;
+}
+
+.tariffs-link:hover {
+    border: none;
+}
+
+.tariffs-link a {
+    color: inherit;
+}
+
+.tariffs-link a:hover, .tariffs-link a:focus {
+    text-decoration: none;
+}
+
