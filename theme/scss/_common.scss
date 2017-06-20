@@ -1,0 +1,163 @@
+@import "variables";
+
+html,
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: $bg-color;
+
+  * {
+    outline: none !important;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @include border-radius($def-br);
+  border: rem-calc(2) solid $default-border-color;
+  height: rem-calc(48);
+  font-size: rem-calc(20);
+  padding: $padding-sm $padding-md;
+  width: rem-calc(300);
+
+  &::-webkit-input-placeholder {
+    color: $default-border-color;
+  }
+
+  &::-moz-placeholder {
+    color: $default-border-color;
+  }
+}
+
+button[type="button"],
+button[type="submit"] {
+  @include border-radius($def-br);
+  border: rem-calc(2) solid $default-border-color;
+  height: rem-calc(48);
+  padding: $padding-sm $padding-md;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: rem-calc(16);
+  transition: all .3s linear;
+
+  &.btn-success {
+    border-color: $success;
+    color: $success;
+
+    &:hover {
+      background-color: $success;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $success-light;
+      color: $white;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="button"],
+button[type="submit"] {
+  transition: all .3s linear;
+
+  &:focus {
+    border-color: darken($default-border-color, 20%);
+  }
+}
+
+.round-button {
+  @include border-radius(18px);
+  font-size: rem-calc(14);
+  font-weight: bold;
+  border: rem-calc(2) solid $default-border-color;
+  height: rem-calc(36);
+  padding: 0 $padding-lg;
+  text-transform: uppercase;
+  transition: all .3s linear;
+
+  &.success {
+    border-color: $success;
+    color: $white;
+    background-color: $success;
+
+    &.reverse {
+      background-color: $white;
+      color: $success;
+
+      &:hover {
+        background-color: $success;
+        color: $white;
+      }
+
+      &:active {
+        background-color: $success-light !important;
+        color: $white !important;
+      }
+    }
+
+    &:hover {
+      color: $success;
+      background-color: $white;
+    }
+
+    &:active {
+      background-color: $active-button-bg;
+    }
+  }
+
+  &.lg-btn {
+    font-size: rem-calc(16);
+    @include border-radius(25px);
+    height: rem-calc(48);
+    padding: 0 $padding-xl;
+  }
+
+  &.xxl-btn {
+    font-size: rem-calc(20);
+    @include border-radius(50px);
+    height: rem-calc(64);
+    padding: 0 rem-calc(120);
+  }
+}
+
+.green-xxl-text {
+  color: $success;
+  font-size: rem-calc(64);
+}
+
+.circle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  @include border-radius(50%);
+  background-color: $default-border-color;
+
+  span {
+    color: white;
+    font-size: 24px;
+  }
+}
+
+.disable-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

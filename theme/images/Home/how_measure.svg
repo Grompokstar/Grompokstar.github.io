@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>how_measure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="6" y="7" width="20" height="3"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VER_Home-02" transform="translate(-530.000000, -1480.000000)">
+            <g id="HOW" transform="translate(119.000000, 1464.000000)">
+                <g id="Group-21" transform="translate(388.000000, 0.000000)">
+                    <g id="Group-8" transform="translate(7.000000, 0.000000)">
+                        <g id="Group-5">
+                            <g id="how_measure" transform="translate(16.000000, 16.000000)">
+                                <path d="M16.0006667,22 C18.0006667,22 22.6673333,19.3333333 22.6673333,15.3333333 C24.6673333,15.3333333 24.6673333,11.3333333 22.6673333,11.3333333 L22.0006667,8 C16.6673333,8 16.6673333,6 16.0006667,5.33333333 C15.334,6 15.334,8 10.0006667,8 L9.334,11.3333333 C7.334,11.3333333 7.334,15.3333333 9.334,15.3333333 C9.334,19.3333333 14.0006667,22 16.0006667,22 L16.0006667,22 Z" id="Stroke-792" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M23.9688,12.2922667 L24.6674667,7.3336 C24.6674667,7.3336 25.3341333,0.666933333 16.0008,0.666933333 C6.66746667,0.666933333 7.33413333,7.3336 7.33413333,7.3336 L8.0448,12.2602667" id="Stroke-793" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.36,20.5090667 L4.128,23.0064 C2.04666667,23.7864 0.666666667,25.7757333 0.666666667,27.9997333 L0.666666667,31.3330667 M31.3333333,31.3330667 L31.3333333,27.9997333 C31.3333333,25.7757333 29.9546667,23.7864 27.8733333,23.0064 L19.6413333,20.5090667" id="Stroke-794" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.0006667,12.6666667 C12.0006667,11.9293333 12.5966667,12 13.334,12 C14.0713333,12 14.6673333,11.9293333 14.6673333,12.6666667" id="Stroke-795" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M17.334,12.6666667 C17.334,11.9293333 17.93,12 18.6673333,12 C19.4046667,12 20.0006667,11.9293333 20.0006667,12.6666667" id="Stroke-796" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <g id="Rectangle-21">
+                                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <rect stroke="#000000" stroke-width="1" x="6.5" y="7.5" width="19" height="2"></rect>
+                                </g>
+                                <circle id="Oval-5" stroke="#000000" cx="28.5" cy="2.5" r="1.5"></circle>
+                                <circle id="Oval-5-Copy" stroke="#000000" cx="2.5" cy="15.5" r="1.5"></circle>
+                                <circle id="Oval-5-Copy-2" stroke="#000000" cx="29.5" cy="18.5" r="1.5"></circle>
+                                <rect id="Rectangle-22" fill="#000000" x="0" y="3" width="1" height="4"></rect>
+                                <rect id="Rectangle-22" fill="#000000" x="4" y="2" width="1" height="5"></rect>
+                                <rect id="Rectangle-22-Copy" fill="#000000" x="2" y="0" width="1" height="7"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

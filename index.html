@@ -1,1010 +1,959 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>MyObject.ru &mdash; информационная платформа управления промышленной безопасностью</title>
+  <meta charset="UTF-8">
+  <title>Verbatoria.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Mobile metadata -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="theme/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="theme/css/theme.css">
 
-    <!-- Google metadata -->
-    <meta name="google-site-verification" content="-WlQtHrSBCA0qt0LVWNcIOawzxPtW3yrfCqXANqMO0A"/>
-
-    <!-- Open graph basic metadata -->
-    <meta property="og:url" content="http://myobject.ru">
-    <meta property="og:title" content="myObject.ru">
-    <meta property="og:description" content="Электронный сервис для руководителей и персонала служб эксплуатации и промышленной безопасности">
-    <meta property="og:image" content="http://myobject.ru/style/theme/img/logo.png">
-
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/landing.css" rel="stylesheet" type="text/css">
-
-    <!-- Favicons
-   ================================================== -->
-    <link rel="shortcut icon" href="/style/theme/img/favicon.png">
-    <link rel="apple-touch-icon" href="/style/theme/img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/style/theme/img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/style/theme/img/apple-touch-icon-114x114.png">
-
-    <script src="assets/libs/jquery-3.1.0.min.js"></script>
+  <script src="theme/js/libs/jquery-3.2.1.min.js"></script>
+  <script src="theme/js/libs/jquery.spincrement.min.js"></script>
+  <script src="theme/js/scripts.js"></script>
+  <script src="theme/js/main_page_scripts.js"></script>
 </head>
-<body>
-<div class="modal fade authWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="extra-bold" style="text-align: center; margin-bottom: 20px">Вход в myObject</h2>
-                <div class="alert alert-danger" style="display: none;"></div>
-                <form role="form" action="" method="post">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <label style="padding-top: 10px">Email</label>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="email" name="email" class="form-control" placeholder="example@example.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <label>Пароль</label>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="password" name="passwd" class="form-control" placeholder="********">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="row" style="margin-top: 30px">
-                    <div class="col-sm-6 col-sm-offset-3 textCenter" style="margin-bottom: 50px">
-                        <button class="btn btn-primary-2 btn-lg btn-block authMe" type="button" style="font-size: 22px">Войти</button>
-                    </div>
-                </div>
-                <div class="text-right">
-                    <a class="passwordReset" href="/site/password">Восстановить пароль</a>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-<div class="modal fade registerWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="extra-bold" style="text-align: center; margin-bottom: 20px">Регистрация</h2>
-                <form class="registerForm" role="form" method="post" action="">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1"><label>Форма организации <span class="red-text">*</span></label></div>
-                                    <div class="col-sm-6">
-                                        <select name="orgForm" class="form-control">
-                                            <option selected value="org">Юридическое лицо</option>
-                                            <option value="ip">Индивидуальный предприниматель</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <label>Название компании <span class="red-text">*</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="company" type="text" class="form-control" placeholder="ООО Название компании">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <label>Email <span class="red-text">*</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="email" type="email" class="form-control" placeholder="example@example.com">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <label>Телефон <span class="red-text">*</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input id="register-phone" name="phone" class="form-control" placeholder="Введите № телефона">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-
-                                <!--<div class="input-notification">
-                                    Телефон используется только для связи с вами и уведомлений в myObject. Никакого спама и рекламы.
-                                </div>-->
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <label>Пароль <span class="red-text">*</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="password[0]" type="password" class="form-control" placeholder="Придумайте надежный пароль">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <label>Повторите пароль <span class="red-text">*</span></label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="password[1]" type="password" class="form-control" placeholder="Повторите пароль">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-9 col-sm-offset-1">
-                                        <label>Дополнительная информация</label><br>
-                                        После регистрации Вам будет предоставлен бесплатный доступ к сервису по тарифу &laquo;Триал&raquo; в течение 2 недель.
-                                        Затем потребуется выбрать платный тариф.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group captcha-control">
-                                <div class="row">
-                                    <div class="col-sm-3 col-sm-offset-1">
-                                        <span id="captcha-image-container">
-                                            <img src="/site/captcha">
-                                        </span>
-                                        <a class="captcha-refresher"><span class="glyphicon glyphicon-refresh"></span></a>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input name="verifyCode" type="text" class="form-control" placeholder="Проверочное слово">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-9 col-sm-offset-1">
-                                    <div class="register-block">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Я согласен с <a href="/site/offer" target="_blank">условиями использования сервиса</a> <span class="red-text">*</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 text-right">
-                                <button id="registerMe" type="button" class="btn btn-lg btn-primary-2" style="margin-bottom: 10px">Зарегистрироваться</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-<div id="call" data-toggle="modal" data-target=".bs-example-modal-lg" title="Заказать обратный звонок"></div>
-
-<div id="callback-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div id="callback-form" class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="modal-title extra-bold" id="myLargeModalLabel" style="text-align: center; margin-bottom: 20px">Заказать обратный звонок</h2>
-                <div id="callback-alert" class="alert alert-success" style="display: none;"></div>
-                <div class="form-group">
-                    <div class="alert alert-info">
-                        Для Вашего удобства мы организовали простой сервис обратной связи.
-                        Чтобы заказать звонок от специалиста &laquo;Ливинг коре&raquo;, просто укажите свой номер телефона и комментарий.
-                        Мы свяжемся с Вами, чтобы ответить на все интересующие Вас вопросы.
-                    </div>
-
-                    <div class="form-group">
-                        <label>&numero; телефона</label>
-                        <input id="phone-field" type="text" class="form-control" aria-describedby="basic-addon1">
-                        <div class="error-msg"></div>
-                    </div>
-                    <div class="form-group">
-                        <label>Ваше имя</label>
-                        <input id="сall-name" type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Комментарий</label>
-                        <textarea id="сall-comment" class="form-control" style="resize: vertical;"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button id="submit-phone" type="button" class="btn btn-primary-2 btn-lg">Отправить заявку</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div id='top'></div>
-<header>
+<body class="page">
+  <header class="shadow">
+    <div class="header-overlay"></div>
     <div class="container">
-        <div id="main-navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-offset-4 col-md-8" style="padding-right: 0">
-                        <nav class="navbar" role="navigation">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Меню</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
+      <div class="header-flex-container">
+        <div class="header-language-menu hidden-xs hidden-sm">
+          <ul class="language-list">
+            <li><span class="fa fa-check"></span><a href="#">english</a></li>
+            <li><span class="fa fa-check"></span><a href="#">қазақша</a></li>
+            <li class="current"><span class="fa fa-check"></span><a href="#">русский</a></li>
+          </ul>
+          <button class="language-btn circle">
+            ру
+          </button>
+        </div>
 
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-right: 0">
-                                <ul class="nav navbar-nav main-menu">
-                                    <li class="active" data-slide-id="1"><a href="#slide-1" style="padding-left: 0"><span class="nav-text">Управление</span></a></li>
-                                    <li data-slide-id="2"><a href="#slide-2"><span class="nav-text">Учет</span></a></li>
-                                    <li data-slide-id="3"><a href="#slide-3"><span class="nav-text">Проверки</span></a></li>
-                                    <li data-slide-id="4"><a href="#slide-4"><span class="nav-text">Инциденты</span></a></li>
-                                    <li data-slide-id="5"><a href="#slide-5"><span class="nav-text">Отчеты</span></a></li>
-                                    <li><a href="#tariffs"><span class="nav-text">Тарифы</span></a></li>
-                                    <li><a href="#introduction"><span class="nav-text">Внедрение</span></a></li>
-                                    <li><a href="#security"><span class="nav-text">Безопасность</span></a></li>
-                                </ul>
-                                <ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-                                    <li><a href="" data-toggle="modal" data-target=".authWindow" style="padding-right: 0">Вход в myObject</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+        <div class="header-phone-btn visible-xs visible-sm">
+          <i class="fa fa-phone"></i>
         </div>
-        <div class="row header-row">
-            <div class="col-sm-4 main-logo">
-                <a href="#"><img class="logo" src="assets/img/mo_logo.png"
-                                 alt="myObject"></a>
-            </div>
-            <div class="col-sm-8">
-                <h1 class="extra-bold main-header">Информационная платформа управления промышленной безопаснотью</h1>
-            </div>
+
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="theme/images/Home/verbatoria_logo.svg" width="211" alt="Логотип Вербатория"/>
+          </a>
         </div>
+        <div class="header-flex-item header__link hidden-xs hidden-sm">
+          <a href="about_method.html">О методе</a>
+        </div>
+        <div class="header-flex-item header__link hidden-xs hidden-sm">
+          <a href="partners.html">Партнерам</a>
+        </div>
+        <div class="header-flex-item hidden-xs">
+          <button class="round-button success">
+            Онлайн-запись
+          </button>
+        </div>
+        <div class="header-flex-item hidden-xs hidden-sm">
+          <div class="header__phone">
+            +7 495 123 4748
+          </div>
+          <div class="header__chose-location">
+
+            <div class="dropdown">
+              <a data-toggle="dropdown" id="city-btn">Москва<span class="fa fa-angle-down"></span></a>
+              <ul id="city-menu" class="dropdown-menu">
+                <li><a href="#">Ачинск</a></li>
+                <li><a href="#">Астана</a></li>
+                <li><a href="#">Мытищи</a></li>
+                <li><a href="#">Челябинск</a></li>
+                <li><a href="#">Оренбург</a></li>
+                <li><a href="#">Новосибирск</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-flex-item">
+          <button class="main-menu-btn circle">
+            <svg  class="visible" width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <title>mainMenu_icn</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Header" transform="translate(-948.000000, -37.000000)" fill="#46C573">
+                  <g id="mainMenu_icn" transform="translate(948.000000, 37.000000)">
+                    <rect id="rect3" x="0" y="0" width="16" height="2"></rect>
+                    <rect id="rect2" x="0" y="6" width="16" height="2"></rect>
+                    <rect id="rect1" x="0" y="12" width="16" height="2"></rect>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <title>close_icn</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="btn_closeMainMenu" transform="translate(-10.000000, -10.000000)" fill="#46C573">
+                  <path d="M18,16.2222223 L11.7777777,10 L10,11.7777777 L16.2222223,18 L10,24.2222223 L11.7777777,26 L18,19.7777777 L24.2222223,26 L26,24.2222223 L19.7777777,18 L26,11.7777777 L24.2222223,10 L18,16.2222223 Z" id="close_icn"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-</header>
-<div id="content">
+
+    <div class="visible-xs visible-sm">
+      <div class="mobile-main-menu">
+        <ul class="mobile-menu">
+          <li><a href="#choose-age">Выбрать исследование</a></li>
+          <li><a href="#how-to-work">Как мы работаем</a></li>
+          <li><a href="about_method.html">О методе</a></li>
+          <li><a href="partners.html">Партнерам</a></li>
+          <li><a href="#main-page-feedback">Оставить заявку</a></li>
+          <div class="submenu-toggle">
+            <div class="click-to-toggle">Москва<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
+            <ul class="mobile-submenu">
+              <li><a href="#">Санкт-Петербург</a></li>
+              <li><a href="#">Ростов-на-Дону</a></li>
+              <li><a href="#">Екатеринбург</a></li>
+              <li><a href="#">Самара</a></li>
+            </ul>
+          </div>
+          <div class="submenu-toggle">
+            <div class="click-to-toggle">Русский<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
+            <ul class="mobile-submenu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">қазақша</a></li>
+              <li><a href="#">中文(简体)</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="visible-xs visible-sm">
+      <div class="phone-mobile-menu">
+        <div>
+          Позвоните нам
+          <div class="phones">
+            <div class="feedback-phone">
+              +7 495 123 4748
+            </div>
+            <div class="phone-subtext">
+              Москва
+            </div>
+            <div class="feedback-phone">
+              8 800 123 4748
+            </div>
+            <div class="phone-subtext">
+              Бесплатный звонок по России
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-xs hidden-sm">
+      <div class="main-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="header_verbatoria-tree-img">
+                <img src="theme/images/Home/verbatoria_tree.svg"  height="250" alt="Дерево Вербатория"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-menu-title-link">
+                <a href="#choose-age" data-package="4-7">Диагностика таланта</a>
+              </div>
+              <ul class="main-menu-link-list">
+                <li><a href="#choose-age" data-package="4-7">4-7 лет: Гармоничное развитие</a> </li>
+                <li><a href="#choose-age" data-package="7-11">7-11 лет: Выбор школы и класса</a> </li>
+                <li><a href="#choose-age" data-package="11-14">11-14 лет: Образовательный маршрут</a> </li>
+                <li><a href="#choose-age" data-package="14-17">14-17 лет: Выбор профессии</a> </li>
+                <li><a href="#choose-age" data-package="17">17+: Кто Я?</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="main-menu-title-link">
+                <a href="partners.html">Партнерам</a>
+              </div>
+              <ul class="main-menu-link-list">
+                <li><a href="businessman.html">Предпринимателям</a> </li>
+                <li><a href="head_of_kindergarten.html">Руководителям детских учреждений</a> </li>
+                <li><a href="psychologist.html">Психологам</a> </li>
+                <li><a href="hr_director.html">HR Директорам</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <div class="overlay"></div>
+
+  <div class="video-slider">
+    <video loop preload="auto">
+      <source src="theme/videos/verbatoria_20s.mp4" type="video/mp4">
+      <source src="theme/videos/verbatoria_20s.webm" type="video/webm">
+      <source src="theme/videos/verbatoria_20s.ogg" type="video/ogg"/>
+    </video>
+    <div class="slider-img"></div>
+    <div class="slider-overlay"></div>
+    <div class="slider-circles">
+      <div class="circle active"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="video-slider__text current">
+      <div class="text-item">
+        <div class="container">
+          <div class="text-container">
+            <h2 class="video-slider__text-title">Диагностика таланта</h2>
+            <div class="video-slider__regular-text">
+              Определяем способности к математике, творчеству, языкам, музыке и спорту на основе измерений ритмов головного мозга
+            </div>
+            <svg id="play-btn" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <g class="play-btn-home" transform="translate(-480.000000, -511.000000)" stroke="#FFFFFF" stroke-width="2" stroke-dashoffset="100">
+                  <g transform="translate(481.000000, 512.000000)">
+                    <circle  id="play-btn-circle" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200" stroke-dashoffset="200" cx="31" cy="31" r="31"></circle>
+                    <polygon id="Stroke-2036" points="21.6666667 43 21.6666667 19 45.6666667 31"></polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-slider__text">
+      <div class="text-item">
+        <div class="container">
+          <div class="text-container">
+            <div class="video-slider__main-text">85% родителей ошибаются в&nbsp;способностях детей</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-slider__text">
+      <div class="text-item">
+        <div class="container">
+          <div class="text-container">
+            <div class="video-slider__main-text">Определите природные способности по&nbsp;ритмам мозга</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-slider__text">
+      <div class="text-item">
+        <div class="container">
+          <div class="text-container">
+            <div class="video-slider__main-text">Получите отчет о&nbsp;способностях к&nbsp;математике, языкам, музыке, творчеству</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-slider__text">
+      <div class="text-item">
+        <div class="container">
+          <div class="text-container">
+            <div class="video-slider__main-text">Подарите гармонию развития и&nbsp;счастье самореализации</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="choose-age" class="choose-age">
+      <div class="first-block">
+        <div class="choose-age-text">
+          Выберите подходящее для вас исследование
+        </div>
+        <div class="choose-age-price">
+          7000 &#8381;
+        </div>
+        <button class="round-button success lg-btn">Онлайн-запись</button>
+      </div>
+      <div class="choose-age-item active" data-package="4-7">
+        <div class="choose-age-icon">
+          <div class="choose-age-second-border">
+            <img src="theme/images/Home/4-7_icon.svg" alt=""/>
+          </div>
+        </div>
+        <div class="choose-age-icon-text">
+          <div class="main-text">Гармоничное развитие</div>
+          <div class="age">4-7 лет</div>
+        </div>
+      </div>
+      <div class="choose-age-item" data-package="7-11">
+        <div class="choose-age-icon">
+          <div class="choose-age-second-border">
+            <img src="theme/images/Home/7-11_icon.svg" alt=""/>
+          </div>
+        </div>
+        <div class="choose-age-icon-text">
+          <div class="main-text">Выбор школы<br/>и класса</div>
+          <div class="age">7-11 лет</div>
+        </div>
+      </div>
+      <div class="choose-age-item" data-package="11-14">
+        <div class="choose-age-icon">
+          <div class="choose-age-second-border">
+            <img src="theme/images/Home/11-14_icon.svg" alt=""/>
+          </div>
+        </div>
+        <div class="choose-age-icon-text">
+          <div class="main-text">Математик? Гуманитарий?</div>
+          <div class="age">11-14 лет</div>
+        </div>
+      </div>
+      <div class="choose-age-item" data-package="14-17">
+        <div class="choose-age-icon">
+          <div class="choose-age-second-border">
+            <img src="theme/images/Home/14-17_icon.svg" alt=""/>
+          </div>
+        </div>
+        <div class="choose-age-icon-text">
+          <div class="main-text">Выбор<br/> профессии</div>
+          <div class="age">14-17 лет</div>
+        </div>
+      </div>
+      <div class="choose-age-item" data-package="17">
+        <div class="choose-age-icon">
+          <div class="choose-age-second-border">
+            <img src="theme/images/Home/17_icon.svg" alt=""/>
+          </div>
+        </div>
+        <div class="choose-age-icon-text">
+          <div class="main-text">Кто<br/>Я?</div>
+          <div class="age">17+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="age-packages">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="package-section-list-wrapper">
+            <div class="package-section-list">
+
+              <div class="package-section current" data-id="1">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-diagnostika"></span>
+                  </div>
+                </div>
+
+                <div class="package-section__title">
+                  Диагностика таланта
+                </div>
+              </div>
+
+              <div class="package-section" data-id="2">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-kruzhki"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Подбор секций и кружков
+                </div>
+              </div>
+
+              <div class="package-section" data-id="4">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-liderstvo"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Лидерство
+                </div>
+              </div>
+
+              <div class="package-section" data-id="5">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-vybor" style="font-size: 20px"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Выбор профильного класса
+                </div>
+              </div>
+
+              <div class="package-section" data-id="6">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-otnoshenia" style="font-size: 20px"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Отношения со сверстниками
+                </div>
+              </div>
+
+              <div class="package-section" data-id="7">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-storony"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Мои сильные стороны
+                </div>
+              </div>
+
+              <div class="package-section" data-id="8">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-organizator"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Организаторские способности
+                </div>
+              </div>
+
+              <div class="package-section" data-id="9">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-professia" style="font-size: 18px"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Куда пойти учиться
+                </div>
+              </div>
+
+              <div class="package-section" data-id="10">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-emotional"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Лидерство и эмоциональный интеллект
+                </div>
+              </div>
+
+              <div class="package-section" data-id="11">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-prizvanie"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Моё призвание
+                </div>
+              </div>
+
+              <div class="package-section" data-id="12">
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-obshenie" style="font-size: 18px"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  Общение и дружба
+                </div>
+              </div>
+
+              <div class="package-section show-section static">
+                <div class="package-section__additional-text">Дополнительные пакеты</div>
+                <div class="package-section__icon">
+                  <div class="circle-wrapper">
+                    <span class="icon-vnimanie"></span>
+                  </div>
+                </div>
+                <div class="package-section__title">
+                  <span>Внимание и память</span>
+                  <span class="package-section__additional-price">+ 3000 &#8381;</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 package-section-description">
+          <div class="package-section-description-overlay"></div>
+          <div class="package-section-triangle"></div>
+          <div class="package-section-description__text-container current" data-id="1">
+            <div class="section-description-title">
+              85% взрослых ошибаются в оценке способностей детей
+            </div>
+            <div class="section-description-subtitle">
+              В результате Ваш ребенок развивает то, что нравится Вам, а не ему
+            </div>
+            <div class="section-description-text">
+              На основе анализа ритмов головного мозга точно определяем склонность ребенка к математике, музыке, языкам,
+              спорту и творчеству. Вы также узнаете тип мышления Вашего ребенка — аналитический или образный
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="2">
+            <div class="section-description-title">
+              В каких занятиях возможен выдающийся результат, а какие стоит оставить только для гармоничного развития?
+            </div>
+            <div class="section-description-subtitle">
+              Как определить, когда нежелание ребенка — это предел, а когда — рубеж?
+            </div>
+            <div class="section-description-text">
+              Индивидульно и точное сопоставляем потенциал развития способностей каждому из видов занятий, кружков и секций.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="3">
+            <div class="section-description-title">
+              Неусидчивость и невнимательность — результат особенностей работы памяти.
+            </div>
+            <div class="section-description-subtitle">
+              Каждому ребенку нужен индивидуальный подход в планировании занятий.
+            </div>
+            <div class="section-description-text">
+              Измеряем внимание и память по каждой области занятий и предлагаем оптимальный режим нагрузок для
+              лучшего результата.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="4">
+            <div class="section-description-title">
+              Нужен ребенку садик или нет? Какой размер группы идеальный? Какой спорт подходит?
+            </div>
+            <div class="section-description-subtitle">
+              Решение зависит от эмоционального интеллекта.
+            </div>
+            <div class="section-description-text">
+              Оцениваем потенциал навыков вести за собой и уверенности себе. Рекомендуем виды спорта, комфортную роль
+              в коллективе.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="5">
+            <div class="section-description-title">
+              Школа России, Школа XXI век или Эльконина-Давыдова?..
+            </div>
+            <div class="section-description-subtitle">
+              Правильный выбор начальной школы или класса определит успешность ребенка и его дальнейшее развитие.
+              Но как определить способности к занятиям, которых у ребенка еще никогда не было?
+            </div>
+            <div class="section-description-text">
+              Сопоставим способности ребенка с требованиями каждого школьного предмета. Наглядная подсказка для
+              родителей и педагогов.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="6">
+            <div class="section-description-title">
+              В чем причина сложностей общения ребенка со сверстниками и взрослыми? Оптимальный размер класса и секции?
+            </div>
+            <div class="section-description-subtitle">
+              Ответ зависит от эмоционального интеллекта
+            </div>
+            <div class="section-description-text">
+              Оцениваем потенциал навыков понимать эмоции окружающих людей, избегать конфликтов и манипулировать ими.
+              Рекомендуем виды спорта, комфортную роль в коллективе.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="7">
+            <div class="section-description-title">
+              Успех во взрослой жизни зависит от личных качеств не меньше, чем от знаний и умений
+            </div>
+            <div class="section-description-subtitle">
+              На какие сильные стороны сделать упор в развитии?
+            </div>
+            <div class="section-description-text">
+              Определим 11 ключевых личных качеств ребенка: системность мышления, управление людьми и другие по Атласу
+              «Будущих профессий»
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="8">
+            <div class="section-description-title">
+              В чем причина успеха или сложностей ребенка при общении со сверстниками?
+            </div>
+            <div class="section-description-subtitle">
+              Индивидуалист он или лидер?
+            </div>
+            <div class="section-description-text">
+              Оцениваем потенциал навыков понимать эмоции окружающих людей, организовывать и манипулировать ими.
+              Рекомендуем комфортную роль в коллективе.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="9">
+            <div class="section-description-title">
+              65% сегодняшних школьников будут работать по специальностям, которые еще не существуют
+            </div>
+            <div class="section-description-subtitle">
+              Прошлый опыт родителей не помогает ориентироваться.в стремительно меняющемся мире
+            </div>
+            <div class="section-description-text">
+              Проведем анализ 25 традиционных и перспективных отраслей и укажем в каждой на самые подходящие профессии.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="10">
+            <div class="section-description-title">
+              Альфа-лидер или ведомый? Директор или наставник?
+            </div>
+            <div class="section-description-subtitle">
+              На какую роль в коллективе Вы можете претендовать и каких ситуаций стоит избегать
+            </div>
+            <div class="section-description-text">
+              Оцениваем потенциал навыков понимать эмоции окружающих людей, организовывать и манипулировать ими.
+              Рекомендуем комфортную роль в коллективе.
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="11">
+            <div class="section-description-title">
+              Начинать все с начала — не безумие
+            </div>
+            <div class="section-description-subtitle">
+              Безумие — продолжать жить прежней жизнью, зная, что она не приносит ничего, кроме усталости и разочарования.
+              Узнай в чем твое призвание и действуй, пока не поздно
+            </div>
+            <div class="section-description-text">
+              По ритмам головного мозга точно определим Ваш природный талант и покажем те виды деятельности,
+              в которых сможете добиться успехов с удовольствием
+            </div>
+          </div>
+
+          <div class="package-section-description__text-container" data-id="12">
+            <div class="section-description-title">
+              Нужен ребенку садик или нет?
+            </div>
+            <div class="section-description-subtitle">
+              Какой размер группы идеальный? Как помочь ребенку в начале развития навыков социализации?
+            </div>
+            <div class="section-description-text">
+              Оцениваем потенциал навыков уверенности в себе и понимания окружающих. Рекомендуем виды спорта,
+              комфортную роль в коллективе.
+            </div>
+          </div>
+        </div>
+        <div class="hidden">
+          <img src="theme/images/Home/bullets_bg/2_4-7.jpg">
+          <img src="theme/images/Home/bullets_bg/2_7-11.jpg">
+          <img src="theme/images/Home/bullets_bg/2_11-14.jpg">
+          <img src="theme/images/Home/bullets_bg/3_4-7.jpg">
+          <img src="theme/images/Home/bullets_bg/3_7-11.jpg">
+          <img src="theme/images/Home/bullets_bg/3_11-14.jpg">
+          <img src="theme/images/Home/bullets_bg/3_14-17.jpg">
+          <img src="theme/images/Home/bullets_bg/5_7-11.jpg">
+          <img src="theme/images/Home/bullets_bg/6_7-11.jpg">
+          <img src="theme/images/Home/bullets_bg/7_11-14.jpg">
+          <img src="theme/images/Home/bullets_bg/8_11-14.jpg">
+          <img src="theme/images/Home/bullets_bg/9_14-17.jpg">
+          <img src="theme/images/Home/bullets_bg/10_17.jpg">
+          <img src="theme/images/Home/bullets_bg/11_17.jpg">
+          <img src="theme/images/Home/bullets_bg/12_4-7.jpg">
+        </div>
+        </div>
+      </div>
+  </div>
+
+  <div id="how-to-work" class="how-to-work">
     <div class="container">
-        <div class="section-wrap">
-            <div id="slide-1" class="section">
-                <div class="row">
-                    <div class="col-md-4 section-text">
-                        <h2 class="slide-text">
-                            Обеспечит пошаговое планирование и&nbsp;прозрачный контроль мероприятий промышленной безопасности с&nbsp;учетом
-                            масштаба и&nbsp;специфики предприятия
-                        </h2>
-                    </div>
-                    <div class="col-md-8 section-img">
-                        <div class="img-header">
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                        </div>
-                        <img src="assets/img/1.gif">
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide-2" class="section">
-                <div class="row">
-                    <div class="col-md-4 section-text" >
-                        <h2 class="slide-text">
-                            Объединит данные о&nbsp;состоянии объектов, зданий и&nbsp;устройств, результатах проверок и&nbsp;экспертиз,
-                            предписаниях и&nbsp;инцидентах
-                        </h2>
-                    </div>
-                    <div class="col-md-8 section-img">
-                        <div class="img-header">
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                        </div>
-                        <img src="assets/img/2.gif">
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide-3" class="section">
-                <div class="row">
-                    <div class="col-md-4 section-text">
-                        <h2 class="slide-text">
-                            <p style="margin-top: 0">Облегчит контроль внутренних проверок и&nbsp;предписаний Ростехнадзора.</p>
-                            <p>Напомнит о&nbsp;будущих мероприятиях по&nbsp;почте
-                                и&nbsp;СМС</p>
-                        </h2>
-                    </div>
-                    <div class="col-md-8 section-img">
-                        <div class="img-header">
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                        </div>
-                        <img src="assets/img/3.gif">
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide-4" class="section">
-                <div class="row">
-                    <div class="col-md-4 section-text">
-                        <h2 class="slide-text">
-                            Поможет быстро
-                            и&nbsp;правильно оформить инцидент или несчастный случай, принять меры
-                            по&nbsp;нейтрализации последствий
-                            и&nbsp;проконтролировать
-                            их исполнение
-                        </h2>
-                    </div>
-                    <div class="col-md-8 section-img">
-                        <div class="img-header">
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                        </div>
-                        <img src="assets/img/4.gif">
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide-5" class="section">
-                <div class="row">
-                    <div class="col-md-4 section-text">
-                        <h2 class="slide-text">
-                            <p style="margin-top: 0">Cформирует отчёт в&nbsp;Ростехнадзор за&nbsp;один клик на&nbsp;основании накопленной за&nbsp;год информации.</p>
-                            <p>Данные из&nbsp;предыдущих отчётов можно загрузить в&nbsp;систему</p>
-                        </h2>
-                    </div>
-                    <div class="col-md-8 section-img">
-                        <div class="img-header">
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                            <div class="img-header-circle"></div>
-                        </div>
-                        <img src="assets/img/5.gif">
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="how-to-work-title">
+            Как мы работаем:
+          </div>
         </div>
-
-        <div class="try-free-btn">
-            <div class="btn-text-container">
-                <span class="try-free-main-text extra-bold">Попробовать</span>
-                <span class="try-free-main-text extra-bold">бесплатно</span><br><br>
-            <span class="try-free-second-text">
-                2 недели бесплатной поддержки и приглашение на&nbsp;вебинар
-            </span>
+        <div class="col-xs-12 col-sm-6">
+          <div class="how-to-work-step-icons">
+            <div class="disable-overlay"></div>
+            <div class="step-item">
+              <div class="step-item-icon active" data-step="1">
+                <img src="theme/images/Home/how_measure.svg" alt="how_measure">
+              </div>
+              <div class="step-item-text">
+                Измерение
+              </div>
             </div>
+            <div class="step-item-circle"></div>
+            <div class="step-item-circle"></div>
+            <div class="step-item-circle"></div>
+            <div class="step-item">
+              <div class="step-item-icon" data-step="2">
+                <img src="theme/images/Home/how_process.svg" alt="how_process">
+              </div>
+              <div class="step-item-text">
+                Обработка
+              </div>
+            </div>
+            <div class="step-item-circle"></div>
+            <div class="step-item-circle"></div>
+            <div class="step-item-circle"></div>
+            <div class="step-item">
+              <div class="step-item-icon" data-step="3">
+                <img src="theme/images/Home/how_report.svg" alt="how_report">
+              </div>
+              <div class="step-item-text">
+                Отчет
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div id="tariffs" class="site-section">
-            <div class="section-title extra-bold">
-                Тарифы и цены <span class="tariffs-link"><a href="/mO_tariffs.xlsx" download>скачать прайс</a></span>
-            </div>
-            <div class="row">
-                <nav class="navbar tariffs" role="navigation">
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li data-tariff-id="1" class="active"><span class="tariff-nav-text">Пробный</span></li>
-                            <li class="with-icon" data-tariff-id="2"><span class="tariff-nav-text">1&nbsp;<svg width="30" height="32" viewBox="0 0 21000 22386">
-                                <g id="Слой_x0020_1">
-                                    <path d="M4191 11916l1350 0 2116 0 0 -9894 0 -675 694 0 1434 0 695 0 0 675 0 9894 2106 0 0 -6383 0 -676 695 0 1434 0 694 0 0 676 0 6383 4241 0 1350 0 0 1351 0 7769 0 1351 -1350 0 -2885 0 -480 0 -215 0 -15376 0 -694 0 0 -675 0 -2116 0 -675 694 0 3497 0 0 -5654 0 -1351zm11218 -7729l0 -676 -2823 0 0 676 2823 0zm-2128 1346l0 6383 1434 0 0 -6383 -1434 0zm-2801 -4857l0 -675 -2823 0 0 675 2823 0zm-2129 1346l0 9894 1434 0 0 -9894 -1434 0zm5681 12669l694 0 0 1399 -694 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1415 0l694 0 0 1399 -694 0 0 -1399zm-1416 0l694 0 0 1399 -694 0 0 -1399zm-1388 0l694 0 0 1399 -694 0 0 -1399zm9784 4905l0 1440 2885 0 0 -7769 -14109 0 0 5654 10529 0 695 0 0 675zm-695 2116l0 -2116 -15376 0 0 2116 15376 0z"/>
-                                </g>
-                            </svg></span></li>
-                            <li class="with-icon" data-tariff-id="3"><span class="tariff-nav-text">5&nbsp;<svg width="30" height="32" viewBox="0 0 21000 22386">
-                                <g id="Слой_x0020_1">
-                                    <path d="M4191 11916l1350 0 2116 0 0 -9894 0 -675 694 0 1434 0 695 0 0 675 0 9894 2106 0 0 -6383 0 -676 695 0 1434 0 694 0 0 676 0 6383 4241 0 1350 0 0 1351 0 7769 0 1351 -1350 0 -2885 0 -480 0 -215 0 -15376 0 -694 0 0 -675 0 -2116 0 -675 694 0 3497 0 0 -5654 0 -1351zm11218 -7729l0 -676 -2823 0 0 676 2823 0zm-2128 1346l0 6383 1434 0 0 -6383 -1434 0zm-2801 -4857l0 -675 -2823 0 0 675 2823 0zm-2129 1346l0 9894 1434 0 0 -9894 -1434 0zm5681 12669l694 0 0 1399 -694 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1415 0l694 0 0 1399 -694 0 0 -1399zm-1416 0l694 0 0 1399 -694 0 0 -1399zm-1388 0l694 0 0 1399 -694 0 0 -1399zm9784 4905l0 1440 2885 0 0 -7769 -14109 0 0 5654 10529 0 695 0 0 675zm-695 2116l0 -2116 -15376 0 0 2116 15376 0z"/>
-                                </g>
-                            </svg></span></li>
-                            <li class="with-icon" data-tariff-id="4"><span class="tariff-nav-text">10&nbsp;<svg width="30" height="32" viewBox="0 0 21000 22386">
-                                <g id="Слой_x0020_1">
-                                    <path d="M4191 11916l1350 0 2116 0 0 -9894 0 -675 694 0 1434 0 695 0 0 675 0 9894 2106 0 0 -6383 0 -676 695 0 1434 0 694 0 0 676 0 6383 4241 0 1350 0 0 1351 0 7769 0 1351 -1350 0 -2885 0 -480 0 -215 0 -15376 0 -694 0 0 -675 0 -2116 0 -675 694 0 3497 0 0 -5654 0 -1351zm11218 -7729l0 -676 -2823 0 0 676 2823 0zm-2128 1346l0 6383 1434 0 0 -6383 -1434 0zm-2801 -4857l0 -675 -2823 0 0 675 2823 0zm-2129 1346l0 9894 1434 0 0 -9894 -1434 0zm5681 12669l694 0 0 1399 -694 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1416 0l695 0 0 1399 -695 0 0 -1399zm-1415 0l694 0 0 1399 -694 0 0 -1399zm-1416 0l694 0 0 1399 -694 0 0 -1399zm-1388 0l694 0 0 1399 -694 0 0 -1399zm9784 4905l0 1440 2885 0 0 -7769 -14109 0 0 5654 10529 0 695 0 0 675zm-695 2116l0 -2116 -15376 0 0 2116 15376 0z"/>
-                                </g>
-                            </svg></span></li>
-                            <li data-tariff-id="5"><span class="tariff-nav-text">Безлимит</span></li>
-                            <li data-tariff-id="6"><span class="tariff-nav-text">Локальный</span></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="tariff-wrap">
-                <div id="tariff-1" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">Пробный</span><br>
-                    <span class="tariff-description">
-                        Тестовый доступ для&nbsp;предприятий любого размера и&nbsp;любой отрасли
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/proba.png"></div>
-                </div>
-                <div id="tariff-2" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">1 объект</span><br>
-                    <span class="tariff-description">
-                        Для предприятий с&nbsp;одним ОПО III или IV класса опасности - подъёмным краном или котельной
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/crane.png"></div>
-                </div>
-                <div id="tariff-3" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">5 объектов</span><br>
-                    <span class="tariff-description">
-                        Для&nbsp;небольших производств, где за&nbsp;промбезопасность отвечают один-два инженера
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/factory.png"></div>
-                </div>
-                <div id="tariff-4" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">10 объектов</span><br>
-                    <span class="tariff-description">
-                        Для крупных предприятий с&nbsp;большим количеством ТУ, ОПО и&nbsp;выделенной службой промбезопасности
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/plant.png"></div>
-                </div>
-                <div id="tariff-5" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">Безлимит</span><br>
-                    <span class="tariff-description">
-                        Для промышленных холдингов и&nbsp;крупных объединений с&nbsp;филиальной структурой
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/plant-2.png"></div>
-                </div>
-                <div id="tariff-6" class="row tariff-block">
-                    <div class="col-md-8 col-md-push-4">
-                        <div class="tariff-text">
-                            <span class="extra-bold tariff-title">Локальный</span><br>
-                    <span class="tariff-description">
-                        Для предприятий и&nbsp;объединений с&nbsp;жесткой политикой информационной безопасности или индивидуальными требованиями
-                    </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-8 tariff-img"><img src="assets/img/powerplant.png"></div>
-                </div>
-            </div>
-
-            <div class="tariff-functionality-wrap">
-                <div id=functionality-1 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p>Аттестацией персонала</p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p><span class="red-crossed">Уведомления о&nbsp;запланированных событиях</span></p>
-                            <p>Управление правами доступа пользователей</p>
-                            <p>Печать информации из&nbsp;сервиса</p>
-                            <p>Поддержка филиальной структуры</p>
-                            <p>Размещение данных на&nbsp;защищенном сервере в&nbsp;Интернет</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p><span class="red-crossed">Сведения о&nbsp;производственном контроле по&nbsp;25</span> <span class="red-crossed">приказу Ростехнадзора — XLS-файл, XML-файл</span></p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: без&nbsp;ограничений</p>
-                            <p>Количество ТУ: без&nbsp;ограничений</p>
-                            <p>Количество пользователей: без&nbsp;ограничений</p>
-                            <p>10 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-
-                    <div class="tariff-price">
-                        <div class="tariff-price-text">
-                            бесплатно
-                        </div>
-                    </div>
-                </div>
-
-                <div id=functionality-2 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p><span class="red-crossed">Аттестацией персонала</span></p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p><span class="red-crossed">Уведомления о&nbsp;запланированных событиях</span></p>
-                            <p><span class="red-crossed">Управление правами доступа пользователей</span></p>
-                            <p><span class="red-crossed">Печать информации из&nbsp;сервиса</span></p>
-                            <p><span class="red-crossed">Поддержка филиальной структуры</span></p>
-                            <p>Размещение данных на&nbsp;защищенном сервере в&nbsp;Интернет</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p>Сведения о&nbsp;производственном контроле по&nbsp;25 приказу Ростехнадзора — XLS-файл, XML-файл</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: 1</p>
-                            <p>Количество ТУ: 15</p>
-                            <p>Количество пользователей: 1</p>
-                            <p>1 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-
-                    <div class="tariff-price">
-                        <div class="tariff-price-text">
-                            500 <span class="rub">Р</span>/мес
-                        </div>
-                    </div>
-                </div>
-
-                <div id=functionality-3 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p><span class="red-crossed">Аттестацией персонала</span></p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p>Уведомления о&nbsp;запланированных событиях</p>
-                            <p><span class="red-crossed">Управление правами доступа пользователей</span></p>
-                            <p><span class="red-crossed">Печать информации из&nbsp;сервиса</span></p>
-                            <p><span class="red-crossed">Поддержка филиальной структуры</span></p>
-                            <p>Размещение данных на&nbsp;защищенном сервере в&nbsp;Интернет</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p>Сведения о&nbsp;производственном контроле по&nbsp;25 приказу Ростехнадзора — XLS-файл, XML-файл</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: 5</p>
-                            <p>Количество ТУ: без ограничений</p>
-                            <p>Количество пользователей: 5</p>
-                            <p>5 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-
-                    <div class="tariff-price">
-                        <div class="tariff-price-text">
-                            4200 <span class="rub">Р</span>/мес
-                        </div>
-                    </div>
-                </div>
-
-                <div id=functionality-4 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p>Аттестацией персонала</p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p>Уведомления о&nbsp;запланированных событиях</p>
-                            <p>Управление правами доступа пользователей</p>
-                            <p>Печать информации из&nbsp;сервиса</p>
-                            <p><span class="red-crossed">Поддержка филиальной структуры</span></p>
-                            <p>Размещение данных на&nbsp;защищенном сервере в&nbsp;Интернет</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p>Сведения о&nbsp;производственном контроле по&nbsp;25 приказу Ростехнадзора — XLS-файл, XML-файл</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: 10</p>
-                            <p>Количество ТУ: без ограничений</p>
-                            <p>Количество пользователей: без&nbsp;ограничений</p>
-                            <p>10 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-                    <div class="tariff-price">
-                        <div class="tariff-price-text">
-                            7200 <span class="rub">Р</span>/мес
-                        </div>
-                    </div>
-                </div>
-
-                <div id=functionality-5 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p>Аттестацией персонала</p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p>Уведомления о&nbsp;запланированных событиях</p>
-                            <p>Управление правами доступа пользователей</p>
-                            <p>Печать информации из&nbsp;сервиса</p>
-                            <p>Поддержка филиальной структуры</p>
-                            <p>Размещение данных на&nbsp;защищенном сервере в&nbsp;Интернет</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p>Сведения о&nbsp;производственном контроле по&nbsp;25 приказу Ростехнадзора — XLS-файл, XML-файл</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: без ограничений</p>
-                            <p>Количество ТУ: без ограничений</p>
-                            <p>Количество пользователей: без&nbsp;ограничений</p>
-                            <p>10 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-                    <div class="tariff-price">
-                        <div class="tariff-price-text" style="margin-top: 47px">
-                            от<br> 7500 <span class="rub">Р</span>/мес
-                        </div>
-                    </div>
-                </div>
-
-                <div id=functionality-6 class="tariff-functionality">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Управление</span></p>
-                            <p>Мероприятиями промбезопасности</p>
-                            <p>Внутренними проверками</p>
-                            <p>Выполнением предписаний</p>
-                            <p>Аттестацией персонала</p>
-                            <p>Расследованием инцидентов и&nbsp;несчастных случаев</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Хранение</span></p>
-                            <p>Сведений об ОПО, ЗиС, ТУ, персонале</p>
-                            <p>Файлов проектной, исполнительной
-                                и&nbsp;эксплуатационной документации</p>
-                            <p>Фотографий дефектов и&nbsp;повреждений</p>
-                            <p>Самостоятельная идентификация ОПО</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Техническая поддержка</span></p>
-                            <p>Бесплатная телефонная линия</p>
-                            <p>Консультации через HelpDesk</p>
-                            <p>Доступ к&nbsp;базе знаний и&nbsp;электронному руководству</p>
-                        </div>
-                    </div>
-
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <p><span class="strong">Сервис:</span></p>
-                            <p>Уведомления о&nbsp;запланированных событиях</p>
-                            <p>Управление правами доступа пользователей</p>
-                            <p>Печать информации из&nbsp;сервиса</p>
-                            <p>Поддержка филиальной структуры</p>
-                            <p><span class="red-crossed">Размещение данных на&nbsp;защищенном сервере </span><span class="red-crossed">в&nbsp;Интернет</span></p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Автоматическое создание отчетов в&nbsp;Ростехнадзор:</span></p>
-                            <p>Комплект для&nbsp;регистационных действий с&nbsp;ОПО
-                                заявление, сведения, карта ОПО, XML-файл;</p>
-                            <p>Сведения о&nbsp;производственном контроле по&nbsp;25 приказу Ростехнадзора — XLS-файл, XML-файл</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p><span class="strong">Ограничения по тарифу:</span></p>
-                            <p>Количество ОПО: без ограничений</p>
-                            <p>Количество ТУ: без ограничений</p>
-                            <p>Количество пользователей: без&nbsp;ограничений</p>
-                            <p>10 Гб памяти для&nbsp;хранения файлов</p>
-                        </div>
-                    </div>
-
-                    <div class="tariff-price">
-                        <div class="tariff-price-text" style="font-size: 25px">
-                            индивидуально
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="introduction" class="site-section">
-            <div class="section-title extra-bold">
-                Два варианта внедрения
-            </div>
-
-            <div class="row security-section">
-                <div class="col-md-6">
-                    <img id=cloud-img src="assets/img/cloud.png">
-                    <span class="extra-bold security-title">Облако myObject.ru</span>
-                    <span class="regular-text">Простая регистрация на этом сайте и сразу можно работать.</span>
-                    <p>Никаких дополнительных закупок оборудования и&nbsp;ПО. Только <span class="strong">арендная</span> плата</p>
-                    <p>Всегда <span class="strong">самая новая</span> версия программы</p>
-                    <p>Данные <span class="strong">ащищены</span> значительно надежнее, чем в&nbsp;большинстве офисных компьютеров и&nbsp;корпоративных сетей.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="assets/img/hdd_space.png">
-                    <span class="extra-bold security-title">Сервер предприятия</span>
-                    <span class="regular-text">Подойдет тем предприятиям, где использование интернета невозможно.</span>
-                    <p>Выгодно при внедрении на <span class="strong">большом</span> числе рабочих мест - вплоть до&nbsp;линейного персонала.</p>
-                    <p>Регулярные <span class="strong">обновления</span> программы</p>
-                    <p>Возможность <span class="strong">интеграции</span> с&nbsp;корпоративными информационными системами и&nbsp;адаптации к&nbsp;бизнес-процессам предпприятия.</p>
-                    <p><span class="strong">Самостоятельное</span> управление защитой данных</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="security" class="site-section">
-            <div class="section-title extra-bold">
-                Безопасность данных
-            </div>
-            <div class="regular-text">
-                чрезвычайно важна для&nbsp;наших клиентов.<br>
-                Поэтому независимо от&nbsp;способа внедрения, мы предоставляем вам все инструменты управления правами
-                и&nbsp;доступом пользователей, не&nbsp;храним пароли в&nbsp;системе, разделяем серверы обработки и&nbsp;хранения данных,
-                ежедневно создаем резервные копии базы данных, шифруем данные при&nbsp;передаче и&nbsp;хранении.
-            </div>
-        </div>
-
-        <div class="try-free-btn">
-            <div class="btn-text-container">
-                <span class="try-free-main-text extra-bold">
-                Попробовать
-                </span>
-                <span class="try-free-main-text extra-bold">
-                бесплатно
-                </span>
-                <br><br>
-            <span class="try-free-second-text">
-                2 недели бесплатной поддержки и приглашение на&nbsp;вебинар
-            </span>
-            </div>
-        </div>
-
-        <footer>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <span class="extra-bold">&copy; ООО &laquo;Ливинг коре&raquo;,  2016</span><br>
-                            г. Казань, ул. Сулеймановой, д.5<br>
-                            <a target="_blank" id="firmsonmap_biglink" href="http://maps.2gis.ru/#/?history=project/kazan/center/49.089640609253,55.813231010873/zoom/18/state/widget/id/2956016537084517/firms/2956016537084517">Смотреть на карте</a><br><br>
-                            <span class="extra-bold">8-800-500-35-67</span><br>
-                            (бесплатно по России) <br>
-                            <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">заказать звонок</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <span class="extra-bold">Обучение и помощь</span><br>
-                            <a target="_blank" href="https://myobject.zendesk.com/hc/ru/categories/200389072-%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F">Руководство пользователя</a><br>
-                            <a target="_blank" href="https://myobject.zendesk.com/hc/ru">Техподдержка и сообщество</a><br>
-                            <a target="_blank" href="http://www.seminar.myobject.ru">Вебинары</a><br>
-                            <a target="_blank" href="https://myobject.zendesk.com/hc/ru/categories/200372301-%D0%91%D0%B0%D0%B7%D0%B0-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9">База знаний</a><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <span class="extra-bold">Условия использования</span><br>
-                            <a href="/site/offer">Публичная оферта</a><br><br>
-
-                            <span class="extra-bold">Партнерская программа</span><br>
-                            <a href="http://agent.myobject.ru">Условия сотрудничества</a><br>
-                        </div>
-                        <div class="col-md-6">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bk-link">
-                    <img src="assets/img/logo-bk.png"> <span class="small">2016</span><br>
-                    Дизайн сайта - <a href="http://brakodelnya.ru/" target="_blank">Бракодельня</a>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
-</div>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script type="text/javascript" src="assets/libs/jquery.inputmask.js"></script>
-<script type="text/javascript" src="assets/libs/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/landing.js"></script>
+  </div>
 
-<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
-<style type="text/css" media="screen, projection">
-    @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
-</style>
-<script type="text/javascript">
-    if (typeof(Zenbox) !== "undefined") {
-        Zenbox.init({
-            dropboxID:   "20302692",
-            url:         "https://myobject.zendesk.com",
-            tabTooltip:  "Поддержка",
-            tabImageURL: "https://p3.zdassets.com/external/zenbox/images/tab_ru_support.png",
-            tabColor:    "black",
-            tabPosition: "Left"
-        });
-    }
-</script>
+  <div class="steps-slider">
+    <div class="slider-btn left"></div>
+    <div class="slider-btn right"></div>
 
+    <div id="step-1" class="step current" data-step="1">
+      <div class="step-1-overlay"></div>
+      <div class="step-content-container">
+        <div class="left-block">
+          <div class="step-title mb-3">
+            Измерение
+          </div>
+          <div class="step-text">
+            Измерение осуществляется с помощью ультра-легкого безопасного датчика NeuroSky (США), прикрепленного на голове
+          </div>
+        </div>
+        <div class="right-block">
+          <div class="clock">
+            <div class="clock-svg">
+              <svg width="202px" height="204px" viewBox="0 0 202 204" version="1.1">
+                <title>30 min circle</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="СARD-S1" transform="translate(-557.000000, -139.000000)">
+                    <g id="Group-21">
+                      <g id="30-min-circle" transform="translate(556.000000, 140.000000)">
+                        <circle id="Oval-6" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3" cx="101" cy="101" r="99"></circle>
+                        <circle id="clock-oval" stroke="#85FF8A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="310" stroke-dasharray="310 1000" transform="translate(101.000000, 101.000000) rotate(-1.000000) translate(-101.000000, -101.000000) " cx="101" cy="101" r="98"></circle>
+                        <path d="M102,11 L102,27" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                        <path d="M190,100 L174,100" id="Line-Copy-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                        <path d="M26,100 L10,100" id="Line-Copy-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                        <path d="M102,175 L102,191" id="Line-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter21990196 = new Ya.Metrika({id:21990196,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-            } catch(e) { }
-        });
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+            <span class="clock-time spincrement-1">30</span>
+            <span class="clock-text">минут</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/21990196" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    <div id="step-2" class="step" data-step="2">
+      <div class="step-2-overlay"></div>
+      <div class="step-content-container">
+        <div class="left-block">
+          <div class="step-title mb-3">
+            Обработка данных
+          </div>
+          <div class="step-text">
+            Сигнал расшифровывается автоматически на основе актуальных научных знаний, субъективные оценки исключены.
+          </div>
+        </div>
+        <div class="right-block">
+          <div class="second-step__right-block">
+            <div class="second-step__regular-text">В итоге ребенку присваивается один из</div>
+            <div class="right-block-second-line">
+              <div class="step-2-count spincrement-2">67</div>
+              <div>
+                <span class="right-block-title">Миллионов</span><br/>
+                <span class="second-step__regular-text">вариантов профилей</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- Google analytics -->
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-43067571-1']);
-    _gaq.push(['_setDomainName', 'myobject.ru']);
-    _gaq.push(['_trackPageview']);
+    <div id="step-3" class="step" data-step="3">
+      <div class="step-3-overlay"></div>
+      <div class="step-content-container">
+        <div class="left-block">
+          <div class="step-title mb-1">
+            Отчет
+          </div>
+          <div class="step-text">
+            <p>В отчете мы доступно, наглядно и подробно описываем долгосрочный план развития личности. </p>
+            <p>Также предоставляем возможность обращаться к нашим специалистам с любыми вопросами в течение года.</p>
+          </div>
+        </div>
+        <div class="right-block">
+          <div class="diagram-bg">
+            <div class="diagram"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
+  <div class="button-online-entry">
+    <div class="container">
+      <div class="button-online-entry-container">
+        <button class="round-button success xxl-btn">Онлайн-запись</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-page__partners">
+    <div class="container">
+      <div class="partners-container">
+        <div class="partners-title">Нам доверяют</div>
+        <div class="partner-numbers">
+          <div class="number-item">
+            <div class="number partners-spincrement">12</div>
+            <div class="partner-numbers-text">Центров по России</div>
+          </div>
+          <div class="number-line hidden-xs"></div>
+          <div class="number-item">
+            <div class="number partners-spincrement">1200</div>
+            <div class="partner-numbers-text">Клиентов</div>
+          </div>
+          <div class="number-line hidden-xs"></div>
+          <div class="number-item">
+            <div class="number partners-spincrement">60</div>
+            <div class="partner-numbers-text">Школ и центров развития</div>
+          </div>
+        </div>
+        <div class="partner-numbers-text">
+          С нами работают
+        </div>
+        <div class="partners-logo">
+          <div class="logo-item">
+            <img src="theme/images/Home/asl_logo.svg">
+          </div>
+          <div class="logo-item">
+            <img src="theme/images/Home/lomonosovka_logo_2x.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="green-bg-block">
+    <div class="container">
+      <div class="green-bg-text-container">
+        Нейрометрия способностей помогла многим семьям заглянуть в будущее, узнать ребёнка лучше и сделать сложный
+        путь к успеху — легче!
+      </div>
+    </div>
+  </div>
+
+  <div class="page-block">
+    <div id="main-page-feedback" class="common-feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feedback-information">
+              <div class="feedback-title">
+                Возникли дополнительные вопросы?
+              </div>
+              <div class="feedback-text">
+                Позвоните нам
+              </div>
+              <div class="phones">
+                <div class="feedback-phone">
+                  +7 495 123 4748
+                </div>
+                <div class="phone-subtext">
+                  Москва
+                </div>
+                <div class="feedback-phone">
+                  8 800 123 4748
+                </div>
+                <div class="phone-subtext">
+                  Бесплатный звонок по России
+                </div>
+              </div>
+              <div class="feedback-text">
+                или оставьте свои контакты и мы свяжемся с вами:
+              </div>
+            </div>
+            <div class="common-feedback__form">
+              <form action="" method="post">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="contact" placeholder="Номер телефона или email">
+                <button class="btn-success" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+          <div class="footer_verbatoria-tree-img hidden-sm hidden-xs">
+            <img src="theme/images/Home/verbatoria_tree.svg"  height="196" alt="Дерево Вербатория"/>
+          </div>
+          <div class="footer__verbatoria-logo">
+            <img src="theme/images/Home/verbatoria_logo.svg" width="198" alt="Логотип Вербатория"/>
+          </div>
+          <div>
+            © ООО «Вербатория».<br/>
+            Основано в 2014 году.
+          </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="footer-title">Москва</div>
+              <div class="footer__link-item">
+                <a href="#">Коробейникова пер. 22с3</a>
+              </div>
+              <div class="footer__link-item">
+                <a href="mailto:info@verbatoria.ru">info@verbatoria.ru</a>
+              </div>
+              <div>
+                +7 495 123 4748<br/>8 800 123 4748
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-title">Партнерам</div>
+              <div class="footer__link-item">
+                <a href="#">предложение</a>
+              </div>
+              <div class="footer__link-item">
+                <a href="mailto:partner@verbatoria.ru">partner@verbatoria.ru</a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-title">Мы в соцсетях</div>
+              <div class="footer__link-item">
+                <span class="fa fa-facebook"></span>
+                <a href="#">Facebook</a>
+              </div>
+              <div class="footer__link-item">
+                <span class="fa fa-vk"></span>
+                <a href="#">ВКонтакте</a>
+              </div>
+              <div class="footer__link-item">
+                <span class="fa fa-instagram"></span>
+                <a href="#">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

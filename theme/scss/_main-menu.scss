@@ -1,0 +1,227 @@
+@import "variables";
+
+.main-menu {
+  background-color: $bg-color;
+  padding: $padding-xxl 0;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.header_verbatoria-tree-img {
+  margin-bottom: -(rem-calc(36));
+  padding-left: rem-calc(90);
+}
+
+.main-menu-title-link {
+  font-size: rem-calc(18);
+  font-weight: bold;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+
+      border-bottom: solid 2px $success;
+    }
+  }
+}
+
+ul.main-menu-link-list {
+  padding-left: 0;
+  list-style-type: none;
+  font-size: rem-calc(14);
+
+  li {
+    margin-top: $margin-md;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+
+      border-bottom: solid 2px $success;
+    }
+  }
+}
+
+.main-menu-btn {
+  border: rem-calc(1) solid $gray;
+  height: rem-calc(36);
+  width: rem-calc(36);
+  color: $gray;
+  background-color: $white;
+  text-transform: uppercase;
+  transition: all .3s linear;
+
+  &.circle {
+    @include border-radius(50%)
+  }
+
+  &:hover {
+    color: $success;
+    border-color: $success;
+    background-color: $success;
+
+    #Header, #btn_closeMainMenu {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    background-color: $success-light;
+    border-color: $success-light;
+
+    #Header, #btn_closeMainMenu {
+      fill: $white;
+    }
+  }
+
+  &.close {
+    background-color: $active-button-bg;
+    color: $success;
+
+    &:hover {
+      background-color: $success;
+      color: $white;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $success-light;
+    }
+  }
+  svg {
+    display: none;
+    cursor: pointer;
+    margin-left: 3px;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mobile-main-menu {
+  width: rem-calc(322);
+  background-color: $white;
+  position: absolute;
+  top: rem-calc(91);
+  right: 0;
+  display: none;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+
+
+    li {
+      text-align: center;
+      padding: rem-calc(15);
+      border-bottom: solid 1px #e8e8e8;
+      cursor: pointer;
+      transition: all .3s linear;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .submenu-toggle {
+    text-align: center;
+    text-transform: uppercase;
+    color: $success;
+    border-top: solid 1px #e8e8e8;
+
+    .fa-angle-up {
+      display: none;
+    }
+
+    &.open {
+      background-color: $bg-color;
+
+      .mobile-submenu {
+        display: block;
+      }
+
+      .fa-angle-down {
+        display: none;
+      }
+
+      .fa-angle-up {
+        display: inline-block;
+      }
+    }
+
+    .click-to-toggle {
+      padding: rem-calc(15);
+      cursor: pointer;
+
+      .fa {
+        padding-left: rem-calc(10);
+        color: $gray;
+      }
+    }
+
+    .mobile-submenu {
+      display: none;
+
+      li {
+        border: none;
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.phone-mobile-menu {
+  position: absolute;
+  top: rem-calc(91);
+  right: 0;
+  width: rem-calc(323);
+  background-color: $white;
+  text-align: center;
+  padding-bottom: rem-calc(30);
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+
+  .feedback-phone {
+    text-align: center;
+    margin-top: rem-calc(15);
+    font-size: rem-calc(32);
+    color: $active-package-section;
+  }
+
+  .phone-subtext {
+    text-align: center;
+    font-size: rem-calc(14);
+  }
+}
+
+

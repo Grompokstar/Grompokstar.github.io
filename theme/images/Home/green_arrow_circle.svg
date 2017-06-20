@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Green Arrow Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VER_Method_" transform="translate(-174.000000, -503.000000)" stroke="#46C573">
+            <g id="Group" transform="translate(42.000000, 255.000000)">
+                <g id="Green-Arrow-Circle" transform="translate(132.000000, 248.000000)">
+                    <g id="Group">
+                        <rect id="Rectangle" stroke-width="2" x="1" y="1" width="34" height="34" rx="17"></rect>
+                        <g id="Stroke-465-+-Stroke-466" transform="translate(9.000000, 11.000000)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17,7 L-7.46069873e-14,7" id="Stroke-465"></path>
+                            <polyline id="Stroke-466" points="9 14 17 7 9 3.95794508e-14"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

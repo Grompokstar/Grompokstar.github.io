@@ -1,0 +1,165 @@
+@import "variables";
+
+.page {
+  padding-top: $header-height;
+  font-size: rem-calc(18);
+
+  &.no-bg {
+    background-color: $white;
+  }
+
+  /* -------------------------------------------- */
+  /* PAGE TITLE */
+  /* -------------------------------------------- */
+
+  .page-title {
+    padding: {
+      top: $padding-xlg;
+      bottom: $padding-xlg;
+    };
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .page-title__text {
+    flex-grow: 1;
+  }
+
+  .page-title__subText {
+    font-size: rem-calc(20);
+  }
+
+  .page-title__mainText {
+    font: {
+      family: 'Fira Sans Extra Condensed', sans-serif;
+      size: rem-calc(36);
+    }
+    text-transform: uppercase;
+  }
+
+  .page-title__img {
+    text-align: right;
+  }
+
+  /* -------------------------------------------- */
+  /* PAGE BLOCK */
+  /* -------------------------------------------- */
+
+  .page-block {
+    background-color: $white;
+    padding: {
+      top: $padding-xlg;
+      bottom: $padding-xxl;
+    }
+  }
+
+  .page-block__results {
+    position: relative;
+    background-color: $bg-color;
+    height: rem-calc(432);
+
+    .page-list {
+      padding: {
+        top: $padding-xlg;
+        bottom: $padding-xxl;
+      }
+    }
+
+    .results-text {
+      max-width: rem-calc(445);
+    }
+  }
+
+  .page-block-results-img {
+    overflow: hidden;
+    margin-right: $margin-md;
+    height: rem-calc(430);
+
+    img {
+      height: 100%
+    }
+  }
+
+  .page-block-no-bg {
+    padding: {
+      top: rem-calc(40);
+      bottom: rem-calc(70);
+    };
+  }
+
+  .page-block__title {
+    font-size: rem-calc(32);
+    margin-bottom: rem-calc(60);
+    text-align: center;
+  }
+
+  .economic-item {
+    text-align: center;
+  }
+
+  /* -------------------------------------------- */
+  /* PAGE LIST */
+  /* -------------------------------------------- */
+
+  .page-list {
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      list-style-position: outside;
+
+      &.green-bullet {
+        list-style-image: url("../images/Partners/green_bullet.svg");
+      }
+      &.orange-bullet {
+        list-style-image: url("../images/Partners/orange_bullet.svg");
+      }
+      &.check-icon {
+        list-style-image: url("../images/Partners/check_icon.svg");
+        padding-left: 32px;
+
+        .check-icon-text {
+          position: relative;
+          top: -7px;
+        }
+
+      }
+
+      li {
+        margin-bottom: rem-calc(22);
+        font-size: rem-calc(18);
+        padding-left: rem-calc(20);
+      }
+    }
+
+  }
+
+  .page-list-title {
+    font-size: rem-calc(32);
+    margin-bottom: rem-calc(22);
+  }
+
+  
+  .page-list-green-bullet {
+    width: 14px;
+    height: 14px;
+    margin-right: rem-calc(20);
+    background: url("../images/Partners/green_bullet.svg") center no-repeat;
+  }
+
+  .half-screen-img {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background: url("../images/Partners/photos/kindergarten.png") center no-repeat;
+    background-size: cover;
+    
+    &.psychologist {
+      background-image: url("../images/Partners/photos/psychologist.jpg");
+    }
+
+    &.hr {
+      background-image: url("../images/Partners/photos/hr.jpg");
+    }
+  }
+}

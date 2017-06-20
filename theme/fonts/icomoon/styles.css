@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?8jgplr');
+  src:  url('icomoon.eot?8jgplr#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?8jgplr') format('truetype'),
+    url('icomoon.woff?8jgplr') format('woff'),
+    url('icomoon.svg?8jgplr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mainMenu_icn:before {
+  content: "\e902";
+  color: #46c573;
+}
+.icon-close_icn:before {
+  content: "\e900";
+  color: #46c573;
+}
+.icon-play_btn-filled:before {
+  content: "\e918";
+}
+.icon-how_measure-filled:before {
+  content: "\e915";
+}
+.icon-how_process-filled:before {
+  content: "\e916";
+}
+.icon-how_report-filled:before {
+  content: "\e917";
+}
+.icon-Green-Arrow-Circle-filled:before {
+  content: "\e914";
+  color: #46c573;
+}
+.icon-icn_cities-filled:before {
+  content: "\e910";
+}
+.icon-icn_globe-filled:before {
+  content: "\e911";
+}
+.icon-icn_partners-filled:before {
+  content: "\e912";
+}
+.icon-small-bullet-filled:before {
+  content: "\e913";
+  color: #ec5d04;
+}
+.icon-Check-icon-filled:before {
+  content: "\e901";
+  color: #46c573;
+}
+.icon-diagnostika:before {
+  content: "\e904";
+}
+.icon-kruzhki:before {
+  content: "\e906";
+}
+.icon-vnimanie:before {
+  content: "\e90e";
+}
+.icon-liderstvo:before {
+  content: "\e907";
+}
+.icon-vybor:before {
+  content: "\e90f";
+}
+.icon-otnoshenia:before {
+  content: "\e90a";
+}
+.icon-storony:before {
+  content: "\e90d";
+}
+.icon-organizator:before {
+  content: "\e909";
+}
+.icon-professia:before {
+  content: "\e903";
+}
+.icon-emotional:before {
+  content: "\e905";
+}
+.icon-prizvanie:before {
+  content: "\e90b";
+}
+.icon-obshenie:before {
+  content: "\e908";
+}

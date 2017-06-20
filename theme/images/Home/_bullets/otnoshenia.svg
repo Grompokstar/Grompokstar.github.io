@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>otnoshenia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bullets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VER_Packages_Bullets-states" transform="translate(-48.000000, -397.000000)">
+            <g id="otnoshenia" transform="translate(48.000000, 397.000000)">
+                <circle id="back" fill="#C1C1C1" cx="24" cy="24" r="24"></circle>
+                <g id="account-group-4" transform="translate(12.000000, 14.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <path d="M0,10.5 C0,11.583 0.336,12.23 1,12.432 L1,16.5 L5,16.5 L5,12.432 C5.663,12.23 5.999,11.583 6,10.5 L6,7 L0,7 L0,10.5 Z M18,7 L18,10.5 C18,11.583 18.336,12.23 19,12.432 L19,16.5 L23,16.5 L23,12.432 C23.663,12.23 23.999,11.583 24,10.5 L24,7 L18,7 Z M8,12.5 C8,13.708 8.86,14.718 10,14.95 L10,21 L14,21 L14,14.95 C15.14,14.718 16,13.708 16,12.5 L16,7 L8,7 L8,12.5 Z" id="Shape"></path>
+                    <circle id="Oval" cx="21" cy="4" r="2"></circle>
+                    <circle id="Oval" cx="3" cy="4" r="2"></circle>
+                    <circle id="Oval" cx="12" cy="3" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
