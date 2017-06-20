@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="theme/css/theme.css">
 
   <script src="theme/js/libs/jquery-3.2.1.min.js"></script>
+  <script src="theme/js/remove_class_wild.js"></script>
   <script src="theme/js/libs/jquery.spincrement.min.js"></script>
   <script src="theme/js/scripts.js"></script>
   <script src="theme/js/main_page_scripts.js"></script>
@@ -191,21 +192,16 @@
   <div class="overlay"></div>
 
   <div class="video-slider">
-    <video loop preload="auto">
-      <source src="theme/videos/verbatoria_20s.mp4" type="video/mp4">
-      <source src="theme/videos/verbatoria_20s.webm" type="video/webm">
-      <source src="theme/videos/verbatoria_20s.ogg" type="video/ogg"/>
-    </video>
     <div class="slider-img"></div>
     <div class="slider-overlay"></div>
     <div class="slider-circles">
-      <div class="circle active"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
+      <div class="circle active" data-id="0"></div>
+      <div class="circle" data-id="1"></div>
+      <div class="circle" data-id="2"></div>
+      <div class="circle" data-id="3"></div>
     </div>
 
-    <div class="video-slider__text current">
+    <div class="video-slider__text">
       <div class="text-item">
         <div class="container">
           <div class="text-container">
@@ -228,38 +224,60 @@
       </div>
     </div>
 
-    <div class="video-slider__text">
-      <div class="text-item">
-        <div class="container">
-          <div class="text-container">
-            <div class="video-slider__main-text">85% родителей ошибаются в&nbsp;способностях детей</div>
+    <div class="slides">
+      <div class="video-slider__item">
+        <video loop preload="auto">
+          <source src="theme/videos/01.mp4" type="video/mp4">
+          <source src="theme/videos/01.webm" type="video/webm">
+          <source src="theme/videos/01.ogg" type="video/ogg"/>
+        </video>
+        <div class="text-item">
+          <div class="container">
+            <div class="text-container">
+              <div class="video-slider__main-text">85% родителей ошибаются в&nbsp;способностях детей</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="video-slider__text">
-      <div class="text-item">
-        <div class="container">
-          <div class="text-container">
-            <div class="video-slider__main-text">Определите природные способности по&nbsp;ритмам мозга</div>
+      <div class="video-slider__item">
+        <video loop preload="auto">
+          <source src="theme/videos/02.mp4" type="video/mp4">
+          <source src="theme/videos/02.webm" type="video/webm">
+          <source src="theme/videos/02.ogg" type="video/ogg"/>
+        </video>
+        <div class="text-item">
+          <div class="container">
+            <div class="text-container">
+              <div class="video-slider__main-text">Определите природные способности по&nbsp;ритмам мозга</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="video-slider__text">
-      <div class="text-item">
-        <div class="container">
-          <div class="text-container">
-            <div class="video-slider__main-text">Получите отчет о&nbsp;способностях к&nbsp;математике, языкам, музыке, творчеству</div>
+      <div class="video-slider__item">
+        <video loop preload="auto">
+          <source src="theme/videos/03.mp4" type="video/mp4">
+          <source src="theme/videos/03.webm" type="video/webm">
+          <source src="theme/videos/03.ogg" type="video/ogg"/>
+        </video>
+        <div class="text-item">
+          <div class="container">
+            <div class="text-container">
+              <div class="video-slider__main-text">Получите отчет о&nbsp;способностях к&nbsp;математике, языкам, музыке, творчеству</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="video-slider__text">
-      <div class="text-item">
-        <div class="container">
-          <div class="text-container">
-            <div class="video-slider__main-text">Подарите гармонию развития и&nbsp;счастье самореализации</div>
+      <div class="video-slider__item">
+        <video loop preload="auto">
+          <source src="theme/videos/04.mp4" type="video/mp4">
+          <source src="theme/videos/04.webm" type="video/webm">
+          <source src="theme/videos/04.ogg" type="video/ogg"/>
+        </video>
+        <div class="text-item">
+          <div class="container">
+            <div class="text-container">
+              <div class="video-slider__main-text">Подарите гармонию развития и&nbsp;счастье самореализации</div>
+            </div>
           </div>
         </div>
       </div>
