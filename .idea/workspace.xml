@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/01.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/01.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/01.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/02.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/02.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/02.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/03.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/03.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/03.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/04.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/04.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/videos/04.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/js/remove_class_wild.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/css/theme.css" afterPath="$PROJECT_DIR$/theme/css/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/css/theme.css.map" afterPath="$PROJECT_DIR$/theme/css/theme.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/js/main_page_scripts.js" afterPath="$PROJECT_DIR$/theme/js/main_page_scripts.js" />
@@ -87,8 +73,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -101,8 +85,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGL_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grompokstar.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,18 +127,18 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
+      <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/libs" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/libs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
-      <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,7 +187,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1445543706823</updated>
-      <workItem from="1497942478969" duration="589000" />
+      <workItem from="1497942478969" duration="1908000" />
+      <workItem from="1497948482698" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="наработки">
       <created>1469803501595</created>
@@ -413,16 +414,23 @@
       <option name="project" value="LOCAL" />
       <updated>1497942579469</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="verbatoria">
+      <created>1497943073839</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1497943073839</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589000" />
+    <option name="totallyTimeSpent" value="2540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21779989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,6 +476,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -548,13 +564,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,24 +573,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
+    <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="300">
+          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -3397,7 +3397,11 @@ ul.main-menu-link-list {
     .slides .video-slider__item .text-item {
       text-align: center;
       color: #ffffff;
-      z-index: 4; }
+      z-index: 4;
+      opacity: 0;
+      transition: opacity 0.4s linear 0.9s; }
+      .slides .video-slider__item .text-item.visible-text {
+        opacity: 1; }
       .slides .video-slider__item .text-item .text-container {
         margin: auto;
         max-width: 39.375rem; }

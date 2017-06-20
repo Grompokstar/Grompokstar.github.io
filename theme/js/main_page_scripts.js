@@ -9,6 +9,7 @@ $(function(){
             sliderCircles = $('.slider-circles .circle'),
             sliderImg = $('.slider-img'),
             sliderStartText = $('.video-slider__text'),
+            sliderTextItems = $('.slides .text-item'),
             clickedSlideId, videoSlidesInterval,
             videos = $('video'),
             i = 0,
@@ -21,22 +22,29 @@ $(function(){
             sliderStartText.addClass('hide-left');
             sliderCirclesBlock.show();
             videos.get(i).play();
+            sliderTextItems.eq(i).addClass('visible-text');
             slidesContainer.addClass('show-' + i);
 
             videoSlidesInterval = setInterval(function() {
                 if (i === 0  && repeat) {
                     slidesContainer.removeClassWild("show-*");
                     slidesContainer.addClass('show-' + i);
+                    sliderTextItems.removeClass('visible-text');
+                    sliderTextItems.eq(i).addClass('visible-text');
                     $(sliderCircles[sliderCircles.length - 1]).toggleClass('active');
                     $(sliderCircles[i]).toggleClass('active');
                 } else if (repeat) {
                     slidesContainer.removeClassWild("show-*");
                     slidesContainer.addClass('show-' + i);
+                    sliderTextItems.removeClass('visible-text');
+                    sliderTextItems.eq(i).addClass('visible-text');
                     $(sliderCircles[i - 1]).toggleClass('active');
                     $(sliderCircles[i]).toggleClass('active');
                 } else {
                     slidesContainer.removeClassWild("show-*");
                     slidesContainer.addClass('show-' + (i+1));
+                    sliderTextItems.removeClass('visible-text');
+                    sliderTextItems.eq(i + 1).addClass('visible-text');
                     $(sliderCircles[i]).toggleClass('active');
                     $(sliderCircles[i + 1]).toggleClass('active');
                     videos.get(i+1).play();
@@ -65,6 +73,8 @@ $(function(){
             $(sliderCircles[clickedSlideId]).addClass('active');
             slidesContainer.removeClassWild("show-*");
             slidesContainer.addClass('show-' + clickedSlideId);
+            sliderTextItems.removeClass('visible-text');
+            sliderTextItems.eq(clickedSlideId).addClass('visible-text');
         });
 
 
