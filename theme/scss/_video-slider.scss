@@ -167,9 +167,5 @@
 }
 
 #play-btn-circle {
-  transition: stroke-dashoffset 11s ease;
 
-  &.go-time {
-    stroke-dashoffset: 0
-  }
 }

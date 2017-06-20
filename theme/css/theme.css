@@ -3463,11 +3463,6 @@ ul.main-menu-link-list {
 #play-btn {
   margin-top: 3.125rem; }
 
-#play-btn-circle {
-  transition: stroke-dashoffset 11s ease; }
-  #play-btn-circle.go-time {
-    stroke-dashoffset: 0; }
-
 /* FONT */
 /* BORDER */
 /* HEADER */
