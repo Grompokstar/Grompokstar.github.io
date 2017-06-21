@@ -11,6 +11,10 @@ body {
   * {
     outline: none !important;
   }
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 .hide {

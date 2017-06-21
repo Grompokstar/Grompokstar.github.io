@@ -210,6 +210,11 @@
     top: rem-calc(14)
   }
 
+  .how-to-work-step-icons {
+    display: flex;
+    justify-content: center;
+  }
+
   .steps-slider {
     .step {
       .left-block {
@@ -221,7 +226,7 @@
   .phone-mobile-menu {
     top: rem-calc(61);
     width: 100%;
-    height: 400px;
+    bottom: rem-calc(90);
     flex-direction: column;
     justify-content: center;
     border-top: solid 1px #e8e8e8;
@@ -229,6 +234,18 @@
     &.visible {
       display: flex !important;
     }
+  }
+
+  .mobile-main-menu {
+    top: rem-calc(60);
+    width: 100%;
+    border-top: solid 1px #e8e8e8;
+  }
+
+  .mobile-menu-wrapper {
+    top: rem-calc(59);
+    bottom: rem-calc(90);
+    width: 100%;
   }
 
   .round-button.xxl-btn {
@@ -260,12 +277,16 @@
     height: rem-calc(350);
   }
 
+  .video-slider__item {
+    height: rem-calc(350) !important;
+  }
+
   .video-slider__text-title {
     font-size: rem-calc(28);
   }
 
   .video-slider__regular-text {
-    font-size: rem-calc(18);
+    font-size: rem-calc(17);
     font-weight: normal;
   }
 
@@ -327,6 +348,11 @@
       }
     }
 
+    .slider-btn {
+      width: rem-calc(20);
+      height: rem-calc(20);
+    }
+
     .step {
       height: rem-calc(420);
 
@@ -363,6 +389,8 @@
   }
 
   .diagram-bg {
+    position: relative;
+    top: -20px;
     width: 92px;
     height: 90px;
 
@@ -441,8 +469,20 @@
   }
 
   footer {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: rem-calc(16);
+    font-weight: normal;
+
+    a {
+      text-decoration: underline;
+    }
     div {
       text-align: center;
+    }
+
+
+    .footer-mobile-block {
+      margin-bottom: rem-calc(55);
     }
   }
 }

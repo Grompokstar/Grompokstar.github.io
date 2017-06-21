@@ -114,13 +114,19 @@ ul.main-menu-link-list {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.mobile-main-menu {
-  width: rem-calc(322);
-  background-color: $white;
-  position: absolute;
+.mobile-menu-wrapper {
+  position: fixed;
   top: rem-calc(91);
+  bottom: 0;
   right: 0;
+  overflow: auto;
+  z-index: 50;
+  width: rem-calc(322);
   display: none;
+}
+
+.mobile-main-menu {
+  background-color: $white;
 
   ul {
     padding: 0;
@@ -198,7 +204,7 @@ ul.main-menu-link-list {
 }
 
 .phone-mobile-menu {
-  position: absolute;
+  position: fixed;
   top: rem-calc(91);
   right: 0;
   width: rem-calc(323);
@@ -206,6 +212,7 @@ ul.main-menu-link-list {
   text-align: center;
   padding-bottom: rem-calc(30);
   display: none;
+  z-index: 50;
 
   &.visible {
     display: block;
@@ -221,6 +228,24 @@ ul.main-menu-link-list {
   .phone-subtext {
     text-align: center;
     font-size: rem-calc(14);
+  }
+}
+
+.online-entry-btn-wrapper {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: rem-calc(90);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
+  z-index: 100;
+
+  &.visible {
+    display: flex !important;
   }
 }
 

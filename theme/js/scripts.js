@@ -2,16 +2,17 @@ $(function(){
 
     $(window).ready(function(){
 
-        $("body").on('click', '[href*="#"]', function(e){
+        $('body').on('click', '[href*="#"]', function(e){
             $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - 90}, 1000);
             e.preventDefault();
         });
 
         //header
-        var $mainMenu = $('.main-menu'),
+        var $body = $('body'),
+            $mainMenu = $('.main-menu'),
             $mainMenuBtn = $('.main-menu-btn'),
             $mainMenuLinks = $('.main-menu a, .mobile-main-menu a'),
-            $mobileMainMenu = $('.mobile-main-menu'),
+            $mobileMainMenu = $('.mobile-menu-wrapper'),
             $phoneHeaderMenu = $('.phone-mobile-menu'),
             $phoneHeaderBtn = $('.header-phone-btn'),
             $cityBtn = $('#city-btn'),
@@ -24,7 +25,8 @@ $(function(){
             $languageListLiks = $('.language-list li a'),
             $headerOverlay = $('.header-overlay'),
             $clickToToggleSubmenu = $('.click-to-toggle'),
-            $chooseAgeLinks = $('a[href="#choose-age"]');
+            $chooseAgeLinks = $('a[href="#choose-age"]'),
+            $onlineEntryBtnWrapper = $('.online-entry-btn-wrapper');
 
         function toggleMainMenu() {
             $mainMenu.toggleClass('visible');
@@ -32,6 +34,13 @@ $(function(){
             $('.main-menu-btn').toggleClass('close');
             $('.main-menu-btn svg').toggleClass('visible');
             $('.overlay').toggleClass('visible');
+            if ($mainMenu.hasClass('visible')) {
+                $body.addClass('overflow-hidden');
+                $onlineEntryBtnWrapper.addClass('visible');
+            } else {
+                $body.removeClass('overflow-hidden');
+                $onlineEntryBtnWrapper.removeClass('visible');
+            }
         }
 
         function toggleCityMenu() {
@@ -52,10 +61,21 @@ $(function(){
         });
 
         $phoneHeaderBtn.on('click', function () {
+            if (!$phoneHeaderMenu.hasClass('visible')) {
+                $body.addClass('overflow-hidden');
+                $onlineEntryBtnWrapper.addClass('visible');
+            } else {
+                $body.removeClass('overflow-hidden');
+                $onlineEntryBtnWrapper.removeClass('visible');
+            }
             $phoneHeaderMenu.toggleClass('visible');
 
             if ($mainMenu.hasClass('visible')) {
-                toggleMainMenu();
+                $mainMenu.removeClass('visible');
+                $mobileMainMenu.removeClass('visible');
+                $('.main-menu-btn').toggleClass('close');
+                $('.main-menu-btn svg').toggleClass('visible');
+                $('.overlay').toggleClass('visible');
             }
         });
 

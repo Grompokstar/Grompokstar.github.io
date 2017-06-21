@@ -10,35 +10,48 @@ $(function(){
             sliderImg = $('.slider-img'),
             sliderStartText = $('.video-slider__text'),
             sliderTextItems = $('.slides .text-item'),
+            sliderItems = $('.video-slider__item'),
             clickedSlideId, videoSlidesInterval,
             videos = $('video'),
             i = 0,
             repeat = false,
             firstVideo = document.getElementById('first-video'),
-            $playBtnCircle = $('#play-btn-circle');
+            $playBtnCircle = $('#play-btn-circle'),
+            desktop = !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || document.body.clientWidth >= 768;
 
-        setTimeout(function() {
-            firstVideo.play();
-        }, 1000);
+        if (desktop) {
+            setTimeout(function() {
+                firstVideo.play();
+            }, 1000);
+            firstVideo.addEventListener('timeupdate', videoPreloadAnimation);
+        } else {
+            videos.remove();
+            for (var j = 0; j < sliderItems.length; j++) {
+                sliderItems.eq(j).addClass('slide-background_' + (j + 1));
+            }
+            $playBtnCircle.addClass('go-time');
+            setTimeout(startVideoSlider, 7000);
+        }
 
         function videoPreloadAnimation() {
             var duration = firstVideo.duration;
             var progress = 200 - (firstVideo.currentTime / duration) * 200;
+
             $playBtnCircle.attr('stroke-dashoffset', progress);
             if (progress === 200) {
                 startVideoSlider();
             }
         }
 
-        firstVideo.addEventListener('timeupdate', videoPreloadAnimation);
-
         function startVideoSlider() {
             firstVideo.removeEventListener('timeupdate', videoPreloadAnimation);
             sliderImg.addClass('hide-left');
             sliderStartText.addClass('hide-left');
             sliderCirclesBlock.show();
-            videos.get(i).currentTime = 0;
-            videos.get(i).play();
+            if (desktop) {
+                videos.get(i).currentTime = 0;
+                videos.get(i).play();
+            }
             sliderTextItems.eq(i).addClass('visible-text');
             slidesContainer.addClass('show-' + i);
 
@@ -50,9 +63,12 @@ $(function(){
                     sliderTextItems.eq(i).addClass('visible-text');
                     $(sliderCircles[sliderCircles.length - 1]).toggleClass('active');
                     $(sliderCircles[i]).toggleClass('active');
-                    videos.get(3).pause();
-                    videos.get(i).currentTime = 0;
-                    videos.get(i).play();
+                    if (desktop) {
+                        videos.get(3).pause();
+                        videos.get(i).currentTime = 0;
+                        videos.get(i).play();
+                    }
+
                 } else if (repeat) {
                     slidesContainer.removeClassWild("show-*");
                     slidesContainer.addClass('show-' + i);
@@ -60,9 +76,12 @@ $(function(){
                     sliderTextItems.eq(i).addClass('visible-text');
                     $(sliderCircles[i - 1]).toggleClass('active');
                     $(sliderCircles[i]).toggleClass('active');
-                    videos.get(i - 1).pause();
-                    videos.get(i).currentTime = 0;
-                    videos.get(i).play();
+                    if (desktop) {
+                        videos.get(i - 1).pause();
+                        videos.get(i).currentTime = 0;
+                        videos.get(i).play();
+                    }
+
                 } else {
                     slidesContainer.removeClassWild("show-*");
                     slidesContainer.addClass('show-' + (i+1));
@@ -70,8 +89,10 @@ $(function(){
                     sliderTextItems.eq(i + 1).addClass('visible-text');
                     $(sliderCircles[i]).toggleClass('active');
                     $(sliderCircles[i + 1]).toggleClass('active');
-                    videos.get(i).pause();
-                    videos.get(i+1).play();
+                    if (desktop) {
+                        videos.get(i).pause();
+                        videos.get(i+1).play();
+                    }
                 }
 
                 i++;
@@ -100,14 +121,16 @@ $(function(){
             sliderTextItems.removeClass('visible-text');
             sliderTextItems.eq(clickedSlideId).addClass('visible-text');
 
-            for (var i = 0; i < videos.length; i++) {
-                if (i !== clickedSlideId) {
-                    videos.get(i).pause();
+            if (desktop) {
+                for (var i = 0; i < videos.length; i++) {
+                    if (i !== clickedSlideId) {
+                        videos.get(i).pause();
+                    }
                 }
-            }
 
-            videos.get(clickedSlideId).currentTime = 0;
-            videos.get(clickedSlideId).play();
+                videos.get(clickedSlideId).currentTime = 0;
+                videos.get(clickedSlideId).play();
+            }
         });
 
 
