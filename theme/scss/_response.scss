@@ -66,6 +66,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   .package-section {
     .package-section__title {
       font-size: rem-calc(22);
@@ -223,6 +224,10 @@
     }
   }
 
+  .slider-img {
+    background-position: center;
+  }
+
   .phone-mobile-menu {
     top: rem-calc(61);
     width: 100%;
@@ -296,6 +301,59 @@
 
   .slider-circles {
     bottom: rem-calc(30);
+  }
+
+  .choose-age {
+    background-color: $white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .choose-age-text {
+    text-align: center;
+  }
+
+  .choose-age-item {
+    flex-basis: 50%;
+    border-top: solid 1px $light-gray;
+    padding-bottom: rem-calc(13);
+
+    .choose-age-icon {
+      margin: auto;
+      border: none !important;
+      width: 90px;
+      height: 90px;
+
+      .choose-age-second-border {
+        border: none;
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+
+  .choose-age-item:nth-child(odd) {
+    border-left: solid 1px $light-gray;
+  }
+
+  .choose-age-item:last-child {
+    flex-basis: 100%;
+    border-bottom: solid 1px $light-gray;
+  }
+
+  .choose-age-icon-text {
+    .main-text {
+      font-size: rem-calc(14);
+    }
+
+    .age {
+      font-size: rem-calc(14);
+    }
+  }
+
+  .choose-age-item.active .choose-age-icon-text {
+    color: inherit;
   }
 
   .package-section {
@@ -457,6 +515,7 @@
   .common-feedback {
     padding-top: rem-calc(30);
     padding-bottom: 0;
+
     .common-feedback__form {
       input {
         margin-bottom: rem-calc(20);
@@ -483,6 +542,232 @@
 
     .footer-mobile-block {
       margin-bottom: rem-calc(55);
+    }
+  }
+
+
+  //partners page
+
+  .page__partner-numbers {
+    background: none;
+    padding-bottom: rem-calc(40);
+
+    .number-item {
+      .number {
+        font-size: rem-calc(40);
+        padding: 0 !important;
+
+      }
+
+      .partner-numbers-text {
+        font-size: rem-calc(11);
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+
+    .number-item:last-child {
+      margin-left: 10px;
+    }
+  }
+
+  .page__partner-cards {
+    .cards-wrapper {
+      .card {
+        width: 100%;
+        margin: 0;
+        margin-bottom: rem-calc(20);
+        padding-bottom: rem-calc(45);
+      }
+    }
+  }
+
+  .page__partner-cards {
+    margin-top: 0;
+    margin-bottom: rem-calc(25) !important;
+
+    .page__partners-title {
+      font-size: rem-calc(28);
+      padding: 0 rem-calc(30);
+      margin-bottom: rem-calc(49) !important;
+    }
+
+    .cards-wrapper {
+      .card-title {
+        margin-bottom: rem-calc(25) !important;
+      }
+
+      .card-bold-text {
+        font-size: rem-calc(16);
+      }
+
+      .card-text {
+        font-size: rem-calc(16);
+        margin-bottom: rem-calc(20) !important;
+      }
+    }
+  }
+
+  .common-feedback {
+    background-color: $white;
+
+    .common-feedback__text {
+      font-size: rem-calc(18);
+    }
+  }
+
+  // страница "О методе"
+
+  .about-method__title {
+    margin-top: rem-calc(25) !important;
+    margin-bottom: rem-calc(30) !important;
+  }
+
+  .method-card {
+    height: auto;
+    padding: rem-calc(28) rem-calc(20) rem-calc(41);
+  }
+
+  .method-cards {
+    margin-bottom: rem-calc(76) !important;
+  }
+
+  .article {
+    padding: rem-calc(30) rem-calc(5) !important;
+    font-size: rem-calc(14);
+
+    .font-lg {
+      font-size: rem-calc(16);
+    }
+  }
+
+  .article-title {
+    font-size: rem-calc(28);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    @include border-radius(50%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12);
+    color: $gray;
+    font-size: 24px;
+    cursor: pointer;
+
+    .fa-angle-right {
+      position: relative;
+      top: -2px;
+      left: 10px;
+    }
+    .fa-angle-left {
+      position: relative;
+      top: -2px;
+      left: 2px;
+    }
+  }
+
+  //partners pages
+
+  .xs-bg-color-white {
+    background-color: $white;
+  }
+
+  .xs-bg-color-default {
+    background-color: $bg-color;
+  }
+
+  .common-feedback {
+    padding: {
+      top: rem-calc(45) !important;
+      bottom: rem-calc(45) !important;
+    }
+  }
+
+  .page {
+
+    .page-title {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .page-title__subText {
+      font-size: rem-calc(16);
+    }
+
+    .page-title__mainText {
+      font-size: rem-calc(32);
+    }
+
+    .page-list-title {
+      font-size: rem-calc(32);
+    }
+
+    .page-block.px-2 {
+      padding: 0 !important;
+    }
+
+    .page-list {
+      margin-bottom: rem-calc(30);
+
+      ul {
+        li {
+          font-size: rem-calc(16);
+          padding-left: rem-calc(5);
+        }
+      }
+    }
+
+    .page-block__results {
+      height: auto;
+
+      &.pr-35 {
+        padding-right: 0 !important;
+      }
+
+      .page-list {
+        padding-bottom: 0;
+      }
+    }
+
+    .half-screen-img {
+      position: relative;
+      width: 100%;
+      height: 300px
+    }
+
+    .page-results-title {
+      font-size: rem-calc(28);
+      text-align: center;
+    }
+
+    .page-block__title {
+      font-size: rem-calc(28);
+      margin-bottom: rem-calc(30);
+    }
+
+    .economic-item {
+      font-size: rem-calc(14);
+      margin-bottom: rem-calc(35);
+    }
+
+    .green-xxl-text {
+      font-size: rem-calc(42);
+    }
+
+    .page-block-no-bg {
+      padding-right: rem-calc(20) !important;
+      padding-left: rem-calc(20) !important;
+      padding-bottom: rem-calc(20);
+    }
+
+    .results-text {
+      padding: 0 rem-calc(5);
+      font-size: rem-calc(16);
+      padding-bottom: rem-calc(20);
     }
   }
 }

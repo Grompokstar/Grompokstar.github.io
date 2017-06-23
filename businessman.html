@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Verbatoria.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="theme/css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="theme/css/theme.css">
 
@@ -40,7 +42,7 @@
       <div class="header-flex-item header__link hidden-xs hidden-sm">
         <a href="partners.html">Партнерам</a>
       </div>
-      <div class="header-flex-item">
+      <div class="header-flex-item hidden-xs">
         <button class="round-button success">
           Онлайн-запись
         </button>
@@ -96,31 +98,61 @@
   </div>
 
   <div class="visible-xs visible-sm">
-    <div class="mobile-main-menu">
-      <ul class="mobile-menu">
-        <li><a href="#choose-age">Выбрать исследование</a></li>
-        <li><a href="#how-to-work">Как мы работаем</a></li>
-        <li><a href="about_method.html">О методе</a></li>
-        <li><a href="partners.html">Партнерам</a></li>
-        <li><a href="#main-page-feedback">Оставить заявку</a></li>
-        <div class="submenu-toggle">
-          <div class="click-to-toggle">Москва<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
-          <ul class="mobile-submenu">
-            <li><a href="#">Санкт-Петербург</a></li>
-            <li><a href="#">Ростов-на-Дону</a></li>
-            <li><a href="#">Екатеринбург</a></li>
-            <li><a href="#">Самара</a></li>
-          </ul>
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-main-menu">
+        <ul class="mobile-menu">
+          <li><a href="#choose-age">Выбрать исследование</a></li>
+          <li><a href="#how-to-work">Как мы работаем</a></li>
+          <li><a href="about_method.html">О методе</a></li>
+          <li><a href="partners.html">Партнерам</a></li>
+          <li><a href="#main-page-feedback">Оставить заявку</a></li>
+          <div class="submenu-toggle">
+            <div class="click-to-toggle">Москва<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
+            <ul class="mobile-submenu">
+              <li><a href="#">Санкт-Петербург</a></li>
+              <li><a href="#">Ростов-на-Дону</a></li>
+              <li><a href="#">Екатеринбург</a></li>
+              <li><a href="#">Самара</a></li>
+            </ul>
+          </div>
+          <div class="submenu-toggle">
+            <div class="click-to-toggle">Русский<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
+            <ul class="mobile-submenu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">қазақша</a></li>
+              <li><a href="#">中文(简体)</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="visible-xs visible-sm">
+    <div class="phone-mobile-menu">
+      <div>
+        Позвоните нам
+        <div class="phones">
+          <div class="feedback-phone">
+            +7 495 123 4748
+          </div>
+          <div class="phone-subtext">
+            Москва
+          </div>
+          <div class="feedback-phone">
+            8 800 123 4748
+          </div>
+          <div class="phone-subtext">
+            Бесплатный звонок по России
+          </div>
         </div>
-        <div class="submenu-toggle">
-          <div class="click-to-toggle">Русский<span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span> </div>
-          <ul class="mobile-submenu">
-            <li><a href="#">English</a></li>
-            <li><a href="#">қазақша</a></li>
-            <li><a href="#">中文(简体)</a></li>
-          </ul>
-        </div>
-      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="visible-xs">
+    <div class="online-entry-btn-wrapper">
+      <button class="round-button success xxl-btn">Онлайн-запись</button>
     </div>
   </div>
 
@@ -164,7 +196,7 @@
 </header>
   <div class="overlay"></div>
 
-  <div class="container px-35">
+  <div class="container px-35 xs-bg-color-white">
     <div class="row">
       <div class="page-title col-md-12">
         <div class="page-title__text">
@@ -276,7 +308,47 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 col-sm-push-4 col-md-push-5 col-lg-push-6">
+          <div class="row">
+            <div class="col-sm-4 footer-mobile-block">
+              <div class="footer-title">Москва</div>
+              <div class="footer__link-item">
+                <a href="#">Коробейникова пер. 22с3</a>
+              </div>
+              <div class="footer__link-item">
+                <a href="mailto:info@verbatoria.ru">info@verbatoria.ru</a>
+              </div>
+              <div class="hidden-xs">
+                +7 495 123 4748<br/>8 800 123 4748
+              </div>
+            </div>
+            <div class="col-sm-4 footer-mobile-block">
+              <div class="footer-title">Партнерам</div>
+              <div class="footer__link-item">
+                <a href="#">предложение</a>
+              </div>
+              <div class="footer__link-item">
+                <a href="mailto:partner@verbatoria.ru">partner@verbatoria.ru</a>
+              </div>
+            </div>
+            <div class="col-sm-4 footer-mobile-block">
+              <div class="footer-title">Мы в соцсетях</div>
+              <div class="footer__link-item">
+                <span class="fa fa-facebook hidden-xs"></span>
+                <a href="#">Facebook</a>
+              </div>
+              <div class="footer__link-item">
+                <span class="fa fa-vk hidden-xs"></span>
+                <a href="#">ВКонтакте</a>
+              </div>
+              <div class="footer__link-item">
+                <span class="fa fa-instagram hidden-xs"></span>
+                <a href="#">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6 col-sm-pull-8 col-md-pull-7 col-lg-pull-6">
           <div class="footer_verbatoria-tree-img hidden-sm hidden-xs">
             <img src="theme/images/Home/verbatoria_tree.svg"  height="196" alt="Дерево Вербатория"/>
           </div>
@@ -286,48 +358,6 @@
           <div>
             © ООО «Вербатория».<br/>
             Основано в 2014 году.
-          </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="footer-title">Москва</div>
-              <div class="footer__link-item">
-                <a href="#">Коробейникова пер. 22с3</a>
-              </div>
-              <div class="footer__link-item">
-                <a href="mailto:info@verbatoria.ru">info@verbatoria.ru</a>
-              </div>
-              <div>
-                +7 495 123 4748<br/>8 800 123 4748
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="footer-title">Партнерам</div>
-              <div class="footer__link-item">
-                <a href="#">предложение</a>
-              </div>
-              <div class="footer__link-item">
-                <a href="mailto:partner@verbatoria.ru">partner@verbatoria.ru</a>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="footer-title">Мы в соцсетях</div>
-              <div class="footer__link-item">
-                <span class="fa fa-facebook"></span>
-                <a href="#">Facebook</a>
-              </div>
-              <div class="footer__link-item">
-                <span class="fa fa-vk"></span>
-                <a href="#">ВКонтакте</a>
-              </div>
-              <div class="footer__link-item">
-                <span class="fa fa-instagram"></span>
-                <a href="#">Instagram</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

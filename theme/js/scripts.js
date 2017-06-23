@@ -26,7 +26,8 @@ $(function(){
             $headerOverlay = $('.header-overlay'),
             $clickToToggleSubmenu = $('.click-to-toggle'),
             $chooseAgeLinks = $('a[href="#choose-age"]'),
-            $onlineEntryBtnWrapper = $('.online-entry-btn-wrapper');
+            $onlineEntryBtnWrapper = $('.online-entry-btn-wrapper'),
+            $articleCloseBtn = $('.article .close-btn');
 
         function toggleMainMenu() {
             $mainMenu.toggleClass('visible');
@@ -137,6 +138,10 @@ $(function(){
         $clickToToggleSubmenu.on('click', function() {
             $(this).closest('.submenu-toggle').toggleClass('open');
         });
+
+        $articleCloseBtn.on('click', function() {
+            window.history.back();
+        })
 
 
     });
