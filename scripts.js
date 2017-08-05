@@ -42,10 +42,6 @@
       var minutesCount = Math.floor(hourRemain/60);
       var secondsCount = Math.floor(hourRemain % 60);
 
-      console.log(daysCount);
-      console.log(hourCount);
-      console.log(minutesCount);
-      console.log(secondsCount);
       outputDays.innerHTML = daysCount;
       outputHours.innerHTML = hourCount;
       outputMinutes.innerHTML = minutesCount;
