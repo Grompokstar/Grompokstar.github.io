@@ -16,7 +16,7 @@
        console.log(timeArray);*/
 
       var now = new Date();
-      var startDate = new Date(2017, 7, 3, 21, 0, 0, 0);
+      var startDate = new Date(2017, 7, 6, 21, 50, 0, 0);
       var secondsDifference = (now - startDate)/1000;
 
       var counts = countTimes(secondsDifference);
