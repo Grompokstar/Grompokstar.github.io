@@ -1,0 +1,21 @@
+.choose-date-top-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .btn-back {
+    position: relative;
+    left: -7px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-family: 'LatoBold', sans-serif;
+    margin-left: 11px;
+  }
+}
+
+#date-output {
+  font-size: 18px;
+  font-family: "LatoBold", sans-serif;
+}

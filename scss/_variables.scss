@@ -1,0 +1,71 @@
+$bg-color: #f5f5f5;
+
+$brand-color: #46c473;
+$gray-main-color: #808080;
+
+
+$spacer-x: 10px;
+$spacer-y: 10px;
+
+$spacers: (
+        0: (
+                x: 0,
+                y: 0
+        ),
+        1: (
+                x: $spacer-x,
+                y: $spacer-y
+        ),
+        15: (
+                x: ($spacer-x * 1.5),
+                y: ($spacer-y * 1.5)
+        ),
+        2: (
+                x: ($spacer-x * 2),
+                y: ($spacer-y * 2)
+        ),
+        24: (
+                x: ($spacer-x * 2.4),
+                y: ($spacer-y * 2.4)
+        ),
+        28: (
+                x: ($spacer-x * 2.8),
+                y: ($spacer-y * 2.8)
+        ),
+        3: (
+                x: ($spacer-x * 3),
+                y: ($spacer-y * 3)
+        ),
+        35: (
+                x: ($spacer-x * 3.5),
+                y: ($spacer-y * 3.5)
+        ),
+        4: (
+                x: ($spacer-x * 4),
+                y: ($spacer-y * 4)
+        ),
+        5: (
+                x: ($spacer-x * 5),
+                y: ($spacer-y * 5)
+        ),
+        6: (
+                x: ($spacer-x * 6),
+                y: ($spacer-y * 6)
+        ),
+        7: (
+                x: ($spacer-x * 7),
+                y: ($spacer-y * 7)
+        ),
+        8: (
+                x: ($spacer-x * 8),
+                y: ($spacer-y * 8)
+        ),
+        9: (
+                x: ($spacer-x * 9),
+                y: ($spacer-y * 9)
+        ),
+        12: (
+                x: ($spacer-x * 12),
+                y: ($spacer-y * 12)
+        ),
+);

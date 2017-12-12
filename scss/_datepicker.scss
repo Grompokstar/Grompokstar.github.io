@@ -1,0 +1,198 @@
+.month-control {
+  position: relative;
+  height: 36px;
+  pointer-events: none;
+
+  .month-container {
+    overflow: hidden;
+    height: 36px;
+    position: relative;
+    padding: 0 5px;
+  }
+
+  .month-scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  &:before {
+    display: inline-block;
+    width: 10px;
+    height: 22px;
+    content: "";
+    background: url("../images/right-arrow-small.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -13px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  &:after {
+    display: inline-block;
+    width: 10px;
+    height: 22px;
+    content: "";
+    background: url("../images/right-arrow-small.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 5px;
+    right: -17px;
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .month-item {
+    width: 91px;
+    height: 26px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 13px;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    font-size: 14px;
+    min-width: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-top: 1px;
+    pointer-events: all;
+
+    &.current {
+      color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+}
+
+.js_cal {
+  width: 100%;
+  margin-bottom: 36px;
+
+  th {
+    font-size: 12px;
+    color: #000;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  td {
+    text-align: center;
+    height: 48px;
+    vertical-align: middle;
+    color: $brand-color;
+    background-color: #fff;
+    font-size: 16px;
+    border-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid $bg-color;
+    width: 64px;
+
+    &.holiday {
+      color: #626a79;
+      cursor: default;
+    }
+
+    &.unavailable {
+      color: #626a79;
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &.current {
+      outline: 1px dashed $brand-color!important;
+      outline-offset: -1px;
+    }
+
+    &.active {
+      outline: 2px solid $brand-color!important;
+      outline-offset: -2px;
+      font-size: 22px;
+      font-family: 'LatoBold', sans-serif;
+
+      .month-name {
+        display: block;
+      }
+    }
+
+    .month-name {
+      display: none;
+      font-size: 8px;
+      text-transform: uppercase;
+      font-family: 'LatoBold', sans-serif;
+    }
+  }
+}
+
+
+#time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 18px 0 26px;
+  margin-right: -16px;
+
+  .time-slot-item {
+    width: 138px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: $brand-color;
+    font-size: 24px;
+    font-family: "LatoBold", sans-serif;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+    padding: 9px 13px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 18px;
+    margin-right: 16px;
+
+    &:after {
+      display: inline-block;
+      width: 10px;
+      height: 25px;
+      content: "";
+      background: url("../images/right-arrow-small.svg") no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 16px;
+      right: 13px;
+    }
+
+    &.unavailable {
+      opacity: 0.5;
+      color: #c0c0c0;
+      cursor: default;
+    }
+  }
+}
+
+
+@media (max-width: 499px) {
+  #time-slots {
+    .time-slot-item {
+      width: 88px;
+      margin-right: 7px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .js_cal td.active {
+    font-size: 20px;
+
+    .month-name {
+      font-size: 7px;
+    }
+  }
+
+}

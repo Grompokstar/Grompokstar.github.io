@@ -1,0 +1,300 @@
+.filials {
+
+  .filial-control-row {
+    margin-bottom: 17px;
+
+    .title {
+      font-size: 18px;
+      font-family: 'LatoBold', sans-serif;
+    }
+  }
+  .filial-card {
+    background-color: #fff;
+    padding: 16px 25px 2px;
+    border-radius: 6px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+    .title {
+      font-size: 24px;
+      font-family: "LatoBold", sans-serif;
+      color: $brand-color;
+      padding-right: 90px;
+    }
+
+    .to-calendar-icon {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+    }
+
+    .metro-station {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .address {
+      font-size: 12px;
+      margin-bottom: 13px;
+    }
+
+    .phone {
+      font-size: 18px;
+      margin-bottom: 13px;
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    .note {
+      font-size: 12px;
+      margin-bottom: 21px;
+    }
+
+    .fast-booking {
+      background-color: #f8f8f8;
+      margin-left: -25px;
+      margin-right: -25px;
+      padding: 12px 25px;
+      position: relative;
+
+      .text {
+        font-size: 14px;
+        color: #808080;
+        padding-right: 240px;
+      }
+
+      .booking-btn {
+        position: absolute;
+        top: 12px;
+        right: 25px;
+        background-color: #fff;
+        color: $brand-color;
+        font-size: 14px;
+        font-family: "LatoBold", sans-serif;
+        border: 1px solid $brand-color;
+        border-radius: 6px;
+        padding: 7px 12px;
+        width: 229px;
+
+        .right-arrow {
+          position: absolute;
+          top: 9px;
+          right: 15px;
+
+          #Timestrip {
+            stroke: $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  .filial-control-row {
+    display: flex;
+
+    .nav-view {
+      display: flex;
+      margin-left: auto;
+
+      .nav-item {
+        font-size: 14px;
+        line-height: 17px;
+        color: #9b9b9b;
+        text-transform: uppercase;
+        padding: 5px 15px 3px;
+        cursor: pointer;
+
+        &.active {
+          border: 1px solid $brand-color;
+          border-radius: 13px;
+          color: $brand-color;
+          background-color: #fff;
+        }
+      }
+
+      .nav-icon {
+        width: 42px;
+        height: 42px;
+        border: 1px solid #d3d3d3;
+        border-radius: 50%;
+        background: transparent;
+        margin: 0 5px;
+        position: relative;
+        top: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          opacity: 0.5;
+        }
+
+        &.active {
+          background-color: #fff;
+
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .filials-map {
+    position: absolute;
+    top: 175px;
+    bottom: 0;
+    width: 100%;
+    margin-left: -25px;
+    margin-right: -25px;
+    background: url(../images/map-fake.png) no-repeat;
+    background-size: cover;
+
+    .filial-card {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+      padding-left: 68px;
+      display: none;
+      padding-top: 20px;
+
+      .fast-booking {
+        background-color: #f8f8f8;
+        margin-left: -68px;
+        padding-left: 68px;
+      }
+
+      .close-icn {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+      }
+    }
+  }
+
+  .nav-view-area {
+    display: none;
+  }
+
+
+  .geopin {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    cursor: pointer;
+
+  }
+}
+
+@media (max-width: 499px) {
+  .filials {
+    .filial-control-row {
+      margin-bottom: 0;
+    }
+
+    .filial-card {
+      margin-left: -25px;
+      margin-right: -25px;
+      border-radius: 0;
+
+      .metro-station {
+        padding-right: 50px;
+      }
+
+      .phone {
+        font-size: 16px;
+        margin-bottom: 9px;
+
+        a {
+          color: $brand-color;
+          text-decoration: underline;
+          font-family: "LatoBold", sans-serif;
+        }
+      }
+
+      .note {
+        margin-bottom: 0;
+      }
+
+      .fast-booking {
+        background-color: #fff;
+        padding-right: 20px;
+
+        .text {
+          padding-right: 0;
+        }
+
+        .booking-btn {
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-top: 6px;
+        }
+      }
+
+    }
+
+    .filials-map {
+      .filial-card {
+        border-radius: 0;
+        padding-top: 6px;
+        padding-left: 17px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+
+        .metro-station {
+          padding-right: 50px;
+        }
+
+        .phone {
+          font-size: 16px;
+          margin-bottom: 9px;
+
+          a {
+            color: $brand-color;
+            text-decoration: underline;
+          }
+        }
+
+        .note {
+          margin-bottom: 0;
+        }
+
+        .close-icn {
+          width: 32px;
+          height: 32px;
+          top: - 40px;
+          left: 90%;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .fast-booking {
+          background-color: #fff;
+
+          .text {
+            padding-right: 0;
+          }
+
+          .booking-btn {
+            position: relative;
+            top: 0;
+            right: 0;
+            margin-top: 6px;
+          }
+        }
+
+      }
+    }
+  }
+
+}

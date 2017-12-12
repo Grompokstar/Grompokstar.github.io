@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="24px" viewBox="0 0 52 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Back To Calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.35" stroke-linejoin="round">
+        <g id="Back-To-Calendar">
+            <g id="Stroke-463-+-Stroke-464" transform="translate(34.000000, 4.000000)" stroke="#0B0B0A">
+                <path d="M0.351525,8.56935 L17.601525,8.56935" id="Stroke-463"></path>
+                <polyline id="Stroke-464" points="9.726525 0.31935 0.351525 8.56935 9.726525 16.81935"></polyline>
+            </g>
+            <g id="Group" stroke="#000000">
+                <polyline id="Stroke-1351" points="4.5 2.5 0.5 2.5 0.5 23.5 23.5 23.5 23.5 2.5 19.5 2.5"></polyline>
+                <polygon id="Stroke-1352" points="7.5 4.5 4.5 4.5 4.5 0.5 7.5 0.5"></polygon>
+                <polygon id="Stroke-1353" points="19.5 4.5 16.5 4.5 16.5 0.5 19.5 0.5"></polygon>
+                <path d="M7.5,2.5 L16.5,2.5" id="Stroke-1354"></path>
+                <path d="M0.5,7.5 L23.5,7.5" id="Stroke-1355"></path>
+                <path d="M6.5,9.5 L6.5,21.5" id="Stroke-1356"></path>
+                <path d="M11.5,9.5 L11.5,21.5" id="Stroke-1357"></path>
+                <path d="M16.5,9.5 L16.5,21.5" id="Stroke-1358"></path>
+                <path d="M2.5,11.5 L21.5,11.5" id="Stroke-1359"></path>
+                <path d="M2.5,15.5 L21.5,15.5" id="Stroke-1360"></path>
+                <path d="M2.5,19.5 L21.5,19.5" id="Stroke-1361"></path>
+            </g>
+        </g>
+    </g>
+</svg>

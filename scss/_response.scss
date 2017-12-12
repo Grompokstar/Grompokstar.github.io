@@ -1,0 +1,30 @@
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  overflow-x: hidden;
+
+  .main-container {
+    width: 500px;
+    min-height: 100%;
+    position: relative;
+    transition: all 0.4s;
+    left: 0;
+  }
+
+  &.close {
+    overflow: hidden;
+
+    .main-container {
+      left: 520px;
+    }
+  }
+}
+
+
+
+.container {
+  width: 500px;
+}

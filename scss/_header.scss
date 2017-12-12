@@ -1,0 +1,82 @@
+header {
+  background-color: #fff;
+  top: 0;
+  position: fixed;
+  max-width: 100%;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+  z-index: 10;
+
+  &.no-border {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .header-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .header-content {
+    padding: 21px 25px;
+  }
+
+  .address {
+    margin-top: 7px;
+  }
+
+  .dropdown-block {
+    margin-right: 24px;
+  }
+
+}
+
+.close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  text-align: center;
+  cursor: pointer;
+
+  img{
+    margin-top: 10px;
+  }
+}
+
+.header__phone {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 19px;
+  font-family: "LatoBold", sans-serif;
+
+  a {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 499px) {
+  header {
+    .header-content {
+      padding: 15px 16px;
+    }
+
+    .close-btn {
+      top: 8px;
+      right: 8px;
+    }
+
+  }
+
+  .header__phone {
+    font-size: 16px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
