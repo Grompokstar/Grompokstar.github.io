@@ -116,10 +116,12 @@
       outline: 2px solid $brand-color!important;
       outline-offset: -2px;
       font-size: 22px;
+      line-height: 22px;
       font-family: 'LatoBold', sans-serif;
 
       .month-name {
         display: block;
+        line-height: 8px;
       }
     }
 
@@ -146,9 +148,10 @@
     background-color: #fff;
     color: $brand-color;
     font-size: 24px;
+    line-height: 24px;
     font-family: "LatoBold", sans-serif;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
-    padding: 9px 13px;
+    padding: 14px 13px;
     cursor: pointer;
     position: relative;
     margin-bottom: 18px;
@@ -177,9 +180,13 @@
 
 @media (max-width: 499px) {
   #time-slots {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+
     .time-slot-item {
       width: 88px;
-      margin-right: 7px;
+      margin-right: 0;
 
       &:after {
         display: none;
@@ -193,6 +200,11 @@
     .month-name {
       font-size: 7px;
     }
+  }
+
+  .choose-date-top-row .btn-back {
+    left: 0;
+    top: -2px;
   }
 
 }

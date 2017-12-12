@@ -53,7 +53,12 @@ $(function(){
 
 
     var headerWidth = $('header').height();
-    $('.main-content').css('padding-top', headerWidth + 15 + 'px');
+    if (windowWidth < 500) {
+      $('.main-content').css('padding-top', headerWidth + 10 + 'px');
+    } else {
+      $('.main-content').css('padding-top', headerWidth + 15 + 'px');
+    }
+
 
 
     $('.ui.dropdown').dropdown();

@@ -5,8 +5,37 @@
   border-radius: 6px;
   padding: 7px 10px;
   font-size: 18px;
+  line-height: 18px;
   font-family: "LatoBold", sans-serif;
   min-width: 200px;
+  max-width: 250px;
+
+
+  .text {
+    max-width: 175px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .menu>.item {
+    border: none;
+    font-size: 18px;
+    font-family: "LatoBold", sans-serif;
+    padding: 7px 10px!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &.font-sm {
+    font-size: 14px;
+    padding-top: 6px;
+
+    .menu>.item {
+      font-size: 14px;
+    }
+  }
 }
 
 
@@ -17,13 +46,6 @@
 
 .ui.selection.dropdown>.dropdown.icon {
   display: none;
-}
-
-.ui.selection.dropdown .menu>.item {
-  border: none;
-  font-size: 18px;
-  font-family: "LatoBold", sans-serif;
-  padding: 7px 10px!important;
 }
 
 .ui.selection.dropdown .menu {
@@ -44,10 +66,12 @@
 @media (max-width: 499px) {
   .ui.selection.dropdown {
     min-width: 145px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 10px;
   }
 
   .ui.selection.dropdown .menu>.item {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

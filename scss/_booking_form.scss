@@ -80,7 +80,10 @@
   .booking-form {
     .back-to-date-btn {
       padding: 0 12px;
-      font-size: 10px;
+      font-size: 12px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .total-price {

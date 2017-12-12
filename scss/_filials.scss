@@ -103,11 +103,12 @@
 
       .nav-item {
         font-size: 14px;
-        line-height: 17px;
+        line-height: 18px;
         color: #9b9b9b;
         text-transform: uppercase;
-        padding: 5px 15px 3px;
+        padding: 4px 15px 5px;
         cursor: pointer;
+        height: 26px;
 
         &.active {
           border: 1px solid $brand-color;
@@ -201,6 +202,8 @@
       margin-left: -25px;
       margin-right: -25px;
       border-radius: 0;
+      padding-top: 6px;
+      margin-bottom: 10px;
 
       .metro-station {
         padding-right: 50px;
@@ -208,7 +211,7 @@
 
       .phone {
         font-size: 16px;
-        margin-bottom: 9px;
+        margin-bottom: 7px;
 
         a {
           color: $brand-color;
@@ -223,7 +226,7 @@
 
       .fast-booking {
         background-color: #fff;
-        padding-right: 20px;
+        padding: 10px 20px 12px 25px;
 
         .text {
           padding-right: 0;
@@ -234,6 +237,13 @@
           top: 0;
           right: 0;
           margin-top: 6px;
+          height: 42px;
+          line-height: 14px;
+          padding: 14px 12px;
+
+          .right-arrow {
+            top: 12px;
+          }
         }
       }
 
@@ -294,6 +304,15 @@
         }
 
       }
+    }
+
+    .inline-block {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .metro-station {
+      line-height: 14px;
     }
   }
 
