@@ -1512,7 +1512,7 @@ input.form-control {
     min-width: 93px;
     font-size: 22px;
     line-height: 22px;
-    padding: 12px 10px;
+    padding: 12px 10px !important;
     position: relative; }
     .ui.selection.dropdown.form-control:before {
       display: inline-block;
