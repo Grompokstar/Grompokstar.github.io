@@ -16,6 +16,10 @@ $spacers: (
                 x: $spacer-x,
                 y: $spacer-y
         ),
+        "1_2": (
+                x: ($spacer-x * 1.2),
+                y: ($spacer-y * 1.2)
+        ),
         15: (
                 x: ($spacer-x * 1.5),
                 y: ($spacer-y * 1.5)

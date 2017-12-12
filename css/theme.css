@@ -45,6 +45,29 @@
   margin-top: 10px !important;
   margin-bottom: 10px !important; }
 
+.m-1_2 {
+  margin: 12px 12px !important; }
+
+.mt-1_2 {
+  margin-top: 12px !important; }
+
+.mr-1_2 {
+  margin-right: 12px !important; }
+
+.mb-1_2 {
+  margin-bottom: 12px !important; }
+
+.ml-1_2 {
+  margin-left: 12px !important; }
+
+.mx-1_2 {
+  margin-right: 12px !important;
+  margin-left: 12px !important; }
+
+.my-1_2 {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important; }
+
 .m-15 {
   margin: 15px 15px !important; }
 
@@ -389,6 +412,29 @@
 .py-1 {
   padding-top: 10px !important;
   padding-bottom: 10px !important; }
+
+.p-1_2 {
+  padding: 12px 12px !important; }
+
+.pt-1_2 {
+  padding-top: 12px !important; }
+
+.pr-1_2 {
+  padding-right: 12px !important; }
+
+.pb-1_2 {
+  padding-bottom: 12px !important; }
+
+.pl-1_2 {
+  padding-left: 12px !important; }
+
+.px-1_2 {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.py-1_2 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
 
 .p-15 {
   padding: 15px 15px !important; }
@@ -1188,14 +1234,19 @@ header {
   border: 1px solid #d3d3d3;
   border-radius: 17px;
   font-size: 12px;
-  line-height: 37px;
+  line-height: 12px;
   color: #808080;
-  padding: 0 20px;
+  padding: 12px 20px 12px 77px;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden; }
   .booking-form .back-to-date-btn svg {
-    margin-right: 10px; }
+    position: absolute;
+    left: 17px;
+    top: 5px; }
 
 .date-place {
   font-size: 18px; }
@@ -1246,11 +1297,7 @@ header {
 
 @media (max-width: 499px) {
   .booking-form .back-to-date-btn {
-    padding: 0 12px;
-    font-size: 12px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
+    width: 100%; }
   .booking-form .total-price {
     display: flex; }
     .booking-form .total-price #total-price-output {
@@ -1282,6 +1329,9 @@ input.form-control {
     margin-top: 10px;
     font-size: 12px;
     opacity: 0.5; }
+
+.input-group {
+  display: flex; }
 
 .month-control {
   position: relative;
@@ -1454,6 +1504,37 @@ input.form-control {
   font-family: "LatoBold", sans-serif;
   min-width: 200px;
   max-width: 250px; }
+  .ui.selection.dropdown.form-control {
+    height: 45px;
+    border: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+    text-align: right;
+    min-width: 93px;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 12px 10px;
+    position: relative; }
+    .ui.selection.dropdown.form-control:before {
+      display: inline-block;
+      width: 10px;
+      height: 15px;
+      content: "";
+      background: url("../images/right-arrow-small.svg") no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 16px;
+      left: 10px;
+      transform: rotate(90deg); }
+    .ui.selection.dropdown.form-control.visible:before {
+      transform: rotate(270deg); }
+    .ui.selection.dropdown.form-control .menu {
+      border: none;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08); }
+    .ui.selection.dropdown.form-control .menu > .item {
+      font-size: 22px;
+      line-height: 22px;
+      padding: 12px 10px !important;
+      text-align: right; }
   .ui.selection.dropdown .text {
     max-width: 175px;
     overflow: hidden;
@@ -1497,7 +1578,7 @@ input.form-control {
     min-width: 145px;
     font-size: 14px;
     line-height: 14px;
-    padding: 8px 10px; }
+    padding: 8px 10px !important; }
 
   .ui.selection.dropdown .menu > .item {
     font-size: 14px; } }
