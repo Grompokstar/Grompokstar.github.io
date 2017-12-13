@@ -119,13 +119,14 @@
 
       .nav-item {
         font-size: 14px;
-        line-height: 14px;
+        line-height: 18px;
         color: #9b9b9b;
         text-transform: uppercase;
-        padding: 6px 15px 4px;
+        padding: 3px 15px;
         cursor: pointer;
         border: 1px solid transparent;
         margin-left: 5px;
+        vertical-align: text-bottom;
 
         &:hover {
           border: 1px solid #9b9b9b;

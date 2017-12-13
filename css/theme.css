@@ -1093,13 +1093,14 @@ header {
     margin-left: auto; }
     .filials .filial-control-row .nav-view .nav-item {
       font-size: 14px;
-      line-height: 14px;
+      line-height: 18px;
       color: #9b9b9b;
       text-transform: uppercase;
-      padding: 6px 15px 4px;
+      padding: 3px 15px;
       cursor: pointer;
       border: 1px solid transparent;
-      margin-left: 5px; }
+      margin-left: 5px;
+      vertical-align: text-bottom; }
       .filials .filial-control-row .nav-view .nav-item:hover {
         border: 1px solid #9b9b9b;
         border-radius: 13px; }
@@ -1441,7 +1442,7 @@ select.form-control {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 14px;
-    padding: 6px 0 4px;
+    padding: 5px;
     min-width: 91px;
     display: flex;
     justify-content: center;
@@ -1511,10 +1512,10 @@ select.form-control {
     background-color: #fff;
     color: #46c473;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 32px;
     font-family: "LatoBold", sans-serif;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
-    padding: 13px 13px 11px;
+    padding: 8px 13px;
     cursor: pointer;
     position: relative;
     margin-bottom: 18px;
