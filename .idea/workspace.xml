@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nargiza.php" />
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="fix">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_booking_form.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_choose_date.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_common.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_datepicker.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_filials.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_fonts.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_forms.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_header.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_response.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_semantic-ui-reload.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_variables.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/theme.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/54376ba1d4f9badb2188258db380ee63250486b2/_spasing.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css" afterPath="$PROJECT_DIR$/css/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css.map" afterPath="$PROJECT_DIR$/css/theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_booking_form.scss" afterPath="$PROJECT_DIR$/scss/_booking_form.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_datepicker.scss" afterPath="$PROJECT_DIR$/scss/_datepicker.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_filials.scss" afterPath="$PROJECT_DIR$/scss/_filials.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" afterPath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,21 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nargiza.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nargiza.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nargiza.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="252" column="45" lean-forward="false" selection-start-line="252" selection-start-column="45" selection-end-line="252" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/reset.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="192">
+              <caret line="255" column="0" lean-forward="true" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,11 +125,6 @@
             <path>
               <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,14 +225,7 @@
       <workItem from="1502173449913" duration="46000" />
       <workItem from="1513038081197" duration="991000" />
       <workItem from="1513117690730" duration="3574000" />
-      <workItem from="1513158776175" duration="4873000" />
-    </task>
-    <task id="LOCAL-00005" summary="доработки">
-      <created>1470729458787</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1470729458787</updated>
+      <workItem from="1513158776175" duration="5508000" />
     </task>
     <task id="LOCAL-00006" summary="доработки">
       <created>1470732161901</created>
@@ -575,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513160298034</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fix">
+      <created>1513174780352</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1513174780352</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20686000" />
+    <option name="totallyTimeSpent" value="21321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4545" y="-4" width="1855" height="1084" extended-state="6" />
@@ -821,18 +816,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nargiza.php">
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="252" column="45" lean-forward="false" selection-start-line="252" selection-start-column="45" selection-end-line="252" selection-end-column="45" />
+        <state relative-caret-position="133">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/reset.css">
+    <entry file="file://$PROJECT_DIR$/nargiza.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="192">
+          <caret line="255" column="0" lean-forward="true" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding />
         </state>
       </provider>
