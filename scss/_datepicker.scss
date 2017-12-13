@@ -183,6 +183,11 @@
 
 
 @media (max-width: 499px) {
+  #datepicker {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
   #time-slots {
     display: flex;
     justify-content: space-between;

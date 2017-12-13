@@ -1392,7 +1392,7 @@ select.form-control {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  padding: 3px 10px; }
+  padding: 4px 10px; }
 
 .month-control {
   position: relative;
@@ -1538,6 +1538,10 @@ select.form-control {
       cursor: default; }
 
 @media (max-width: 499px) {
+  #datepicker {
+    margin-left: -25px;
+    margin-right: -25px; }
+
   #time-slots {
     display: flex;
     justify-content: space-between;
