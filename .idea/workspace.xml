@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="fix">
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_datepicker.scss" afterPath="$PROJECT_DIR$/scss/_datepicker.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_forms.scss" afterPath="$PROJECT_DIR$/scss/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css" afterPath="$PROJECT_DIR$/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css.map" afterPath="$PROJECT_DIR$/css/theme.css.map" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +57,8 @@
       <file leaf-file-name="_forms.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_forms.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="172">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -255,14 +255,7 @@
       <workItem from="1502173449913" duration="46000" />
       <workItem from="1513038081197" duration="991000" />
       <workItem from="1513117690730" duration="3574000" />
-      <workItem from="1513158776175" duration="929000" />
-    </task>
-    <task id="LOCAL-00002" summary="наработки">
-      <created>1470063575364</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1470063575364</updated>
+      <workItem from="1513158776175" duration="1046000" />
     </task>
     <task id="LOCAL-00003" summary="доработки">
       <created>1470650834770</created>
@@ -600,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513159396770</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fix">
+      <created>1513159707186</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1513159707186</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16742000" />
+    <option name="totallyTimeSpent" value="16859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4544" y="-11" width="1857" height="1092" extended-state="6" />
@@ -822,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_forms.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="172">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
       </provider>
