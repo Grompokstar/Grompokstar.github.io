@@ -48,15 +48,22 @@ $(function(){
       if (initRender) {
         var monthControl = dc('div');
         monthControl.classList.add('month-control');
+        monthControl.classList.add('mobile-hide');
 
         var monthContainer = dc('div');
         monthContainer.classList.add('month-container');
+
 
         var monthScrollContainer = dc('div');
         monthScrollContainer.classList.add('month-scroll-container');
 
         var monthItem = dc('div');
         monthItem.classList.add('month-item');
+
+        var monthSelect = dc('select');
+        monthSelect.classList.add('form-control');
+        monthSelect.classList.add('desktop-hide');
+        monthSelect.setAttribute('name', 'month');
 
         for (i = this.month; i < this.month + 12; i++){
           var j;
@@ -66,9 +73,13 @@ $(function(){
             j = i-12;
           }
           var monthCaption = document.createTextNode(this.months[j]);
+          var monthCaptionSelect = document.createTextNode(this.months[j]);
           var monthItem = dc('div');
           monthItem.classList.add('month-item');
           monthItem.setAttribute('data-month-id', i > 11 ? i - 12 : i);
+
+          var monthSelectItem = dc('option');
+          monthSelectItem.setAttribute('value', i > 11 ? i - 12 : i);
 
           if (i == this.month) {
             monthItem.classList.add('current');
@@ -94,7 +105,11 @@ $(function(){
 
           monthItem.appendChild(monthCaption);
           monthScrollContainer.appendChild(monthItem);
+
+          monthSelectItem.appendChild(monthCaptionSelect);
+          monthSelect.appendChild(monthSelectItem);
         }
+
         monthContainer.appendChild(monthScrollContainer);
         monthControl.appendChild(monthContainer);
       }
@@ -197,12 +212,27 @@ $(function(){
       if (holder.lastChild) holder.removeChild(holder.lastChild);
       if (initRender) {
         holder.appendChild(monthControl);
+        holder.appendChild(monthSelect);
+
+        $('select[name="month"]').on('change', function() {
+          var clickedMonthId = parseInt($(this).val());
+
+          self.month = clickedMonthId;
+          if (clickedMonthId < initMonthId) {
+            self.year = initYear + 1
+          } else {
+            self.year = initYear
+          }
+
+          self.countMonth();
+          self.render();
+        });
       }
 
       holder.appendChild(table);
       initRender = false;
 
-      this.cells = document.getElementById(this.holder).getElementsByTagName("tbody")[1].getElementsByTagName('td');
+      //this.cells = document.getElementById(this.holder).getElementsByTagName("tbody")[1].getElementsByTagName('td');
 
       function selectDate() {
         $('.js_cal td').removeClass('active');
