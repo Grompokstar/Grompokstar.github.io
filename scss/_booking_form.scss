@@ -15,6 +15,20 @@
     position: relative;
     white-space: nowrap;
     overflow: hidden;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #fff;
+      color: $brand-color;
+
+      #Symbols {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      border-color: $brand-color;
+    }
 
     svg {
       position: absolute;

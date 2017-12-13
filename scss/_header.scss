@@ -41,9 +41,23 @@ header {
   right: 14px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear;
 
-  img{
-    margin-top: 10px;
+  &:hover {
+    background-color: $brand-color;
+    svg path {
+      fill: #fff
+    }
+  }
+
+  &:active {
+    background-color: $success-light;
+    svg path {
+      fill: #fff
+    }
   }
 }
 

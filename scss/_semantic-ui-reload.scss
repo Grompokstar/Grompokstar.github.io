@@ -10,6 +10,20 @@
   min-width: 200px;
   max-width: 250px;
 
+  &:hover {
+    border-color: $brand-color;
+  }
+
+  &.active {
+    border-color: transparent!important;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.08)!important;
+
+    .menu {
+      border-color: transparent!important;
+      box-shadow: 0 7px 8px 3px rgba(0, 0, 0, 0.08)!important;
+    }
+  }
+
   &.form-control {
     height: 45px;
     border: none;
@@ -66,9 +80,6 @@
     font-size: 18px;
     font-family: "LatoBold", sans-serif;
     padding: 7px 10px!important;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 
   &.font-sm {
@@ -102,7 +113,7 @@
 
 .dropdown-icon {
   position: absolute;
-  top: 4px;
+  top: 3px;
   right: 10px;
 }
 

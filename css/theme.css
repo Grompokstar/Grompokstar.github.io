@@ -979,9 +979,19 @@ header {
   top: 14px;
   right: 14px;
   text-align: center;
-  cursor: pointer; }
-  .close-btn img {
-    margin-top: 10px; }
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear; }
+  .close-btn:hover {
+    background-color: #46c473; }
+    .close-btn:hover svg path {
+      fill: #fff; }
+  .close-btn:active {
+    background-color: rgba(70, 196, 115, 0.5); }
+    .close-btn:active svg path {
+      fill: #fff; }
 
 .header__phone {
   display: inline-block;
@@ -1060,8 +1070,16 @@ header {
       font-family: "LatoBold", sans-serif;
       border: 1px solid #46c473;
       border-radius: 6px;
-      padding: 7px 12px;
-      width: 229px; }
+      width: 229px;
+      transition: all 0.3s linear; }
+      .filials .filial-card .fast-booking .booking-btn .second-border {
+        border: 1px solid transparent;
+        border-radius: 6px;
+        padding: 6px 11px; }
+      .filials .filial-card .fast-booking .booking-btn:hover .second-border {
+        border-color: #46c473; }
+      .filials .filial-card .fast-booking .booking-btn:active {
+        background-color: #f5f5f5; }
       .filials .filial-card .fast-booking .booking-btn .right-arrow {
         position: absolute;
         top: 9px;
@@ -1080,7 +1098,12 @@ header {
       text-transform: uppercase;
       padding: 4px 15px 5px;
       cursor: pointer;
-      height: 26px; }
+      height: 26px;
+      border: 1px solid transparent;
+      margin-left: 5px; }
+      .filials .filial-control-row .nav-view .nav-item:hover {
+        border: 1px solid #9b9b9b;
+        border-radius: 13px; }
       .filials .filial-control-row .nav-view .nav-item.active {
         border: 1px solid #46c473;
         border-radius: 13px;
@@ -1218,7 +1241,21 @@ header {
   margin-bottom: 15px; }
   .choose-date-top-row .btn-back {
     position: relative;
-    left: -7px; }
+    left: -7px;
+    transition: all 0.2s linear; }
+    .choose-date-top-row .btn-back:hover {
+      background-color: #fff; }
+      .choose-date-top-row .btn-back:hover #Symbols {
+        opacity: 1; }
+      .choose-date-top-row .btn-back:hover #Back-Big-Arrow {
+        stroke: #46c473; }
+    .choose-date-top-row .btn-back:active {
+      background-color: #fff;
+      border-color: #46c473; }
+      .choose-date-top-row .btn-back:active #Symbols {
+        opacity: 1; }
+      .choose-date-top-row .btn-back:active #Back-Big-Arrow {
+        stroke: #46c473; }
   .choose-date-top-row .title {
     font-size: 18px;
     font-family: 'LatoBold', sans-serif;
@@ -1242,7 +1279,15 @@ header {
   margin-bottom: 20px;
   position: relative;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.2s linear; }
+  .booking-form .back-to-date-btn:hover {
+    background-color: #fff;
+    color: #46c473; }
+    .booking-form .back-to-date-btn:hover #Symbols {
+      opacity: 1; }
+  .booking-form .back-to-date-btn:active {
+    border-color: #46c473; }
   .booking-form .back-to-date-btn svg {
     position: absolute;
     left: 17px;
@@ -1379,7 +1424,7 @@ input.form-control {
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-radius: 13px;
-    color: #e8e8e8;
+    color: #c0c0c0;
     text-transform: uppercase;
     font-size: 14px;
     min-width: 91px;
@@ -1391,6 +1436,8 @@ input.form-control {
     margin-left: 3px;
     padding-top: 1px;
     pointer-events: all; }
+    .month-control .month-item:hover {
+      border-color: #46c473; }
     .month-control .month-item.current {
       color: #46c473;
       border-color: #46c473; }
@@ -1504,6 +1551,14 @@ input.form-control {
   font-family: "LatoBold", sans-serif;
   min-width: 200px;
   max-width: 250px; }
+  .ui.selection.dropdown:hover {
+    border-color: #46c473; }
+  .ui.selection.dropdown.active {
+    border-color: transparent !important;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.08) !important; }
+    .ui.selection.dropdown.active .menu {
+      border-color: transparent !important;
+      box-shadow: 0 7px 8px 3px rgba(0, 0, 0, 0.08) !important; }
   .ui.selection.dropdown.form-control {
     height: 45px;
     border: none;
@@ -1544,10 +1599,7 @@ input.form-control {
     border: none;
     font-size: 18px;
     font-family: "LatoBold", sans-serif;
-    padding: 7px 10px !important;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
+    padding: 7px 10px !important; }
   .ui.selection.dropdown.font-sm {
     font-size: 14px;
     padding-top: 6px; }
@@ -1570,7 +1622,7 @@ input.form-control {
 
 .dropdown-icon {
   position: absolute;
-  top: 4px;
+  top: 3px;
   right: 10px; }
 
 @media (max-width: 499px) {

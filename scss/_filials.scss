@@ -78,8 +78,24 @@
         font-family: "LatoBold", sans-serif;
         border: 1px solid $brand-color;
         border-radius: 6px;
-        padding: 7px 12px;
         width: 229px;
+        transition: all 0.3s linear;
+
+        .second-border {
+          border: 1px solid transparent;
+          border-radius: 6px;
+          padding: 6px 11px;
+        }
+
+        &:hover {
+          .second-border {
+            border-color: $brand-color;
+          }
+        }
+
+        &:active {
+          background-color: $active-button-bg;
+        }
 
         .right-arrow {
           position: absolute;
@@ -109,6 +125,13 @@
         padding: 4px 15px 5px;
         cursor: pointer;
         height: 26px;
+        border: 1px solid transparent;
+        margin-left: 5px;
+
+        &:hover {
+          border: 1px solid #9b9b9b;
+          border-radius: 13px;
+        }
 
         &.active {
           border: 1px solid $brand-color;
