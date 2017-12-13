@@ -84,6 +84,8 @@ body {
   border-radius: 50%;
   background-color: $brand-color;
   margin-right: 2px;
+  position: relative;
+  top: 1px;
 
   &.red {
     background-color: #d0021b;

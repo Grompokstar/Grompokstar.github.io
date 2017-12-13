@@ -804,7 +804,9 @@ body {
   height: 11px;
   border-radius: 50%;
   background-color: #46c473;
-  margin-right: 2px; }
+  margin-right: 2px;
+  position: relative;
+  top: 1px; }
   .metro-circle.red {
     background-color: #d0021b; }
   .metro-circle.brown {
