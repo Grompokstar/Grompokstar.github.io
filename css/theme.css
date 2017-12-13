@@ -1190,8 +1190,9 @@ header {
         right: 0;
         margin-top: 6px;
         height: 42px;
-        line-height: 14px;
-        padding: 14px 12px; }
+        line-height: 14px; }
+        .filials .filial-card .fast-booking .booking-btn .second-border {
+          padding: 13px 11px; }
         .filials .filial-card .fast-booking .booking-btn .right-arrow {
           top: 12px; }
   .filials .filials-map .filial-card {
@@ -1347,7 +1348,7 @@ header {
     display: flex; }
     .booking-form .total-price #total-price-output {
       margin-left: 10px;
-      font-size: 30px; } }
+      font-size: 32px; } }
 input.form-control {
   display: block;
   width: 100%;

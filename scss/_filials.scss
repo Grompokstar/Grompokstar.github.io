@@ -262,7 +262,10 @@
           margin-top: 6px;
           height: 42px;
           line-height: 14px;
-          padding: 14px 12px;
+
+          .second-border {
+            padding: 13px 11px;
+          }
 
           .right-arrow {
             top: 12px;
