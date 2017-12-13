@@ -1385,13 +1385,13 @@ select.form-control {
   border-radius: 13px;
   background-color: #fff;
   color: #46c473;
-  margin-left: 68px;
+  margin-left: 64px;
   position: relative;
   top: -12px;
   border-color: #46c473;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 14px !important;
   padding: 4px 10px; }
 
 .month-control {
@@ -1539,7 +1539,7 @@ select.form-control {
 
 @media (max-width: 499px) {
   #datepicker {
-    margin-left: -20px;
+    margin-left: -16px;
     margin-right: -25px; }
 
   #time-slots {
