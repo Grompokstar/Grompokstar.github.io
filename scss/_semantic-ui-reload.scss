@@ -1,9 +1,9 @@
 .ui.selection.dropdown {
-  height: 30px;
   min-height: 30px;
+  max-height: 30px;
   border: 1px solid #d3d3d3;
   border-radius: 6px;
-  padding: 7px 10px;
+  padding: 6px 10px;
   font-size: 18px;
   line-height: 18px;
   font-family: "LatoBold", sans-serif;
@@ -26,6 +26,7 @@
 
   &.form-control {
     height: 45px;
+    max-height: 45px;
     border: none;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
     text-align: right;
@@ -84,7 +85,8 @@
 
   &.font-sm {
     font-size: 14px;
-    padding-top: 6px;
+    line-height: 14px;
+    padding: 8px 10px;
 
     .menu>.item {
       font-size: 14px;

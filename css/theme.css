@@ -1093,12 +1093,11 @@ header {
     margin-left: auto; }
     .filials .filial-control-row .nav-view .nav-item {
       font-size: 14px;
-      line-height: 18px;
+      line-height: 13px;
       color: #9b9b9b;
       text-transform: uppercase;
-      padding: 4px 15px 5px;
+      padding: 6px 15px 5px;
       cursor: pointer;
-      height: 26px;
       border: 1px solid transparent;
       margin-left: 5px; }
       .filials .filial-control-row .nav-view .nav-item:hover {
@@ -1268,7 +1267,6 @@ header {
 
 .booking-form .back-to-date-btn {
   display: inline-flex;
-  height: 37px;
   border: 1px solid #d3d3d3;
   border-radius: 17px;
   font-size: 12px;
@@ -1436,13 +1434,14 @@ select.form-control {
     pointer-events: all; }
   .month-control .month-item {
     width: 91px;
-    height: 26px;
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-radius: 13px;
     color: #c0c0c0;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 14px;
+    padding: 5px 0;
     min-width: 91px;
     display: flex;
     justify-content: center;
@@ -1450,7 +1449,6 @@ select.form-control {
     cursor: pointer;
     margin-right: 3px;
     margin-left: 3px;
-    padding-top: 1px;
     pointer-events: all; }
     .month-control .month-item:hover {
       border-color: #46c473; }
@@ -1509,15 +1507,14 @@ select.form-control {
   margin-right: -16px; }
   #time-slots .time-slot-item {
     width: 138px;
-    height: 48px;
     border-radius: 6px;
     background-color: #fff;
     color: #46c473;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 22px;
     font-family: "LatoBold", sans-serif;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
-    padding: 14px 13px;
+    padding: 14px 13px 12px;
     cursor: pointer;
     position: relative;
     margin-bottom: 18px;
@@ -1561,11 +1558,11 @@ select.form-control {
     left: 0;
     top: -2px; } }
 .ui.selection.dropdown {
-  height: 30px;
   min-height: 30px;
+  max-height: 30px;
   border: 1px solid #d3d3d3;
   border-radius: 6px;
-  padding: 7px 10px;
+  padding: 6px 10px;
   font-size: 18px;
   line-height: 18px;
   font-family: "LatoBold", sans-serif;
@@ -1581,6 +1578,7 @@ select.form-control {
       box-shadow: 0 7px 8px 3px rgba(0, 0, 0, 0.08) !important; }
   .ui.selection.dropdown.form-control {
     height: 45px;
+    max-height: 45px;
     border: none;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
     text-align: right;
@@ -1622,7 +1620,8 @@ select.form-control {
     padding: 7px 10px !important; }
   .ui.selection.dropdown.font-sm {
     font-size: 14px;
-    padding-top: 6px; }
+    line-height: 14px;
+    padding: 8px 10px; }
     .ui.selection.dropdown.font-sm .menu > .item {
       font-size: 14px; }
 

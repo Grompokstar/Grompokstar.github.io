@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nargiza.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css" afterPath="$PROJECT_DIR$/css/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css.map" afterPath="$PROJECT_DIR$/css/theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_booking_form.scss" afterPath="$PROJECT_DIR$/scss/_booking_form.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_datepicker.scss" afterPath="$PROJECT_DIR$/scss/_datepicker.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_forms.scss" afterPath="$PROJECT_DIR$/scss/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_filials.scss" afterPath="$PROJECT_DIR$/scss/_filials.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" afterPath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nargiza.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nargiza.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="252" column="45" lean-forward="false" selection-start-line="252" selection-start-column="45" selection-end-line="252" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="reset.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="349">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -41,6 +54,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>before</find>
+      <find>send_to</find>
+      <find>$mail</find>
+      <find>service</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/scss</dir>
@@ -60,6 +76,7 @@
         <option value="$PROJECT_DIR$/scripts.js" />
         <option value="$PROJECT_DIR$/scss/_datepicker.scss" />
         <option value="$PROJECT_DIR$/scss/_forms.scss" />
+        <option value="$PROJECT_DIR$/nargiza.php" />
       </list>
     </option>
   </component>
@@ -81,10 +98,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4544" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="4545" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -141,6 +158,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1123" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -212,14 +230,7 @@
       <workItem from="1502173449913" duration="46000" />
       <workItem from="1513038081197" duration="991000" />
       <workItem from="1513117690730" duration="3574000" />
-      <workItem from="1513158776175" duration="1512000" />
-    </task>
-    <task id="LOCAL-00004" summary="доработки">
-      <created>1470667686638</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1470667686638</updated>
+      <workItem from="1513158776175" duration="4873000" />
     </task>
     <task id="LOCAL-00005" summary="доработки">
       <created>1470729458787</created>
@@ -557,14 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513159828909</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix">
+      <created>1513160298034</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1513160298034</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17325000" />
+    <option name="totallyTimeSpent" value="20686000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4544" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="4545" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30071864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -572,7 +590,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36125654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27853402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.313089" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -803,10 +821,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nargiza.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="252" column="45" lean-forward="false" selection-start-line="252" selection-start-column="45" selection-end-line="252" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="349">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
       </provider>
