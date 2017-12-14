@@ -3,16 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose_date.html" afterPath="$PROJECT_DIR$/choose_date.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css" afterPath="$PROJECT_DIR$/css/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css.map" afterPath="$PROJECT_DIR$/css/theme.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_common.scss" afterPath="$PROJECT_DIR$/scss/_common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_datepicker.scss" afterPath="$PROJECT_DIR$/scss/_datepicker.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_filials.scss" afterPath="$PROJECT_DIR$/scss/_filials.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_header.scss" afterPath="$PROJECT_DIR$/scss/_header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_response.scss" afterPath="$PROJECT_DIR$/scss/_response.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" afterPath="$PROJECT_DIR$/scss/_semantic-ui-reload.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step-3.html" afterPath="$PROJECT_DIR$/step-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/success_page.html" afterPath="$PROJECT_DIR$/success_page.html" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="reset.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="421">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -234,14 +232,7 @@
       <workItem from="1513038081197" duration="991000" />
       <workItem from="1513117690730" duration="3574000" />
       <workItem from="1513158776175" duration="7640000" />
-      <workItem from="1513290629718" duration="862000" />
-    </task>
-    <task id="LOCAL-00010" summary="доработки">
-      <created>1470736944470</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1470736944471</updated>
+      <workItem from="1513290629718" duration="2020000" />
     </task>
     <task id="LOCAL-00011" summary="доработки">
       <created>1471512541894</created>
@@ -579,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513290682986</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="fix">
+      <created>1513293400814</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1513293400814</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24315000" />
+    <option name="totallyTimeSpent" value="25473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4545" y="-4" width="1855" height="1084" extended-state="6" />
@@ -847,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="421">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding />
         </state>
       </provider>

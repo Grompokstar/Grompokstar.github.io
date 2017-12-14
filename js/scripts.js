@@ -41,6 +41,7 @@ $(function(){
 
     if (windowWidth < 500) {
       $('.main-container').css('width', windowWidth + 'px');
+      $('.container').css('width', windowWidth + 'px');
     }
 
     $(window).resize(function() {
@@ -48,11 +49,9 @@ $(function(){
 
       if (windowWidth < 500) {
         $('.main-container').css('width', windowWidth + 'px');
+        $('.container').css('width', windowWidth + 'px');
       }
     });
-
-
-
 
     $('.ui.dropdown').dropdown();
 

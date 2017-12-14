@@ -954,9 +954,10 @@ a {
       left: 520px; }
 
 .container {
-  width: 500px; }
+  width: 500px;
+  overflow: hidden; }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   .container {
     width: 320px; } }
 header {
