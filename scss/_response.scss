@@ -5,6 +5,8 @@
   right: 0;
   overflow: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
+  margin-right: -10px;
 
   .main-container {
     width: 500px;
@@ -27,4 +29,10 @@
 
 .container {
   width: 500px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
 }

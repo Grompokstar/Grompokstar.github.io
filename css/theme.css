@@ -907,6 +907,9 @@ a {
   box-shadow: none; }
 
 @media (max-width: 499px) {
+  .main-content {
+    padding: 20px 16px; }
+
   .mobile-hide {
     display: none !important; }
 
@@ -936,7 +939,9 @@ a {
   bottom: 0;
   right: 0;
   overflow: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-right: -10px; }
   .content .main-container {
     width: 500px;
     min-height: 100%;
@@ -951,11 +956,14 @@ a {
 .container {
   width: 500px; }
 
+@media (max-width: 375px) {
+  .container {
+    width: 320px; } }
 header {
   background-color: #fff;
   top: 0;
   position: fixed;
-  max-width: 100%;
+  width: 100%;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
   z-index: 10; }
   header.no-border {
@@ -966,7 +974,8 @@ header {
     line-height: 22px;
     margin-bottom: 15px; }
   header .header-content {
-    padding: 21px 25px; }
+    padding: 21px 25px;
+    position: relative; }
   header .address {
     margin-top: 7px; }
   header .dropdown-block {
@@ -1006,7 +1015,7 @@ header {
 
 @media (max-width: 499px) {
   header .header-content {
-    padding: 15px 25px; }
+    padding: 15px 16px; }
   header .close-btn {
     top: 8px;
     right: 8px; }
@@ -1163,6 +1172,7 @@ header {
 
 @media (max-width: 499px) {
   .filials .filial-control-row {
+    margin-top: 10px;
     margin-bottom: 0; }
   .filials .filial-card {
     margin-left: -25px;
@@ -1197,42 +1207,45 @@ header {
           padding: 13px 11px; }
         .filials .filial-card .fast-booking .booking-btn .right-arrow {
           top: 12px; }
-  .filials .filials-map .filial-card {
-    border-radius: 0;
-    padding-top: 6px;
-    padding-left: 17px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; }
-    .filials .filials-map .filial-card .metro-station {
-      padding-right: 50px; }
-    .filials .filials-map .filial-card .phone {
-      font-size: 16px;
-      margin-bottom: 9px; }
-      .filials .filials-map .filial-card .phone a {
-        color: #46c473;
-        text-decoration: underline; }
-    .filials .filials-map .filial-card .note {
-      margin-bottom: 0; }
-    .filials .filials-map .filial-card .close-icn {
-      width: 32px;
-      height: 32px;
-      top: -40px;
-      left: 90%;
-      background-color: #fff;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .filials .filials-map .filial-card .fast-booking {
-      background-color: #fff; }
-      .filials .filials-map .filial-card .fast-booking .text {
-        padding-right: 0; }
-      .filials .filials-map .filial-card .fast-booking .booking-btn {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-top: 6px; }
+  .filials .filials-map {
+    margin-left: -16px;
+    margin-right: -16px; }
+    .filials .filials-map .filial-card {
+      border-radius: 0;
+      padding-top: 6px;
+      padding-left: 17px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; }
+      .filials .filials-map .filial-card .metro-station {
+        padding-right: 50px; }
+      .filials .filials-map .filial-card .phone {
+        font-size: 16px;
+        margin-bottom: 9px; }
+        .filials .filials-map .filial-card .phone a {
+          color: #46c473;
+          text-decoration: underline; }
+      .filials .filials-map .filial-card .note {
+        margin-bottom: 0; }
+      .filials .filials-map .filial-card .close-icn {
+        width: 32px;
+        height: 32px;
+        top: -40px;
+        left: 90%;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .filials .filials-map .filial-card .fast-booking {
+        background-color: #fff; }
+        .filials .filials-map .filial-card .fast-booking .text {
+          padding-right: 0; }
+        .filials .filials-map .filial-card .fast-booking .booking-btn {
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-top: 6px; }
   .filials .inline-block {
     font-size: 16px;
     line-height: 18px; }
@@ -1565,7 +1578,7 @@ select.form-control {
 @media (max-width: 499px) {
   #datepicker {
     margin-left: -16px;
-    margin-right: -25px; }
+    margin-right: -16px; }
 
   #time-slots {
     display: flex;
@@ -1673,11 +1686,16 @@ select.form-control {
   right: 10px; }
 
 @media (max-width: 499px) {
+  header .dropdown-block {
+    margin-right: 14px; }
+
   .ui.selection.dropdown {
-    min-width: 145px;
+    min-width: 139px;
     font-size: 14px;
     line-height: 14px;
     padding: 8px 10px !important; }
+    .ui.selection.dropdown.max-width-139 {
+      max-width: 139px; }
 
   .ui.selection.dropdown .menu > .item {
     font-size: 14px; } }

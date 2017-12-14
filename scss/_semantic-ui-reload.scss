@@ -120,11 +120,22 @@
 }
 
 @media (max-width: 499px) {
+  header {
+    .dropdown-block {
+      margin-right: 14px;
+    }
+  }
+
+
   .ui.selection.dropdown {
-    min-width: 145px;
+    min-width: 139px;
     font-size: 14px;
     line-height: 14px;
     padding: 8px 10px!important;
+
+    &.max-width-139 {
+      max-width: 139px;
+    }
   }
 
   .ui.selection.dropdown .menu>.item {

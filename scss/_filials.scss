@@ -218,6 +218,7 @@
 @media (max-width: 499px) {
   .filials {
     .filial-control-row {
+      margin-top: 10px;
       margin-bottom: 0;
     }
 
@@ -276,6 +277,9 @@
     }
 
     .filials-map {
+      margin-left: -16px;
+      margin-right: -16px;
+
       .filial-card {
         border-radius: 0;
         padding-top: 6px;

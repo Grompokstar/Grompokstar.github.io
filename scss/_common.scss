@@ -230,6 +230,10 @@ a {
 }
 
 @media (max-width: 499px) {
+  .main-content {
+    padding: 20px 16px;
+  }
+
   .mobile-hide {
     display: none!important;
   }
