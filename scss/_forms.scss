@@ -37,16 +37,49 @@ input.form-control {
   display: flex;
 }
 
-select.form-control {
+.styled-select {
+  margin-left: 64px;
   width: 204px;
   height: 26px;
   border-radius: 13px;
   background-color: #fff;
-  color: $brand-color;
-  margin-left: 64px;
+  border: 1px solid $brand-color;
   position: relative;
   top: -12px;
   border-color: $brand-color;
+  overflow: hidden;
+
+  &:after {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-bottom: 1px solid $brand-color;
+    border-right: 1px solid $brand-color;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+
+  select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+    height: 26px;
+    padding: 4px 55px 4px 15px;
+    width: 244px;
+    color: $brand-color;
+    text-transform: uppercase;
+  }
+}
+
+select.form-control {
+  width: 204px;
+
+
+
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px!important;

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_common.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_common.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_datepicker.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_datepicker.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_filials.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_filials.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_forms.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29b41b43e7eeb3d01903f88e8e2e96da43cec156/_forms.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css" afterPath="$PROJECT_DIR$/css/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme.css.map" afterPath="$PROJECT_DIR$/css/theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_common.scss" afterPath="$PROJECT_DIR$/scss/_common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/datepicker.js" afterPath="$PROJECT_DIR$/js/datepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_forms.scss" afterPath="$PROJECT_DIR$/scss/_forms.scss" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nargiza.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nargiza.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nargiza.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="266" column="51" lean-forward="false" selection-start-line="266" selection-start-column="51" selection-end-line="266" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/reset.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -114,7 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,13 +119,14 @@
             <path>
               <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,18 +152,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
-      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
-      <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/libs" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
+      <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
+      <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -226,14 +221,8 @@
       <workItem from="1502173449913" duration="46000" />
       <workItem from="1513038081197" duration="991000" />
       <workItem from="1513117690730" duration="3574000" />
-      <workItem from="1513158776175" duration="7033000" />
-    </task>
-    <task id="LOCAL-00008" summary="доработки">
-      <created>1470736567309</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1470736567309</updated>
+      <workItem from="1513158776175" duration="7640000" />
+      <workItem from="1513290629718" duration="51000" />
     </task>
     <task id="LOCAL-00009" summary="доработки">
       <created>1470736697171</created>
@@ -571,17 +560,23 @@
       <option name="project" value="LOCAL" />
       <updated>1513183307774</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fix">
+      <created>1513183592525</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1513183592525</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22846000" />
+    <option name="totallyTimeSpent" value="23504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4545" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30071864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30403537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -658,6 +653,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nargiza.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4788">
+          <caret line="266" column="51" lean-forward="false" selection-start-line="266" selection-start-column="51" selection-end-line="266" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -789,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1860">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="187" column="24" lean-forward="true" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="151">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>

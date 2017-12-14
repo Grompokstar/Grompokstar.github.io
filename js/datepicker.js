@@ -60,9 +60,11 @@ $(function(){
         var monthItem = dc('div');
         monthItem.classList.add('month-item');
 
+        var selectContainer = dc('div');
+        selectContainer.classList.add('styled-select');
+        selectContainer.classList.add('desktop-hide');
+
         var monthSelect = dc('select');
-        monthSelect.classList.add('form-control');
-        monthSelect.classList.add('desktop-hide');
         monthSelect.setAttribute('name', 'month');
 
         for (i = this.month; i < this.month + 12; i++){
@@ -109,6 +111,8 @@ $(function(){
           monthSelectItem.appendChild(monthCaptionSelect);
           monthSelect.appendChild(monthSelectItem);
         }
+
+        selectContainer.appendChild(monthSelect);
 
         monthContainer.appendChild(monthScrollContainer);
         monthControl.appendChild(monthContainer);
@@ -212,7 +216,7 @@ $(function(){
       if (holder.lastChild) holder.removeChild(holder.lastChild);
       if (initRender) {
         holder.appendChild(monthControl);
-        holder.appendChild(monthSelect);
+        holder.appendChild(selectContainer);
 
         $('select[name="month"]').on('change', function() {
           var clickedMonthId = parseInt($(this).val());
