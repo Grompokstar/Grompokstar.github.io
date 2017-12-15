@@ -237,7 +237,7 @@ $(function(){
       }
 
       holder.appendChild(table);
-      initRender = false;
+
 
       //this.cells = document.getElementById(this.holder).getElementsByTagName("tbody")[1].getElementsByTagName('td');
 
@@ -255,11 +255,13 @@ $(function(){
         self.selectedMonth = self.month;
         self.selectedDate = parseInt(this.innerHTML);
 
-        if (windowWidth < 500) {
-          $('.content').stop().animate({ scrollTop: $('#date-output').offset().top - headerHeight - 10 }, 1000);
+        if (windowWidth < 500 && !initRender) {
+          $('.content').stop().animate({ scrollTop: 390 }, 1000);
         }
 
       }
+
+      initRender = false;
 
     }
 
