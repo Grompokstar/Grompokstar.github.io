@@ -55,14 +55,14 @@ $(function(){
 
     $('.ui.dropdown').dropdown();
 
-    var headerWidth = $('header').height();
+    var headerHeight = $('header').height();
 
     if (windowWidth < 500) {
-      $('.main-content').css('padding-top', headerWidth + 10 + 'px');
-      $('.filials-map').css('top', headerWidth + 60 + 'px');
+      $('.main-content').css('padding-top', headerHeight + 10 + 'px');
+      $('.filials-map').css('top', headerHeight + 60 + 'px');
     } else {
-      $('.main-content').css('padding-top', headerWidth + 15 + 'px');
-      $('.filials-map').css('top', headerWidth + 55 + 'px');
+      $('.main-content').css('padding-top', headerHeight + 15 + 'px');
+      $('.filials-map').css('top', headerHeight + 55 + 'px');
     }
 
     $('.close-btn').on('click', function(e) {
@@ -76,6 +76,12 @@ $(function(){
 
     $('.phone a').on('click', function(e) {
       e.stopPropagation();
+    });
+
+
+    $('#date-input').on('change', function() {
+      var top = $('#date-output').offset().top;
+      $('.content').animate({scrollTop: top }, 700);
     });
 
 

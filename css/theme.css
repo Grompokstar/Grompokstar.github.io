@@ -954,8 +954,7 @@ a {
       left: 520px; }
 
 .container {
-  width: 500px;
-  overflow: hidden; }
+  width: 500px; }
 
 @media (max-width: 320px) {
   .container {

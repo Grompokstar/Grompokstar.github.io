@@ -15,6 +15,8 @@ $(function(){
     this.selectedMonth = this.oDate.getMonth();
     this.selectedDate = this.oDate.getDate();
     this.initDay = this.oDate.getDay();
+    var windowWidth = window.innerWidth;
+    var headerHeight = $('header').height();
 
     this.countMonth = function() {
       this.daysTotal = new Date(this.year, this.month + 1, 0).getDate();
@@ -169,7 +171,8 @@ $(function(){
           } else if (day <= this.daysTotal && (i > 0 || j >= this.firstDay-1)){
             var day_n = document.createTextNode(day);
             td = dc("td");
-            td.setAttribute("Class","date");
+            td.classList.add('date');
+            td.classList.add('available');
             td.appendChild(day_n);
 
             if (initMonthId == this.month && day == initDay) {
@@ -251,6 +254,11 @@ $(function(){
         self.selectedYear = self.year;
         self.selectedMonth = self.month;
         self.selectedDate = parseInt(this.innerHTML);
+
+        if (windowWidth < 500) {
+          $('.content').stop().animate({ scrollTop: $('#date-output').offset().top - headerHeight - 10 }, 1000);
+        }
+
       }
 
     }
