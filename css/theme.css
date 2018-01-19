@@ -941,7 +941,8 @@ a {
   overflow: auto;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-right: -10px; }
+  margin-right: -10px;
+  -webkit-overflow-scrolling: touch; }
   .content .main-container {
     width: 500px;
     min-height: 100%;
