@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><!-- Creator: niges.ru --><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210px" height="210px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 210 210" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FF7000}
+    .fil12 {fill:url(#id0)}
+    .fil9 {fill:url(#id1)}
+    .fil4 {fill:url(#id2)}
+    .fil1 {fill:url(#id3)}
+    .fil7 {fill:url(#id4);fill-opacity:0.250980}
+    .fil6 {fill:url(#id5);fill-opacity:0.250980}
+    .fil3 {fill:url(#id6);fill-opacity:0.501961}
+    .fil2 {fill:url(#id7);fill-opacity:0.501961}
+    .fil10 {fill:url(#id8);fill-opacity:0.501961}
+    .fil5 {fill:url(#id9);fill-opacity:0.501961}
+    .fil11 {fill:url(#id10);fill-opacity:0.501961}
+    .fil8 {fill:url(#id11);fill-opacity:0.501961}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="70.7579" y1="53.5709" x2="70.7579" y2="206.663">
+   <stop offset="0" style="stop-opacity:1; stop-color:#FF3200"/>
+   <stop offset="0.278431" style="stop-opacity:1; stop-color:#FC3103"/>
+   <stop offset="0.501961" style="stop-opacity:1; stop-color:#F2300A"/>
+   <stop offset="0.709804" style="stop-opacity:1; stop-color:#E12D18"/>
+   <stop offset="0.890196" style="stop-opacity:1; stop-color:#C92A2A"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#B92737"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="31.0314" y1="128.179" x2="116.298" y2="128.179">
+   <stop offset="0" style="stop-opacity:1; stop-color:#1208FF"/>
+   <stop offset="0.109804" style="stop-opacity:1; stop-color:#1208F9"/>
+   <stop offset="0.25098" style="stop-opacity:1; stop-color:#1208E6"/>
+   <stop offset="0.431373" style="stop-opacity:1; stop-color:#1208C9"/>
+   <stop offset="0.619608" style="stop-opacity:1; stop-color:#12089F"/>
+   <stop offset="0.819608" style="stop-opacity:1; stop-color:#12086B"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#120836"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="132.77" y1="17.7202" x2="132.77" y2="171.781">
+   <stop offset="0" style="stop-opacity:1; stop-color:#45FFFF"/>
+   <stop offset="0.2" style="stop-opacity:1; stop-color:#46F2F9"/>
+   <stop offset="0.580392" style="stop-opacity:1; stop-color:#4ACFE8"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#4FA1D1"/>
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="92.0745" y1="93.2973" x2="178.31" y2="93.2973">
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="105.64" y1="19.6581" x2="105.64" y2="144.651">
+  </linearGradient>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="102.733" y1="20.627" x2="102.733" y2="145.62">
+  </linearGradient>
+  <linearGradient id="id6" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="136.646" y1="1.24823" x2="136.646" y2="126.241">
+  </linearGradient>
+  <linearGradient id="id7" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="133.739" y1="3.18611" x2="133.739" y2="128.179">
+  </linearGradient>
+  <linearGradient id="id8" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="71.7268" y1="39.0368" x2="71.7268" y2="164.03">
+  </linearGradient>
+  <linearGradient id="id9" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="62.0375" y1="110.738" x2="147.304" y2="110.738">
+  </linearGradient>
+  <linearGradient id="id10" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="74.6336" y1="37.0989" x2="74.6336" y2="162.092">
+  </linearGradient>
+  <linearGradient id="id11" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="101.764" y1="35.1611" x2="101.764" y2="189.222">
+  </linearGradient>
+ </defs>
+ <g id="x0020_1">
+  <rect class="fil0" transform="matrix(4.78932 -2.77836 2.77836 4.78932 31.0021 53.1793)" width="0.5022" height="0.252"/>
+  <path class="fil0" d="M39 50l-1 -1 5 -3 1 1 -5 3zm9 -5l0 -1 4 -3 1 1 -5 3zm10 -6l-1 -1 5 -3 1 1 -5 3zm9 -5l0 -2 4 -2 1 1 -5 3zm10 -6l-1 -1 5 -3 1 1 -5 3zm9 -5l0 -2 4 -2 1 1 -5 3z"/>
+  <rect class="fil0" transform="matrix(4.79154 -2.77448 2.77448 4.79154 95.2505 15.8883)" width="0.5022" height="0.2502"/>
+  <path class="fil1" d="M174 172l5 -3 0 -93 -41 -24 -3 -15c-12,-8 -25,-15 -37,-22l-5 3 37 22 3 15 41 24 0 93z"/>
+  <path class="fil2" d="M98 3l0 84 72 42 0 -84c-24,-14 -48,-28 -72,-42z"><animate attributeName="d" dur="2500ms" repeatCount="indefinite" values="M98 3l0 84 72 42 0 -84c-24,-14 -48,-28 -72,-42z; M70 20l0 83 72 42 0 -84c-24,-13 -48,-27 -72,-41z; M98 3l0 84 72 42 0 -84c-24,-14 -48,-28 -72,-42z;"/></path>  
+  <path class="fil3" d="M101 2l0 83 72 42 0 -83c-24,-14 -48,-28 -72,-42z"/>
+  <polygon class="fil4" points="93,32 93,125 174,172 174,79 133,55 130,40 93,18 "/>
+  <path class="fil5" d="M143 190l5 -3 0 -93 -41 -24 -3 -16c-12,-7 -24,-14 -37,-21l-5 3 37 21 3 16 41 24 0 93z"/>
+  <path class="fil6" d="M67 21l0 84 72 41 0 -83c-24,-14 -48,-28 -72,-42z"><animate attributeName="d" dur="2500ms" repeatCount="indefinite" values="M67 21l0 84 72 41 0 -83c-24,-14 -48,-28 -72,-42z; M39 37l0 84 72 42 0 -84c-24,-14 -48,-28 -72,-42z; M67 21l0 84 72 41 0 -83c-24,-14 -48,-28 -72,-42z;"/></path>  
+  <path class="fil7" d="M70 20l0 83 72 42 0 -84c-24,-14 -48,-27 -72,-41z"><animate attributeName="d" dur="2500ms" repeatCount="indefinite" values="M70 20l0 83 72 42 0 -84c-24,-14 -48,-27 -72,-41z; M98 4l0 83 72 42 0 -84c-24,-14 -48,-28 -72,-41z; M70 20l0 83 72 42 0 -84c-24,-14 -48,-27 -72,-41z;"/>  </path>  
+  <polygon class="fil8" points="62,50 62,143 143,190 143,97 102,73 99,57 62,36 "/>
+  <path class="fil10" d="M36 39l0 83 73 42 0 -83c-25,-14 -49,-28 -73,-42z"/>  
+  <path class="fil11" d="M39 38l0 83 72 42 0 -84c-24,-14 -48,-28 -72,-41z"><animate attributeName="d" dur="2500ms" repeatCount="indefinite" values="M39 38l0 83 72 42 0 -84c-24,-14 -48,-28 -72,-41z; M67 21l0 83 72 42 0 -83c-24,-14 -48,-28 -72,-42z; M39 38l0 83 72 42 0 -84c-24,-14 -48,-28 -72,-41z;"/> </path> 
+  <path class="fil9" d="M112 207l5 -3 0 -93 -40 -23 -3 -16c-13,-7 -25,-14 -38,-21l-5 3 38 21 3 16 40 23 0 93z"/>  
+  <path class="fil12" d="M31 68l0 93 81 46 0 -93 -40 -23 -3 -16c-13,-7 -25,-14 -38,-21l0 14z"/>
+  <rect class="fil0" transform="matrix(4.78932 -2.77836 2.77836 4.78932 111.639 113.779)" width="0.5022" height="0.252"/>
+  <path class="fil0" d="M119 111l0 -1 5 -3 0 1 -5 3zm10 -6l-1 -1 5 -3 1 2 -5 2zm10 -5l-1 -1 5 -3 0 1 -4 3zm9 -6l-1 -1 5 -3 1 2 -5 2zm10 -5l-1 -1 5 -3 0 1 -4 3zm9 -6l-1 -1 5 -3 1 1 -5 3z"/>
+  <rect class="fil0" transform="matrix(4.78932 -2.77836 2.77836 4.78932 175.891 76.5152)" width="0.5022" height="0.252"/>
+  <rect class="fil0" transform="matrix(4.78932 -2.77836 2.77836 4.78932 111.641 206.895)" width="0.5022" height="0.252"/>
+  <path class="fil0" d="M119 204l0 -1 5 -3 0 1 -5 3zm10 -6l-1 -1 5 -3 1 2 -5 2zm10 -5l-1 -1 5 -3 0 1 -4 3zm9 -6l-1 -1 5 -3 1 2 -5 2zm10 -5l-1 -1 5 -3 0 1 -4 3zm9 -6l-1 -1 5 -3 1 2 -5 2z"/>
+  <rect class="fil0" transform="matrix(4.78932 -2.77836 2.77836 4.78932 175.892 169.632)" width="0.5022" height="0.252"/>
+ </g>
+</svg>
