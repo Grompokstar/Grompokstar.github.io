@@ -2,7 +2,7 @@ jQuery(function($){
 
   $(document).ready(function() {
     var previousScroll = 0;
-    /*$(window).scroll(function(event){
+    $(window).scroll(function(event){
       var scroll = $(this).scrollTop();
 
       if (scroll > previousScroll || scroll === 0){
@@ -14,7 +14,7 @@ jQuery(function($){
         $("#content").addClass('pinned-header');
       }
       previousScroll = scroll;
-    });*/
+    });
 
     $('#mobile-menu-btn').on('click', function() {
       var $header = $('header');
