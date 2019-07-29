@@ -1,6 +1,7 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 3000 1080" style="enable-background:new 0 0 3000 1080;" xml:space="preserve"> 
 <style type="text/css">
+    .index-bg-animation{opacity:0.4}
 .st0{fill:url(#SVGID_1_);}
 .st1{fill:#184193;}
 .st2{fill:#1B58BC;}
@@ -857,7 +858,7 @@
 	<stop  offset="1" style="stop-color:#0A2984"/>
 </radialGradient>
 <rect x="0" class="st0" width="3000" height="1080"/>
-<g>
+<g class="index-bg-animation">
 	<polygon class="st1" points="1046.82,586.85 1285.78,724.81 1070.71,848.98 831.75,711.01 	"/>
 	<polygon class="st1" points="871.92,424.54 1023.3,511.94 887.06,590.59 735.68,503.2 	"/>
 	<polygon class="st1" points="1424.81,780.31 1627.82,897.52 1445.11,1003 1242.11,885.8 	"/>

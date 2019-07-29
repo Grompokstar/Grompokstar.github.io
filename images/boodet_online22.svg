@@ -1,5 +1,8 @@
 <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
+<style type="text/css">
+.index-bg-animation{opacity:0.4}
+</style>
+<g clip-path="url(#clip0)" class="index-bg-animation">
 <path d="M3000 0H0V1080H3000V0Z" fill="url(#paint0_radial)"/>
 <path d="M601.14 586.854L840.1 724.815L625.03 848.984L386.07 711.015L601.14 586.854Z" fill="#184193"/>
 <path d="M426.24 424.545L577.62 511.945L441.38 590.595L290 503.205L426.24 424.545Z" fill="#184193"/>
