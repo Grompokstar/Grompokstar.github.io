@@ -727,7 +727,7 @@
         function delegatedEvents(e){
             var target = e.target;
 
-            if(target && closest(target, SECTION_NAV_SEL + ' a')){
+            if(target && closest(target, SECTION_NAV_SEL + ' li')){
                 sectionBulletHandler.call(target, e);
             }
             else if(matches(target, SECTION_NAV_TOOLTIP_SEL)){
