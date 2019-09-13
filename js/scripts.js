@@ -1,6 +1,16 @@
 jQuery(function($){
 
   $(document).ready(function() {
+    if (window.devicePixelRatio > 1) {
+      var images = $('.retina-img');
+
+      images.each(function(i) {
+        var lowres = $(this).attr('src');
+        var highres = lowres.replace(".", "@2x.");
+        $(this).attr('src', highres);
+      });
+    }
+
     var previousScroll = 0;
     $(window).scroll(function(event){
       var scroll = $(this).scrollTop();
@@ -144,10 +154,6 @@ jQuery(function($){
     } else {
       $('.page1-content-container').addClass('show')
     }
-
-
-
-
 
 
     var forms = document.getElementsByClassName('contest-form');
