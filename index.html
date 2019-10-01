@@ -16,6 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@1.3.8/dist/vuetify.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/mainpage_scripts.js"></script>
 </head>
 <body>
 <header id="header" class="new-header">
@@ -57,8 +58,8 @@
         </div>
       </a>
       <div class="header-right-part">
-        <a class="desktop-link" href="https://my.boodet.online/registration" target="_blank">Регистрация</a>
-        <a class="desktop-link boodet-btn small white-color width-100 m2l_40" href="https://my.boodet.online/login" target="_blank">Войти</a>
+        <a class="desktop-link" href="https://my.boodet.online/login" target="_blank">Вход</a>
+        <a class="desktop-link boodet-btn small white-color m2l_40" href="https://my.boodet.online/login" target="_blank">Создать сервер</a>
         <a id="mobile-login-link" class="vector-link" href="https://my.boodet.online/login" target="_blank">
           <img src="images/vector_2.svg">
           <span>Войти</span>
@@ -90,25 +91,54 @@
     </div>
   </div>
 </header>
-<div id="content">
+<div id="content" class="section new-design">
   <div id="vue-app">
     <v-app>
       <div id="main-block">
         <div class="container">
           <div class="page-title">
             <h1>
-              Бесплатные облачные серверы для&nbsp;стартапов
+              Виртуальные серверы по&nbsp;доступным ценам
             </h1>
           </div>
         </div>
     
         <div class="change-order-container">
-          <div class="container">
-            <div class="promo-text">
-              Зарегистрируйся до&nbsp;15 июля и&nbsp;получи в&nbsp;подарок  виртуальные машины на&nbsp;сумму 500&nbsp;рублей.
-            </div>
-            <div id="gift-button-container">
-              <a href="https://my.boodet.online/login" target="_blank" class="boodet-btn gift-button">Забрать&nbsp;подарок</a>
+          <div id="main-section-advantages">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <ul>
+                    <li>
+                      От 99 р/месяц за сервер
+                    </li>
+                    <li>
+                      Только SSD
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul>
+                    <li>
+                      Серверы на 500 рублей в подарок
+                    </li>
+                    <li>
+                      Почасовая оплата
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul>
+                    <li>
+                      Гибкое масштабирование
+                    </li>
+                    <li>
+                      Полный root-доступ
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
             </div>
           </div>
           <div id="configurator" class="alternative-configurator-container">
@@ -155,9 +185,10 @@
                       </div>
                   
                       <div class="boodet-total-price-container">
-                        <label>Стоимость</label>
-                        <div class="boodet-total-price p2b-20">
-                          {{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;
+                        <label>Создать за</label>
+                        <div class="boodet-total-price p2t-8 p2b-20">
+                          <div class="m2r-24">{{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;</div>
+                          <a href="https://my.boodet.online/login" target="_blank"><img src="images/arrow_button.svg"></a>
                         </div>
                       </div>
                 
@@ -168,17 +199,10 @@
           </div>
         </div>
       </div>
-      <div id="boodet-online-section">
-        <div class="container">
-          <div class="flex-container">
-            <h2 class="m2b_32">boodet.online</h2>
-            <p>Идеальная гибкость для&nbsp;стартапов, небольших компаний, ”пилотов” и&nbsp;новых проектов.</p>
-          </div>
-        </div>
-      </div>
   
       <div id="video-section">
         <div class="container">
+          <div class="section-count">01.</div>
           <h3 class="section-title text-center m2b_44">
             Сколько вы
             <span class="boodet-bg-text">&nbsp;теряете каждый день&nbsp;</span>
@@ -195,6 +219,7 @@
           </h3>
       
           <div id="youtube-video-container">
+            <div id="video-container-cover"></div>
             <div class="play-video-button-circle">
               <img src="./images/play_triangle.svg" alt="play button">
             </div>
@@ -211,8 +236,10 @@
   
       </div>
   
-      <div class="advantages">
+      <div id="why-we">
         <div class="container">
+          <div class="section-count">02.</div>
+          <h2 class="section-title m2b-60">Почему мы</h2>
           <div class="advantages-row">
             <div class="advantage-item">
               <div class="icon">
@@ -253,20 +280,170 @@
   
       <div id="cases">
         <div class="container">
-          <img class="quote-img" src="images/quote.svg">
-          <div class="case-comment">
-            Мы отказались от&nbsp;услуг штатного системного администратора, который раньше обслуживал наши физические серверы.
+          <div class="section-count">03.</div>
+          <h2 class="section-title">Кейсы</h2>
+          <div class="text-center cases-description">
+            Наши клиенты рассказывают, как Boodet.online помогает их&nbsp;бизнесу.
           </div>
-          <div class="description-text m2b_4">
-            FORapp — cервис для удобной работы с мобильным персоналом.
+          <div class="cases-slider-container">
+            <div class="slider-button left disabled">
+              <svg width="29" height="52" viewBox="0 0 29 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 2L3 26L27 50" stroke="#2D4FDD" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="slider-button right">
+              <svg width="29" height="52" viewBox="0 0 29 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 50L26 26L2 2" stroke="#2D4FDD" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <img class="quote-img" width="38" src="images/quote.svg">
+            
+            <div class="carousel-overflow">
+              <div class="carousel-container">
+                <div class="cases-slider-item active" data-id="0">
+                  <div class="case-comment">
+                    Мы отказались от&nbsp;услуг штатного системного администратора, который раньше обслуживал наши физические серверы.
+                  </div>
+                  <div class="description-text m2b_4">
+                    FORapp — cервис для&nbsp;удобной работы с&nbsp;мобильным персоналом.
+                  </div>
+                </div>
+    
+                <div class="cases-slider-item" data-id="1">
+                  <div class="case-comment">
+                    В Boodet.online очень понравилась возможность запустить консоль прямо из браузера,
+                    задать вопрос в&nbsp;чате, при этом отвечают довольно быстро, и&nbsp;ответы приходят на&nbsp;почту,
+                    если не&nbsp;дождался в&nbsp;окне.
+                  </div>
+                  <div class="description-text m2b_4">
+                    Дмитрий, разработчик компании T-Systems Rus.
+                  </div>
+                </div>
+    
+                <div class="cases-slider-item" data-id="2">
+                  <div class="case-comment">
+                    В Boodet.online все просто, лаконично, функционально и&nbsp;интуитивно понятно.
+                    В&nbsp;общем, пока проблем нет никаких. Все отлично.
+                  </div>
+                  <div class="description-text m2b_4">
+                    Шалва Епхошвили, владелец Dpartphoto.
+                  </div>
+                </div>
+    
+                <div class="cases-slider-item" data-id="3">
+                  <div class="case-comment">
+                    Когда запустил в&nbsp;первый раз - радовался как&nbsp;ребенок. Красиво, шустро работает, поддержка отвечает.
+                    Удобно и&nbsp;быстро меняются параметры тарифа.
+                  </div>
+                  <div class="description-text m2b_4">
+                    Егор, разработчик в&nbsp;ИП Воронкин&nbsp;Е.Ю.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="description-text font-weight-normal"><a href="http://forapp.ru" target="_blank">forapp.ru</a></div>
+        </div>
+      </div>
+  
+      <div id="security">
+        <div class="container">
+          <div class="section-count">04.</div>
+          <h2 class="section-title m2b-30">Заботимся о&nbsp;безопасности облака сразу в&nbsp;трех аспектах</h2>
+          <div class="security-row">
+            <div class="security-item">
+              <img src="images/key.svg">
+              <div class="description">
+                Двухфакторная авторизация и доступ по SHH-ключу обеспечивают безопасность вашего аккаунта
+                в личном кабинете. Двухфакторная авторизация и доступ по SHH-ключу обеспечивают безопасность
+                вашего аккаунта в личном кабинете.
+              </div>
+            </div>
+  
+            <div class="security-item">
+              <img src="images/sertificate.svg">
+              <div class="description">
+                Компоненты облачной платформы, отвечающие за хранение данных и за контроль доступа
+                к пользовательским ресурсам, проверены на наличие уязвимостей компанией BI.ZONE,
+                лидером российского рынка информационной безопасности.
+              </div>
+            </div>
+  
+            <div class="security-item">
+              <img src="images/clouds.svg">
+              <div class="description">
+                Данные можно разместить в двух дата-центрах и реализовать надежную систему отказоустойчивости:
+                если в экстренных ситуациях серверы одного дата-центра недоступны, вы все равно останетесь онлайн
+                и сможете использовать ресурсы второго ЦОДа.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="test" class="section dark-bg">
+        <div class="container">
+          <h2 class="section-title m2b-44">Виртуализируй бизнес  и&nbsp;обойди конкурентов уже&nbsp;завтра</h2>
+          <div class="section-description m2b-32">
+            Мы знаем, какие технические, финансовые и юридические проблемы бывают у&nbsp;стартапов
+            и&nbsp;действующего технологическиого бизнеса в&nbsp;России. Пройдите тест и&nbsp;получите консультацию
+            наших системных инженеров и&nbsp;аналитиков, которые сделают ваш&nbsp;бизнес прибыльнее и&nbsp;стабильнее.
+          </div>
+          <div class="text-center">
+            <button class="boodet-btn width-170" @click.stop="testDialog = true">Пройти тест</button>
+          </div>
+        </div>
+      </div>
+  
+      <div id="support">
+        <div class="container">
+          <div class="section-count">05.</div>
+          <h2 class="section-title m2b-44">Быстрая, вежливая техподдержка</h2>
+          <div class="section-description m2b-44">
+            Мы на связи в&nbsp;удобном чате и&nbsp;готовы разобраться с&nbsp;любой возникшей ситуацией.
+          </div>
+          <div class="support-images">
+            <img class="support-main-image" src="images/support_image.png" alt="Поддержка">
+            <img class="chat-image" src="images/support_chat.png" alt="Чат поддержки">
+          </div>
         </div>
       </div>
   
       <div id="more-with-us">
         <div class="container">
-          <h3 class="section-title text-center m2b_72">С нами вы&nbsp;можете больше!</h3>
+          <div class="section-count">06.</div>
+          <h2 class="section-title m2b-32">С нами вы можете больше!</h2>
+          <div class="divider-2 m2b-24 m2t-24"></div>
+          <ul class="more-list">
+            <li>Экономить на&nbsp;покупке собственного оборудования.</li>
+            <li>Мгновенно увеличивать/уменьшать мощности при&nbsp;необходимости.</li>
+            <li>Дата-центры с&nbsp;уровнем надежности Tier&nbsp;III.</li>
+          </ul>
+          <div class="divider-2 m2b-24 m2t-24"></div>
+          <ul class="more-list">
+            <li>Полный root-доступ (SSH). </li>
+            <li>Гибкая настройка.</li>
+            <li>Только SSD-диски.</li>
+          </ul>
+          <div class="divider-2 m2b-24 m2t-24"></div>
+          <ul class="more-list">
+            <li>Создавать частные сетей с&nbsp;настройкой маршрутизации. </li>
+            <li>Компенсация простоев. </li>
+            <li>Безлимитный трафик 1Гбит/с.</li>
+          </ul>
+          <div class="divider-2 m2b-24 m2t-24"></div>
+          <ul class="more-list">
+            <li>100% гарантированные ресурсы.</li>
+            <li>Отказоустойчивые серверы.</li>
+            <li>Бонусы за&nbsp;честные отзывы и&nbsp;не&nbsp;только.</li>
+          </ul>
+          <div class="divider-2 m2b-24 m2t-24"></div>
+        </div>
+      </div>
+  
+      <div id="compatibility">
+        <div class="container">
+          <div class="section-count">07.</div>
+          <h3 class="section-title text-center m2b_44">Мы подходим друг&nbsp;другу, если&nbsp;вы</h3>
           <div class="more-cases-row">
             <div class="more-case">
               <div class="title-row">
@@ -278,7 +455,7 @@
             <div class="more-case">
               <div class="title-row">
                 <img src="./images/dashboard.svg">
-                <div class="title">Размещайте веб-проекты с&nbsp;любой нагрузкой</div>
+                <div class="title">Хостите веб-проекты с&nbsp;любой нагрузкой</div>
               </div>
               <div class="description-text description">Меняйте мощность ресурсов за&nbsp;две минуты, подстраиваясь под&nbsp;динамическую нагрузку на&nbsp;ваш ресурс.</div>
             </div>
@@ -287,28 +464,30 @@
                 <img src="./images/database.svg">
                 <div class="title">Храните данные</div>
               </div>
-              <div class="description-text description">Три вида SSD-дисков под все популярные задачи.</div>
+              <div class="description-text description">Три вида SSD-дисков под&nbsp;двсе популярные задачи.</div>
             </div>
             <div class="more-case">
               <div class="title-row">
                 <img src="./images/website.svg">
-                <div class="title">Используйте собственный виртуальный дата-центре</div>
+                <div class="title">Нуждаетесь в&nbsp;дсобственном виртуальном дата-центре</div>
               </div>
-              <div class="description-text description">Публичные и приватные сетевые сегменты, настраиваемая маршрутизация.</div>
+              <div class="description-text description">Публичные и&nbsp;дприватные сетевые сегменты, настраиваемая маршрутизация.</div>
             </div>
           </div>
         </div>
       </div>
   
-      <div class="advantages">
+      <div id="options">
         <div class="container">
+          <div class="section-count">08.</div>
+          <h2 class="section-title m2b-60">Дополнительные опции</h2>
           <div class="advantages-row">
             <div class="advantage-item">
               <div class="icon">
                 <img src="images/4.svg">
               </div>
               <div class="title">
-                индивидуальный IP&#8209;адрес
+                Индивидуальный IP&#8209;адрес
               </div>
               <div class="description">
                 Статический IP дает множество преимуществ вашему сайту или веб&#8209;продукту.
@@ -319,7 +498,7 @@
                 <img src="images/5.svg">
               </div>
               <div class="title">
-                резервное копирование
+                Резервное копирование
               </div>
               <div class="description">
                 Пакеты мгновенных снимков системы, чтобы&nbsp;восстановить все данные за&nbsp;считанные минуты.
@@ -330,7 +509,7 @@
                 <img src="images/6.svg">
               </div>
               <div class="title">
-                дополнительные диски
+                Дополнительные диски
               </div>
               <div class="description">
                 Стандартные, для&nbsp;высокой производительности или для&nbsp;архивного хранения — вам доступно оборудование под&nbsp;любые задачи.
@@ -340,11 +519,27 @@
         </div>
       </div>
   
+      <div id="contest-section" class="section dark-bg">
+        <div class="container">
+          <h2 class="section-title m2b-44">Объединяем инноваторов со&nbsp;всей России</h2>
+          <div class="section-description m2b-32">
+            Мы с&nbsp;вами одной крови! Boodet.online старается поддерживать отечественное IT-сообщество
+            и&nbsp;спонсировать проекты, в&nbsp;которых мы видим большую социальную или&nbsp;культурную значимость.
+            Уже сейчас вы можете рассказать о&nbsp;своем уникальном проекте до&nbsp;2&nbsp;октября и&nbsp;участвовать
+            в&nbsp;конкурсе за&nbsp;бесплатные ресурсы на&nbsp;ГОД!
+          </div>
+          <div class="text-center">
+            <a class="boodet-btn width-170" href="/contest">Подробнее</a>
+          </div>
+        </div>
+      </div>
+  
       <div id="prices">
         <div id="price-configurator-with-select-period">
           <div class="price-section">
               <div class="container">
-                <h3 class="section-title text-xs-center">Цены</h3>
+                <div class="section-count">09.</div>
+                <h2 class="section-title text-xs-center">Экономьте с нами!</h2>
                 <div class="payment-type-row">
                   <div class="payment-type-item"
                        :class="{'active': paymentMonthCount == 0}"
@@ -429,11 +624,12 @@
                                   class="label-output relative-top">
                       </v-combobox>
                     </div>
-                
+  
                     <div class="boodet-total-price-container">
-                      <label>Стоимость</label>
-                      <div class="boodet-total-price p2b-20">
-                        {{purchaseTotalPrice}}&nbsp;&#8381;
+                      <label>Создать за</label>
+                      <div class="boodet-total-price p2t-8 p2b-20">
+                        <div class="m2r-24">{{purchaseTotalPrice}}&nbsp;&#8381;</div>
+                        <a href="https://my.boodet.online/login" target="_blank"><img src="images/arrow_button.svg"></a>
                       </div>
                     </div>
               
@@ -444,8 +640,206 @@
             </div>
         </div>
       </div>
+  
+      <v-dialog class="xl-padding" v-model="testDialog" max-width="770px" persistent>
+        <div class="close-btn"
+             @click.stop="testDialog = !testDialog">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5L19 19" stroke="#FF3301" stroke-width="2"/>
+            <path d="M19 5L5 19" stroke="#FF3301" stroke-width="2"/>
+          </svg>
+        </div>
+    
+        <div class="m2b-20">
+          <img src="images/logo_rgb.svg">
+        </div>
+        <div class="m2b-34 font-weight-normal">
+          Несколько вопросов, которые помогут нам подобрать для&nbsp;вас лучшее решение по&nbsp;цене и&nbsp;функциональности.
+        </div>
+  
+        <v-form v-model="testForm" ref="testForm" class="new-design-form" @submit.prevent>
+          <v-layout class="form-row" wrap>
+            <v-flex lg6>
+              <v-autocomplete class="m2t-56 mmr-3 two-line-label"
+                              :items="selectTarget"
+                              v-model="selectTargetValue"
+                              label="Для чего планируете использовать виртуальную инфраструктуру?"
+                              placeholder="Например хостинг веб-сайта"
+                              nudge-top="-5"
+                              :rules="requireMultipleSelectRules"
+                              multiple>
+              </v-autocomplete>
+            </v-flex>
+            <v-flex lg6>
+              <v-autocomplete class="m2t-56 mmr-3 two-line-label"
+                              :items="selectOS"
+                              v-model="selectOSValue"
+                              label="Какая операционная система нужна для работы?"
+                              placeholder="Windows или Linux"
+                              :rules="requireRules"
+                              nudge-top="-5">
+              </v-autocomplete>
+            </v-flex>
+          </v-layout>
+  
+          <v-text-field v-if="isShowTextFiledForOwnVariant"
+                        class="m2t-34"
+                        v-model="ownVariant"
+                        :rules="requireRules"
+                        label="Свой вариант использования виртуальной инфраструктуры"
+          ></v-text-field>
+  
+          <v-layout class="form-row" wrap>
+            <v-flex lg6>
+              <div class="label">
+                Будете ли вы объединять виртуальные серверы в частную сеть?
+              </div>
+              <v-radio-group v-model="isPrivateNetwork" row>
+                <v-radio label="Да" value="Да"></v-radio>
+                <v-radio label="Нет" value="Нет"></v-radio>
+                <v-radio label="Не уверен" value="Не уверен"></v-radio>
+              </v-radio-group>
+            </v-flex>
+            <v-flex lg6>
+              <v-text-field class="m2t-56 two-line-label"
+                            v-model="ipCount"
+                            label="Сколько ip-адресов вам может понадобиться?"
+                            :rules="requireRules"
+                            placeholder="Хотя бы примерно"
+              ></v-text-field>
+            </v-flex>
+          </v-layout>
+          
+          <div class="label m2b-10">
+            Укажите минимальные требования по конфигурации серверов, если это известно
+          </div>
+          <div class="test-configurator m2b-32">
+            <div class="price-configurator-row">
+              <div>
+                <label>CPU</label>
+                <div class="slider-form-group without-label">
+                  <input  v-model="computedCPU" type="text" class="form-control" disabled>
+                  <v-slider v-model="sliderCPUValue" max="9" @input="changeCPU"></v-slider>
+                </div>
+              </div>
+    
+              <div>
+                <label>ОЗУ</label>
+                <div class="slider-form-group without-label">
+                  <input  v-model="computedRAM" type="text" class="form-control" disabled>
+                  <v-slider v-model="sliderRAMValue" max="13" :min="minRamSize" @input="changeRAM"></v-slider>
+                </div>
+              </div>
+    
+              <div>
+                <label>SSD</label>
+                <div class="slider-form-group without-label">
+                  <input  v-model="computedBootDisk" type="text" class="form-control" disabled>
+                  <v-slider v-model="sliderBootDiskValue" :min="minBootDiskSize" max="7"></v-slider>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <v-layout class="form-row" wrap>
+            <v-flex lg6>
+              <v-text-field class="m2t-32"
+                            v-model="email"
+                            label="E-mail"
+                            :rules="emailRules"
+              ></v-text-field>
+            </v-flex>
+            <v-flex lg6>
+              <v-text-field class="m2t-32"
+                            v-model="phone"
+                            label="Телефон для связи"
+              ></v-text-field>
+            </v-flex>
+          </v-layout>
+  
+          <v-layout class="m2t-14" wrap>
+            <v-flex grow>
+              <v-checkbox v-model="agreement"
+                          class="m2b-22"
+                          label="Согласен на обработку моих персональных данных">
+                
+              </v-checkbox>
+            </v-flex>
+            <v-flex shrink>
+              <button  class="boodet-btn width-180 font-weight-normal"
+                       @click="sendTestForm">
+                Отправить
+              </button>
+            </v-flex>
+          </v-layout>
+          
+        </v-form>
+        
+        
+        <!--<div class="width-100 mmt-3 text-xs-center" v-if="createTicketPreloader">
+          <img width=45px height=45px src="~assets/images/preloader.svg">
+        </div>-->
+  
+      </v-dialog>
+  
+      <div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="close-btn" data-dismiss="modal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5L19 19" stroke="#FF3301" stroke-width="2"/>
+                <path d="M19 5L5 19" stroke="#FF3301" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Готово</h3>
+            <div class="m2b_28 text-center">
+              Мы обязательно свяжемся с Вами.
+            </div>
+        
+            <div class="text-center">
+              <a href="/index" class="boodet-btn width-280">На главную</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="errorModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="close-btn" data-dismiss="modal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5L19 19" stroke="#FF3301" stroke-width="2"/>
+                <path d="M19 5L5 19" stroke="#FF3301" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Ошибка!</h3>
+            <div class="m2b_28 text-center">
+              Не удалось отправить вашу заявку. Попробуйте снова или обратитесь в техподдержку.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="emailHasModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="close-btn" data-dismiss="modal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5L19 19" stroke="#FF3301" stroke-width="2"/>
+                <path d="M19 5L5 19" stroke="#FF3301" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Ошибка!</h3>
+            <div class="m2b_28 text-center">
+              На данный E-mail заявка уже зарегистрирована.
+            </div>
+          </div>
+        </div>
+      </div>
     </v-app>
   </div>
+</div>
   
   
   <script>
@@ -459,32 +853,44 @@
     const ProductPrices = {
       currency: 'rub',
       VCPU: {
-        month: 446.4
+        month: 357.12,
+        hour: 0.496
       },
       VMemory: {
-        month: 158.4
+        month: 126.72,
+        hour: 0.176
       },
       BootDisk: {
-        month: 7.2
+        month: 5.04,
+        hour: 0.007
       },
       TypicalDisk: {
-        month: 7.2
+        month: 5.04,
+        hour: 0.007
       },
       IndividualDisk: {
         month: {
-          gb: 7.2,
-          iops: 3.6
+          gb: 5.04,
+          iops: 2.52
+        },
+        hour: {
+          gb: 0.007,
+          iops: 0.0035
         }
       },
       ArchiveDisk: {
-        month: 2.02
+        month: 1.4112,
+        hour: 0.00196
       },
       OSWindows: {
-        month: 800
+        month: 350,
+        hour: 0.48611111111
       },
       ExternalIp: {
-        month: 90
-      }
+        month: 90,
+        hour: 0.125
+      },
+      SnapshotPack: 0.2,
 
     };
 
@@ -525,6 +931,22 @@
       }
 
       return resultRamPrice + resultCpuPrice;
+    }
+
+    function require(v) {
+      return !!v || "Это поле обязательно для заполнения";
+    }
+
+    function requireMultipleSelect(v) {
+      return v.length > 0 || "Это поле обязательно для заполнения";
+    }
+
+    function testEmail(v) {
+      return /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,20})+$/.test(v) || "Введите корректный E-mail";
+    }
+
+    function testPhone(v) {
+      return /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11}(\s*)?$/.test(v) || "Введите телефон";
     }
 
     new Vue({
@@ -578,44 +1000,79 @@
           cpuArray: [1, 2, 4, 6, 8, 12, 16, 24, 32, 48],
           ramArray: [512, 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 224],
           bootDiskArray: [10, 20, 60, 100, 250, 500, 1000, 2000],
-          bandwidthArray: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
           sliderCPUValue: 0,
           sliderRAMValue: 0,
           sliderBootDiskValue: 0,
-          sliderBandwidthValue: 0,
           externalIpValue: false,
-          vdcName: '',
-          vdcDescription: '',
-          vmName: '',
-          vmDescription: '',
-          isCustomBackupFolder: false,
-          customBackupFolderPath: '',
-          backup: {
-            monday: false,
-            tuesday: false,
-            wednesday: false,
-            thursday: false,
-            friday: false,
-            saturday: false,
-            sunday: false,
-
-          },
-          emailValue: '',
-          additionalDiskCount: 0,
-          additionalDisks: [],
-          cookie: '',
-          showPreloader: false,
-          makeBackup: false,
           paymentMonthCount: '12',
           selectPaymentMonthCount: {
             text: "Оплата за 12 месяцев",
             value: '12'
           },
+
+          testDialog: false,
+          testForm: false,
+
+          selectTargetValue: [],
+          selectTarget: [
+            {value: 'Хостинг веб-сайта', text: 'Хостинг веб-сайта'},
+            {value: 'Среда для разработки или тестирования ПО', text: 'Среда для разработки или тестирования ПО'},
+            {value: 'Сервер для 1С', text: 'Сервер для 1С'},
+            {value: 'Сервер для Forex', text: 'Сервер для Forex'},
+            {value: 'Удаленный рабочий стол', text: 'Удаленный рабочий стол'},
+            {value: 'Почтовый сервер', text: 'Почтовый сервер'},
+            {value: 'Хранение файлов и бэкапов', text: 'Хранение файлов и бэкапов'},
+            {value: 'VPN-сервер', text: 'VPN-сервер'},
+            {value: 'Игровой сервер', text: 'Игровой сервер'},
+            {value: 'Прокси-сервер', text: 'Прокси-сервер'},
+            {value: 'IP-телефония', text: 'IP-телефония'},
+            {value: 'Сервер для видеонаблюдения', text: 'Сервер для видеонаблюдения'},
+            {value: 'Сервер для интернета вещей', text: 'Сервер для интернета вещей'},
+            {value: 'Свой вариант', text: 'Свой вариант'},
+          ],
+          selectOS: [
+            {value: 'Windows', text: 'Windows'},
+            {value: 'Linux', text: 'Linux'},
+          ],
+
+          ownVariant: '',
+          ipCount: '',
+          isPrivateNetwork: 'Да',
+          phone: '',
+          email: '',
+          agreement: true,
+          requireRules: [
+            require
+          ],
+          requireMultipleSelectRules: [
+            requireMultipleSelect
+          ],
+          emailRules: [
+            require,
+            testEmail
+          ],
+          phoneRules: [
+            require,
+            testEmail
+          ]
+          
         }
 
       },
 
       computed: {
+        
+        isShowTextFiledForOwnVariant() {
+          let result = false
+
+          this.selectTargetValue.forEach((item) => {
+            if (item === 'Свой вариант') {
+              result = true
+            }
+          })
+          
+          return result
+        },
 
         computedCPU: function() {
           return this.cpuArray[this.sliderCPUValue];
@@ -698,27 +1155,6 @@
 
           }
 
-          if(this.externalIpValue) {
-            price += ProductPrices.ExternalIp.month;
-          }
-
-          let additionalDisksPrice = 0;
-
-          if (this.additionalDisks.length > 0) {
-            this.additionalDisks.forEach(function(disk) {
-              if (disk.type === 'standart') {
-                additionalDisksPrice += disk.diskSize * ProductPrices.TypicalDisk.month;
-              } else if (disk.type === 'archive') {
-                additionalDisksPrice += disk.diskSize * ProductPrices.ArchiveDisk.month;
-              } else if (disk.type === 'custom') {
-                additionalDisksPrice += (disk.diskSize * ProductPrices.IndividualDisk.month.gb +
-                  disk.diskSpeed * ProductPrices.IndividualDisk.month.iops);
-              }
-            })
-          }
-
-          price += additionalDisksPrice;
-
           return price;
         },
 
@@ -746,27 +1182,6 @@
 
           }
 
-          if(this.externalIpValue) {
-            price += ProductPrices.ExternalIp.month;
-          }
-
-          let additionalDisksPrice = 0;
-
-          if (this.additionalDisks.length > 0) {
-            this.additionalDisks.forEach(function(disk) {
-              if (disk.type === 'standart') {
-                additionalDisksPrice += disk.diskSize * ProductPrices.TypicalDisk.month;
-              } else if (disk.type === 'archive') {
-                additionalDisksPrice += disk.diskSize * ProductPrices.ArchiveDisk.month;
-              } else if (disk.type === 'custom') {
-                additionalDisksPrice += (disk.diskSize * ProductPrices.IndividualDisk.month.gb +
-                  disk.diskSpeed * ProductPrices.IndividualDisk.month.iops);
-              }
-            })
-          }
-
-          price += additionalDisksPrice;
-
           switch (this.paymentMonthCount) {
             case '3':
               price = price * 0.9;
@@ -790,6 +1205,67 @@
       },
 
       methods: {
+        
+        sendTestForm() {
+          if (this.$refs.testForm.validate()) {
+            let requestData = {
+              notifications_request: {
+                key_name: 'selection_help',
+                provided_data: {
+                  tasks: this.selectTargetValue.toString(),
+                  task: this.ownVariant,
+                  os: this.selectOSValue,
+                  network: this.isPrivateNetwork,
+                  ip: this.ipCount,
+                  cpu: this.computedCPU,
+                  ram: this.computedRAM,
+                  hdd: this.computedBootDisk,
+                  agreement: this.agreement
+                }
+              }
+            }
+
+            if (this.email) {
+              requestData.notifications_request.emails = [this.email]
+            } else if (this.phone) {
+              requestData.notifications_request.phones = [this.phone]
+            }
+
+
+            $.ajax({
+              type: 'POST',
+              contentType: 'application/json',
+              url: 'http://staging.decs.online/api/notifications/v1/notifications_requests',
+              data: JSON.stringify(requestData),
+              success: function(data){
+                this.testDialog = false
+                $('#successModal').modal('show')
+              }.bind(this),
+              error: function(error) {
+                this.testDialog = false
+                if (error && error.responseJSON && error.responseJSON.errors
+                  && error.responseJSON.errors.uuid[0] === 'has already been taken') {
+                  $('#emailHasModal').modal('show')
+                } else {
+                  $('#errorModal').modal('show')
+                }
+              }.bind(this)
+            });
+          }
+          
+        },
+        clearForm() {
+          this.selectTargetValue = []
+          this.ownVariant = ''
+          this.ipCount = ''
+          this.isPrivateNetwork = 'Да'
+          this.phone = ''
+          this.email = ''
+          this.agreement = true
+          this.sliderCPUValue = 0
+          this.sliderRAMValue = 0
+          this.sliderBootDiskValue = 0
+        },
         changeCPU: function () {
           if (this.sliderCPUValue === 0) {
             if (this.sliderRAMValue !== 0) {
