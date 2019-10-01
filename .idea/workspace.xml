@@ -32,16 +32,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="11" />
-          <entry key="html" value="9" />
+          <entry key="css" value="13" />
+          <entry key="html" value="10" />
           <entry key="js" value="5" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="11" />
-          <entry key="HTML" value="9" />
+          <entry key="CSS" value="13" />
+          <entry key="HTML" value="10" />
           <entry key="JavaScript" value="5" />
           <entry key="SVG" value="2" />
         </counts>
@@ -306,21 +306,7 @@
       <workItem from="1568368425015" duration="1912000" />
       <workItem from="1568626564881" duration="621000" />
       <workItem from="1568704378427" duration="184000" />
-      <workItem from="1569929707322" duration="1922000" />
-    </task>
-    <task id="LOCAL-00043" summary="fixes">
-      <created>1513120412045</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1513120412046</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fixes">
-      <created>1513120549262</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1513120549262</updated>
+      <workItem from="1569929707322" duration="2849000" />
     </task>
     <task id="LOCAL-00045" summary="fixes">
       <created>1513125596153</created>
@@ -651,11 +637,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569932398047</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="index page refactor">
+      <created>1569932669073</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1569932669073</updated>
+    </task>
+    <task id="LOCAL-00093" summary="index page refactor">
+      <created>1569932922840</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1569932922840</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56740000" />
+    <option name="totallyTimeSpent" value="57667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4480" y="-2" width="1920" height="1082" extended-state="6" />

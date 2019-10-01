@@ -660,25 +660,25 @@
         <v-form v-model="testForm" ref="testForm" class="new-design-form" @submit.prevent>
           <v-layout class="form-row" wrap>
             <v-flex lg6>
-              <v-autocomplete class="m2t-56 mmr-3 two-line-label"
+              <v-select class="m2t-56 mmr-3 two-line-label"
                               :items="selectTarget"
                               v-model="selectTargetValue"
                               label="Для чего планируете использовать виртуальную инфраструктуру?"
                               placeholder="Например хостинг веб-сайта"
-                              nudge-top="-5"
+                              nudge-top="-49"
                               :rules="requireMultipleSelectRules"
                               multiple>
-              </v-autocomplete>
+              </v-select>
             </v-flex>
             <v-flex lg6>
-              <v-autocomplete class="m2t-56 mmr-3 two-line-label"
+              <v-select class="m2t-56 mmr-3 two-line-label"
                               :items="selectOS"
                               v-model="selectOSValue"
                               label="Какая операционная система нужна для работы?"
                               placeholder="Windows или Linux"
                               :rules="requireRules"
-                              nudge-top="-5">
-              </v-autocomplete>
+                              nudge-top="-49">
+              </v-select>
             </v-flex>
           </v-layout>
   
@@ -766,8 +766,8 @@
                 
               </v-checkbox>
             </v-flex>
-            <v-flex shrink>
-              <button  class="boodet-btn width-180 font-weight-normal"
+            <v-flex shrink class="test-form-btn">
+              <button  class="boodet-btn width-180 mobile-full-width font-weight-normal"
                        @click="sendTestForm">
                 Отправить
               </button>
