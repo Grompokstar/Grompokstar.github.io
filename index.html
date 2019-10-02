@@ -658,8 +658,8 @@
         </div>
   
         <v-form v-model="testForm" ref="testForm" class="new-design-form" @submit.prevent>
-          <v-layout class="form-row" wrap>
-            <v-flex lg6>
+          <div class="row">
+            <div class="col-lg-6">
               <v-select class="m2t-56 mmr-3 two-line-label"
                               :items="selectTarget"
                               v-model="selectTargetValue"
@@ -669,8 +669,8 @@
                               :rules="requireMultipleSelectRules"
                               multiple>
               </v-select>
-            </v-flex>
-            <v-flex lg6>
+            </div>
+            <div class="col-lg-6">
               <v-select class="m2t-56 mmr-3 two-line-label"
                               :items="selectOS"
                               v-model="selectOSValue"
@@ -679,8 +679,8 @@
                               :rules="requireRules"
                               nudge-top="-49">
               </v-select>
-            </v-flex>
-          </v-layout>
+            </div>
+          </div>
   
           <v-text-field v-if="isShowTextFiledForOwnVariant"
                         class="m2t-34"
@@ -689,8 +689,8 @@
                         label="Свой вариант использования виртуальной инфраструктуры"
           ></v-text-field>
   
-          <v-layout class="form-row" wrap>
-            <v-flex lg6>
+          <div class="row">
+            <div class="col-lg-6">
               <div class="label">
                 Будете ли вы объединять виртуальные серверы в частную сеть?
               </div>
@@ -699,16 +699,16 @@
                 <v-radio label="Нет" value="Нет"></v-radio>
                 <v-radio label="Не уверен" value="Не уверен"></v-radio>
               </v-radio-group>
-            </v-flex>
-            <v-flex lg6>
+            </div>
+            <div class="col-lg-6">
               <v-text-field class="m2t-56 two-line-label"
                             v-model="ipCount"
                             label="Сколько ip-адресов вам может понадобиться?"
                             :rules="requireRules"
                             placeholder="Хотя бы примерно"
               ></v-text-field>
-            </v-flex>
-          </v-layout>
+            </div>
+          </div>
           
           <div class="label m2b-10">
             Укажите минимальные требования по конфигурации серверов, если это известно
@@ -742,21 +742,21 @@
             </div>
           </div>
   
-          <v-layout class="form-row" wrap>
-            <v-flex lg6>
+          <div class="row">
+            <div class="col-lg-6">
               <v-text-field class="m2t-32"
                             v-model="email"
                             label="E-mail"
                             :rules="emailRules"
               ></v-text-field>
-            </v-flex>
-            <v-flex lg6>
+            </div>
+            <div class="col-lg-6">
               <v-text-field class="m2t-32"
                             v-model="phone"
                             label="Телефон для связи"
               ></v-text-field>
-            </v-flex>
-          </v-layout>
+            </div>
+          </div>
   
           <v-layout class="m2t-14" wrap>
             <v-flex grow>
