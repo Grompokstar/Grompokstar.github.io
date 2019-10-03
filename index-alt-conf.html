@@ -183,11 +183,13 @@
                           <v-slider v-model="sliderBootDiskValue" :min="minBootDiskSize" max="7"></v-slider>
                         </div>
                       </div>
-  
-                      <div class="boodet-total-price-button m2t-40 m2b-20">
-                        <button class="boodet-btn" @click="buyProduct">
-                          Купить за {{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;
-                        </button>
+                  
+                      <div class="boodet-total-price-container">
+                        <label>Создать за</label>
+                        <div class="boodet-total-price p2t-8 p2b-20">
+                          <div class="m2r-24">{{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;</div>
+                          <a href="https://my.boodet.online/login" target="_blank"><img src="images/arrow_button.svg"></a>
+                        </div>
                       </div>
                 
                     </div>
@@ -623,11 +625,14 @@
                       </v-combobox>
                     </div>
   
-                    <div class="boodet-total-price-button m2t-40 m2b-20">
-                      <button class="boodet-btn" @click="buyProduct">
-                        Купить за {{purchaseTotalPrice}}&nbsp;&#8381;
-                      </button>
+                    <div class="boodet-total-price-container">
+                      <label>Создать за</label>
+                      <div class="boodet-total-price p2t-8 p2b-20">
+                        <div class="m2r-24">{{purchaseTotalPrice}}&nbsp;&#8381;</div>
+                        <a href="https://my.boodet.online/login" target="_blank"><img src="images/arrow_button.svg"></a>
+                      </div>
                     </div>
+              
                   </div>
                 </div>
               </div>
@@ -1249,10 +1254,6 @@
             });
           }
           
-        },
-        
-        buyProduct() {
-          window.location = 'https://my.boodet.online/login'
         },
         clearForm() {
           this.selectTargetValue = []
