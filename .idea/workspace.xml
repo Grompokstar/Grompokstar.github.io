@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="index page refactor">
-      <change afterPath="$PROJECT_DIR$/index-alt-conf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="index page refactor" />
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -23,7 +18,7 @@
     <session id="1481796772">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -173,10 +168,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4480" />
-    <option name="y" value="-2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="x" value="1987" />
+    <option name="y" value="25" />
+    <option name="width" value="2493" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -313,14 +308,7 @@
       <workItem from="1568704378427" duration="184000" />
       <workItem from="1569929707322" duration="3483000" />
       <workItem from="1570005881168" duration="623000" />
-      <workItem from="1570092986253" duration="1910000" />
-    </task>
-    <task id="LOCAL-00049" summary="month select">
-      <created>1513159254266</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1513159254266</updated>
+      <workItem from="1570092986253" duration="2519000" />
     </task>
     <task id="LOCAL-00050" summary="fix">
       <created>1513159396769</created>
@@ -658,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570094972486</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="index page refactor">
+      <created>1570099715967</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1570099715967</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60834000" />
+    <option name="totallyTimeSpent" value="61443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4480" y="-2" width="1920" height="1082" extended-state="6" />
