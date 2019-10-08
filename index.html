@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Anti-flicker snippet (recommended)  -->
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-    {'GTM-PKGV6D4':true});</script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KN6SZ5V');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149358597-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149358597-1');
+  </script>
   
   <meta charset="UTF-8">
   <title>Boodet Online</title>
@@ -34,10 +29,6 @@
   <script src="js/mainpage_scripts.js"></script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KN6SZ5V"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <header id="header" class="new-header">
   <div class="container">
     <div class="header-row">
@@ -196,7 +187,7 @@
                       </div>
                   
                       <div>
-                        <label>Размер&nbsp;основного&nbsp;SSD-диска</label>
+                        <label>Размер&nbsp;SSD-диска</label>
                         <div class="slider-form-group without-label">
                           <input  v-model="computedBootDisk" type="text" class="form-control" disabled>
                           <v-slider v-model="sliderBootDiskValue" :min="minBootDiskSize" max="7"></v-slider>
@@ -205,7 +196,7 @@
   
                       <div class="boodet-total-price-button m2t-40 m2b-20">
                         <button class="boodet-btn" @click="buyProduct">
-                          Купить за {{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;
+                          Купить за {{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;<span class="font-sm">/мес</span>
                         </button>
                       </div>
                 
@@ -627,7 +618,7 @@
                     </div>
                 
                     <div>
-                      <label>Размер&nbsp;основного&nbsp;SSD-диска</label>
+                      <label>Размер&nbsp;SSD-диска</label>
                       <div class="slider-form-group without-label">
                         <input  v-model="computedBootDisk" type="text" class="form-control" disabled>
                         <v-slider v-model="sliderBootDiskValue" :min="minBootDiskSize" max="7"></v-slider>
@@ -644,7 +635,7 @@
   
                     <div class="boodet-total-price-button m2t-40 m2b-20">
                       <button class="boodet-btn" @click="buyProduct">
-                        Купить за {{purchaseTotalPrice}}&nbsp;&#8381;
+                        Купить за {{purchaseTotalPrice}}&nbsp;&#8381;<span class="font-sm">/мес</span>
                       </button>
                     </div>
                   </div>
