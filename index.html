@@ -200,9 +200,17 @@
                       </div>
   
                       <div class="boodet-total-price-button m2t-40 m2b-20">
-                        <a class="boodet-btn" href="https://my.boodet.online/login">
+                        <button class="boodet-btn" @click="buyProduct">
                           <span class="alt-1-display-none">Купить за </span>{{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;<span class="font-sm">/мес</span>
-                        </a>
+                        </button>
+                      </div>
+  
+                      <div class="boodet-total-price-button alt-1 m2b-20">
+                        <label class="m2l-10 m2t-6 m2b-20">Создать за</label>
+                        <button class="boodet-btn alt-1" @click="buyProduct">
+                          <span class="alt-1-display-none">Купить за </span>{{Math.floor(totalPrice).toLocaleString('ru-RU')}}&nbsp;&#8381;<span class="font-sm">/мес</span>
+                          <img class="p2l-24" src="images/arrow_button.svg">
+                        </button>
                       </div>
                 
                     </div>
