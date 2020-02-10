@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="delete boodet">
-      <change afterPath="$PROJECT_DIR$/conference2.html" afterDir="false" />
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="trueconf">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conference.html" beforeDir="false" afterPath="$PROJECT_DIR$/conference.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conference2.html" beforeDir="false" afterPath="$PROJECT_DIR$/conference2.html" afterDir="false" />
     </list>
     <ignored path="WebGL_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +39,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="24" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="17" />
           <entry key="js" value="5" />
           <entry key="svg" value="2" />
@@ -49,19 +50,21 @@
           <entry key="CSS" value="24" />
           <entry key="HTML" value="17" />
           <entry key="JavaScript" value="5" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="6" />
           <entry key="html" value="117" />
-          <entry key="txt" value="71" />
+          <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="117" />
-          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
     </session>
@@ -80,9 +83,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conference2.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -125,6 +141,8 @@
         <option value="$PROJECT_DIR$/contest.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/conference.html" />
+        <option value="$PROJECT_DIR$/conference2.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -194,18 +212,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/assets/libs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
       <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/assets/libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,14 +309,7 @@
       <workItem from="1580914732848" duration="1082000" />
       <workItem from="1580976018130" duration="859000" />
       <workItem from="1581331445177" duration="3351000" />
-      <workItem from="1581348419304" duration="2237000" />
-    </task>
-    <task id="LOCAL-00062" summary="fix">
-      <created>1513337737951</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1513337737951</updated>
+      <workItem from="1581348419304" duration="3315000" />
     </task>
     <task id="LOCAL-00063" summary="fix">
       <created>1513340549873</created>
@@ -636,16 +647,24 @@
       <option name="project" value="LOCAL" />
       <updated>1581370796982</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="trueconf">
+      <created>1581372256552</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1581372256552</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89519000" />
+    <option name="totallyTimeSpent" value="90597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="2493" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20809716" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20566802" />
       <window_info id="Structure" order="1" weight="0.28502023" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -657,7 +676,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3392857" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2627027" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21837838" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -725,7 +744,8 @@
     <MESSAGE value="tag manager" />
     <MESSAGE value="delete boodet" />
     <MESSAGE value="conference" />
-    <option name="LAST_COMMIT_MESSAGE" value="conference" />
+    <MESSAGE value="trueconf" />
+    <option name="LAST_COMMIT_MESSAGE" value="trueconf" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
@@ -755,7 +775,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conference2.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
