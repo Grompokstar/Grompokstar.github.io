@@ -1,0 +1,85 @@
+.v-select>.v-input__control>.v-input__slot {
+  cursor: pointer;
+}
+
+.form-check {
+  padding-left: 0;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label::before {
+    background-image: url("../images/unchecked.png");
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    background-image: url("../images/checked.png");
+  }
+
+  label {
+    font-family: SourceSansPro, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-color-gray;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      margin: 0 10px 0 0;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 4px;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none;
+}
+
+.invalid-feedback {
+  color: $secondary-brand-color;
+  position: absolute;
+  margin-top: 0;
+  font-size: 11px;
+}
+
+.form-check-input.is-invalid~.form-check-label, .was-validated .form-check-input:invalid~.form-check-label {
+  color: $font-color-gray;
+}
+
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+  color: $font-color-gray;
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+  background-image: none;
+}
+
+input.form-control {
+  border: 2px solid #E7EBED;
+  border-radius: 0;
+  height: 44px;
+}
+
+
+textarea.form-control {
+  border: 2px solid #E7EBED;
+  border-radius: 0;
+}

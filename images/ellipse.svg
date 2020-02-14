@@ -1,0 +1,12 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">
+	<path d="M27 14C27 21.1797 21.1797 27 14 27C6.82029 27 0.999996 21.1797 0.999998 14C0.999999 6.8203 6.8203 1 14 1" stroke="white" stroke-width="2" stroke-linecap="round">
+		<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="rotate"
+		from="0 14 14"
+		to="360 14 14"
+		dur="1.5s"
+		repeatCount="indefinite" />
+
+	</path>
+</svg>

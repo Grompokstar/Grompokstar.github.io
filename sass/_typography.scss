@@ -1,0 +1,71 @@
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.font-sm {
+  font-size: 15px!important;
+}
+
+.display-1 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.title-1 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 1.12!important;
+}
+
+.title-1_5 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 76px;
+  line-height: 1.12!important;
+}
+
+.title-2 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2!important;
+  letter-spacing: 0.02em;
+}
+
+.title-3 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.12!important;
+  letter-spacing: 0.02em;
+}
+
+.title-4 {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.12!important;
+  letter-spacing: 0.02em;
+}
+
+.text-color__blue-brand {
+  color: $boodet-blue-brand-color!important;
+}
+
+.line-height__1_4 {
+  line-height: 1.4!important;
+}
