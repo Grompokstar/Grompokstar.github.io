@@ -1,0 +1,89 @@
+$dropdown-bg: #fff;
+$dropdown-border-color: rgba(0, 0, 0, .15);
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 12px 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+
+  .dropdown-item {
+    color: $font-color!important;
+    letter-spacing: 0.02em;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 4px 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: #F2F3F6;
+      opacity: 1;
+    }
+  }
+
+}
+
+[class*="dropdown-menu-tip-"]::after {
+  content: '';
+  position: absolute;
+  width: .4rem;
+  height: .4rem;
+  background-color: $dropdown-bg;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* North */
+.dropdown-menu-tip-n::after {
+  top: calc(-.2rem - 1px);
+  left: calc(50% - .25rem);
+  transform: rotate(-45deg);
+}
+
+/* Northeast */
+.dropdown-menu-tip-ne::after {
+  top: calc(-.2rem - 1px);
+  right: 1rem;
+  transform: rotate(-45deg);
+}
+
+/* Northwest */
+.dropdown-menu-tip-nw::after {
+  top: calc(-.1rem - 1px);
+  left: 1rem;
+  transform: rotate(-45deg);
+}
+
+/* South */
+.dropdown-menu-tip-s::after {
+  left: calc(50% - .2rem);
+  bottom: calc(-.2rem - 1px);
+  transform: rotate(135deg);
+}
+
+/* Southeast */
+.dropdown-menu-tip-se::after {
+  right: 1rem;
+  bottom: calc(-.2rem - 1px);
+  transform: rotate(135deg);
+}
+
+/* Southwest */
+.dropdown-menu-tip-sw::after {
+  left: 1rem;
+  bottom: calc(-.2rem - 1px);
+  transform: rotate(135deg);
+}
+
+.modal-content {
+  border-radius: 0;
+}

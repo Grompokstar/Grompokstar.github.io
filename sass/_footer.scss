@@ -1,0 +1,48 @@
+footer {
+  padding: 36px 0 32px;
+
+  @media (max-width: 465px) {
+    padding: 40px 5px 32px;
+  }
+
+  .block-title {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  &.gray-bg-footer {
+    background-color: #F2F3F6;
+    padding: 36px 0 32px!important;
+  }
+
+  a {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $font-color;
+
+    &:hover {
+      color: $font-color;
+      text-decoration: underline;
+    }
+  }
+
+  .row {
+    >div {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  .copyright {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #999999;
+  }
+}
+

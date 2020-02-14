@@ -1,0 +1,115 @@
+.boodet-btn {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+  color: $font-color;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 7px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $primary-brand-color;
+  border-image: linear-gradient(to right, $secondary-brand-color 0%, #c45492 50%,  $primary-brand-color 100%);
+  border-image-slice: 1;
+  transition: all 0.3s ease;
+  text-align: center;
+  opacity: 1;
+  background-color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  &.small {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 18px;
+  }
+
+  &.alt-1 {
+    border: none;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    margin-left: 10px;
+
+    .alt-1-display-none {
+      display: none;
+    }
+  }
+
+  &.white-color {
+    color: #fff;
+    border-image: none;
+    border-color: #fff;
+    background-color: transparent;
+
+    &:hover {
+      border-image: none;
+      border-color: #fff;
+      color: #fff!important;
+      opacity: 0.85;
+    }
+  }
+
+  &.transparent {
+    color: #fff;
+    background-color: transparent;
+
+    &:hover {
+      color: #fff!important;
+      border-image: none;
+    }
+  }
+
+  &.width-100 {
+    width: 100px;
+  }
+
+  &.width-170 {
+    width: 170px;
+  }
+
+  &.width-200 {
+    width: 200px;
+  }
+
+  &.width-280 {
+    width: 280px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-image: none!important;
+    border-color: $primary-brand-color;
+    opacity: 1;
+    color: #000!important;
+  }
+
+  &:focus {
+    outline: none
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+    color: $font-color-gray!important;
+    cursor: default;
+    border-image: none;
+    border-color: $dark-gray;
+    opacity: 1;
+  }
+
+  &.new-design {
+    font-size: 18px;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    padding: 8px 20px;
+  }
+
+}

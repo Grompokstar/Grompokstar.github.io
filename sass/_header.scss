@@ -1,0 +1,282 @@
+header.new-header {
+  letter-spacing: 0.02em;
+  color: #fff;
+  transition: all 0.3s ease;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      opacity: 0.85;
+    }
+  }
+
+  &.white-bg {
+    color: #000;
+    box-shadow: inset 0px -1px 0px #E7EBED;
+    background-color: #fff;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: $primary-brand-color;
+        opacity: 1;
+      }
+    }
+
+    .white-logo {
+      display: none;
+    }
+
+    .grad-logo {
+      display: block;
+    }
+
+    .main-menu {
+
+      .menu-item {
+        a {
+          color: #000;
+        }
+
+        &:hover {
+          a {
+            color: $primary-brand-color;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .grad-logo {
+    display: none;
+  }
+
+  &.open-mobile-menu {
+
+    #mobile-menu {
+      display: block;
+    }
+
+    #mobile-menu-btn {
+      img {
+
+        &.close {
+          opacity: 1;
+          display: block;
+        }
+
+        &.open {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.pinned {
+    background-color: #fff;
+    color: $font-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    #mobile-menu {
+      display: block;
+    }
+
+    .grad-logo {
+      display: block;
+    }
+
+    .white-logo {
+      display: none;
+    }
+
+    a {
+      color: $font-color;
+
+      &:hover {
+        color: $primary-brand-color;
+        opacity: 1;
+      }
+    }
+
+    .main-menu {
+
+      .menu-item {
+        a {
+          color: #000;
+        }
+
+        &:hover {
+          a {
+            color: $primary-brand-color;
+          }
+        }
+      }
+    }
+
+    .boodet-btn.white-color {
+      color: $font-color;
+      border-color: $primary-brand-color;
+      border-image: linear-gradient(to right, $secondary-brand-color 0%, #c45492 50%,  $primary-brand-color 100%);
+      border-image-slice: 1;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .header-row {
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-logo {
+    width: 154px;
+    height: 46px;
+
+    .img {
+      height: 100%;
+    }
+  }
+
+  .header-left-part {
+    padding-right: 40px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header-right-part {
+    padding-left: 40px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+  .main-menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    letter-spacing: 0.02em;
+
+    .menu-item {
+      margin-right: 40px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 0.24px;
+      }
+
+      &:hover {
+        a {
+          color: #fff
+        }
+      }
+    }
+  }
+
+  #mobile-menu-btn {
+    display: none;
+    img {
+      margin-right: 12px;
+
+      &.close {
+        display: none;
+      }
+    }
+  }
+
+  #mobile-login-link {
+    display: none;
+  }
+
+  .short-logo {
+    display: none;
+  }
+
+  #mobile-menu {
+    position: fixed;
+    z-index: 10;
+    top: 86px;
+    height: 0;
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    transition: height 0.4s ease;
+    color: $font-color;
+    display: none;
+
+    &.open {
+      height: 100vh;
+    }
+
+    .item {
+      font-size: 28px;
+      letter-spacing: 0.02em;
+      line-height: 1.28;
+      text-align: center;
+      padding: 12px 10px;
+    }
+
+    .sub-item {
+      font-size: 19px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      padding: 6px 10px;
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .main-menu {
+      display: none;
+    }
+
+    #mobile-menu-btn {
+      display: flex;
+      align-items: center;
+    }
+
+    #mobile-login-link {
+      display: flex;
+    }
+
+    .desktop-link {
+      display: none;
+    }
+
+    .short-logo {
+      display: block;
+    }
+
+    .new-logo {
+      display: none;
+    }
+  }
+
+}

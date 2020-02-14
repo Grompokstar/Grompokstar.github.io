@@ -1,0 +1,51 @@
+
+@each $header, $spacer in $my-spacers {
+  .m2t#{$header} {
+    margin-top: $spacer !important;
+  }
+  .m2r#{$header} {
+    margin-right: $spacer !important;
+  }
+  .m2b#{$header} {
+    margin-bottom: $spacer !important;
+  }
+  .m2l#{$header} {
+    margin-left: $spacer !important;
+  }
+  .m2x#{$header} {
+    margin-left: $spacer !important;
+    margin-right: $spacer !important;
+  }
+  .m2y#{$header} {
+    margin-top: $spacer !important;
+    margin-bottom: $spacer !important;
+  }
+  .m2a#{$header} {
+    margin: $spacer $spacer !important;
+  }
+
+  .p2t#{$header} {
+    padding-top: $spacer !important;
+  }
+  .p2r#{$header} {
+    padding-right: $spacer !important;
+  }
+  .p2b#{$header} {
+    padding-bottom: $spacer !important;
+  }
+  .p2l#{$header} {
+    padding-left: $spacer !important;
+  }
+  .p2x#{$header} {
+    padding-left: $spacer !important;
+    padding-right: $spacer !important;
+  }
+  .p2y#{$header} {
+    padding-top: $spacer !important;
+    padding-bottom: $spacer !important;
+  }
+  .p2a#{$header} {
+    padding: $spacer $spacer !important;
+  }
+
+}
