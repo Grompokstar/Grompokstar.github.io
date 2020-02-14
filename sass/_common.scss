@@ -872,4 +872,33 @@ ul.boodet-list {
   }
 }
 
+.table-item-mobile {
+  background-color: #fff;
+  box-shadow: 0 1px 8px rgba(26, 23, 59, 0.24);
+  padding: 20px;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 32px;
+
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .th {
+      color: rgba(26, 23, 59, 0.64);
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+}
+
 
