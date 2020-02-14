@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="fix">
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="mobile styles">
+      <change afterPath="$PROJECT_DIR$/images/vector_blue_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vector_blue_up.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_vps-page.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vps_vds_servers.html" beforeDir="false" afterPath="$PROJECT_DIR$/vps_vds_servers.html" afterDir="false" />
     </list>
@@ -36,28 +37,34 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
+          <entry key="js" value="1" />
           <entry key="scss" value="3" />
+          <entry key="svg" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="3" />
+          <entry key="SVG" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="44" />
-          <entry key="scss" value="160" />
-          <entry key="txt" value="15" />
+          <entry key="html" value="392" />
+          <entry key="js" value="263" />
+          <entry key="scss" value="480" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="44" />
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="SCSS" value="160" />
+          <entry key="HTML" value="392" />
+          <entry key="JavaScript" value="263" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="SCSS" value="480" />
         </counts>
       </usages-collector>
     </session>
@@ -67,11 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="643" column="21" lean-forward="true" selection-start-line="643" selection-start-column="21" selection-end-line="643" selection-end-column="21" />
+            <state relative-caret-position="324">
+              <caret line="936" lean-forward="true" selection-start-line="936" selection-end-line="936" />
               <folding>
                 <element signature="e#11044#13701#0" />
               </folding>
@@ -82,17 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="198">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -109,21 +107,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vps_vds_servers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
+            <state relative-caret-position="234">
+              <caret line="537" column="50" selection-start-line="537" selection-start-column="50" selection-end-line="537" selection-end-column="50" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/vector_blue_down.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/vector_blue_up.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/vector_2.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/vector.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="144">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -148,6 +178,8 @@
       <find>new</find>
       <find>server-image</find>
       <find>.server</find>
+      <find>Готовы</find>
+      <find>.row</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/scss</dir>
@@ -169,7 +201,6 @@
         <option value="$PROJECT_DIR$/scss/_datepicker.scss" />
         <option value="$PROJECT_DIR$/scss/_forms.scss" />
         <option value="$PROJECT_DIR$/nargiza.php" />
-        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/scss/_response.scss" />
         <option value="$PROJECT_DIR$/contest.html" />
         <option value="$PROJECT_DIR$/conference.html" />
@@ -177,10 +208,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/_vps-page.scss" />
-        <option value="$PROJECT_DIR$/sass/style.scss" />
         <option value="$PROJECT_DIR$/sass/_typography.scss" />
         <option value="$PROJECT_DIR$/vps_vds_servers.html" />
         <option value="$PROJECT_DIR$/sass/_common.scss" />
+        <option value="$PROJECT_DIR$/sass/style.scss" />
+        <option value="$PROJECT_DIR$/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -231,6 +263,16 @@
             <path>
               <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -263,21 +305,21 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/assets/libs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets" />
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io" />
       <recent name="C:\Users\romac\Documents\GitHub\Grompokstar.github.io\assets\css" />
       <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/assets/libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,21 +408,7 @@
       <workItem from="1581348419304" duration="3929000" />
       <workItem from="1581410320793" duration="699000" />
       <workItem from="1581668173240" duration="1151000" />
-      <workItem from="1581679527359" duration="2337000" />
-    </task>
-    <task id="LOCAL-00068" summary="vue integration">
-      <created>1564386924386</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1564386924387</updated>
-    </task>
-    <task id="LOCAL-00069" summary="vue integration">
-      <created>1564387136117</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1564387136117</updated>
+      <workItem from="1581679527359" duration="9617000" />
     </task>
     <task id="LOCAL-00070" summary="fixes">
       <created>1564390058973</created>
@@ -711,17 +739,31 @@
       <option name="project" value="LOCAL" />
       <updated>1581668602965</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="mobile styles">
+      <created>1581681953218</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1581681953218</updated>
+    </task>
+    <task id="LOCAL-00118" summary="mobile styles">
+      <created>1581686894037</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1581686894037</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96154000" />
+    <option name="totallyTimeSpent" value="103434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="2493" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26963562" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26963562" />
       <window_info id="Structure" order="1" weight="0.28502023" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -734,8 +776,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49964765" weight="0.3" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49716598" visible="true" weight="0.32216215" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502834" side_tool="true" visible="true" weight="0.32216215" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49716598" visible="true" weight="0.28972974" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502834" side_tool="true" visible="true" weight="0.28972974" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -804,7 +846,8 @@
     <MESSAGE value="trueconf" />
     <MESSAGE value="new pages" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="mobile styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile styles" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
@@ -818,7 +861,6 @@
     <entry file="file://$PROJECT_DIR$/scss/_response.scss" />
     <entry file="file://$PROJECT_DIR$/images/bg.svg" />
     <entry file="file://$PROJECT_DIR$/images/index.svg" />
-    <entry file="file://$PROJECT_DIR$/js/scripts.js" />
     <entry file="file://$PROJECT_DIR$/css/app.css" />
     <entry file="file://$PROJECT_DIR$/js/fullpage.js" />
     <entry file="file://$PROJECT_DIR$/images/1.svg" />
@@ -834,6 +876,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_vps-page.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -841,41 +886,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_vps-page.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="144">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/vector_2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/vector.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/vector_blue_up.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/vector_blue_down.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vps_vds_servers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
+        <state relative-caret-position="234">
+          <caret line="537" column="50" selection-start-line="537" selection-start-column="50" selection-end-line="537" selection-end-column="50" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="643" column="21" lean-forward="true" selection-start-line="643" selection-start-column="21" selection-end-line="643" selection-end-column="21" />
+        <state relative-caret-position="324">
+          <caret line="936" lean-forward="true" selection-start-line="936" selection-end-line="936" />
           <folding>
             <element signature="e#11044#13701#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
         </state>
       </provider>
     </entry>

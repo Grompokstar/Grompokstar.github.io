@@ -2,14 +2,14 @@ jQuery(function($){
 
   $(document).ready(function() {
 
-    let previousScroll = 0;
-    let $header = $("header")
-    let $mobileMenu = $('#mobile-menu')
+    var previousScroll = 0;
+    var $header = $("header")
+    var $mobileMenu = $('#mobile-menu')
     $(window).scroll(function(event){
       $mobileMenu.removeClass('open');
       $header.removeClass('open-mobile-menu');
 
-      let scrollTop = $(this).scrollTop();
+      var scrollTop = $(this).scrollTop();
 
       if (scrollTop > 0 && previousScroll > scrollTop) {
         $header.addClass('pinned');
@@ -62,28 +62,43 @@ jQuery(function($){
 
     //custom tab navigation
 
-    let $tabNavItems = $('.tab-nav-item')
-    let $tabContentItems = $('.tab-content-item')
+    var $tabNavItems = $('.tab-nav-item')
+    var $tabContentItems = $('.tab-content-item')
 
     $tabNavItems.on('click', function() {
-      $tabNavItems.removeClass('active')
-      $tabContentItems.removeClass('show')
-      $(this).addClass('active')
-      let id = $(this).attr('data-id')
-      $(".tab-content-item[data-id='" + id + "']").addClass('show')
+      var doc_w = $(document).width()
+      var id = $(this).attr('data-id')
+      var $targetContent = $(".tab-content-item[data-id='" + id + "']")
+
+      if (doc_w < 768 && $(this).hasClass('active')) {
+        $('.mobile-tab-content').detach()
+        $(this).removeClass('active')
+      } else if (doc_w < 768 && !$(this).hasClass('active')) {
+        $('.mobile-tab-content').detach()
+        $(this).addClass('active')
+        var targetHtml = '<div class="mobile-tab-content">' + $targetContent.html() + '</div>'
+        $(this).after(targetHtml)
+      } else {
+        $tabNavItems.removeClass('active')
+        $tabContentItems.removeClass('show')
+        $(this).addClass('active')
+        $targetContent.addClass('show')
+      }
     });
 
 
+
+
     //карусель
-    let carousel = $('.carousel-container');
-    let buttons = $('.slider-button');
-    let leftButton = $('.slider-button.left');
-    let rightButton = $('.slider-button.right');
+    var carousel = $('.carousel-container');
+    var buttons = $('.slider-button');
+    var leftButton = $('.slider-button.left');
+    var rightButton = $('.slider-button.right');
 
     $('.cases-slider-container .slider-button.right').on('click', function() {
-      let activeCount = carousel.find('.cases-slider-item.active').attr('data-id');
+      var activeCount = carousel.find('.cases-slider-item.active').attr('data-id');
       if (activeCount < 3) {
-        let targetCount = parseInt(activeCount) + 1
+        var targetCount = parseInt(activeCount) + 1
         carousel.find('.cases-slider-item').removeClass('active')
         carousel.find('.cases-slider-item[data-id="' + targetCount + '"]').addClass('active')
         carousel.css('margin-left', targetCount * -100 + '%')
@@ -96,9 +111,9 @@ jQuery(function($){
     })
 
     $('.cases-slider-container .slider-button.left').on('click', function() {
-      let activeCount = carousel.find('.cases-slider-item.active').attr('data-id');
+      var activeCount = carousel.find('.cases-slider-item.active').attr('data-id');
       if (activeCount > 0) {
-        let targetCount = parseInt(activeCount) - 1
+        var targetCount = parseInt(activeCount) - 1
         carousel.find('.cases-slider-item').removeClass('active')
         carousel.find('.cases-slider-item[data-id="' + targetCount + '"]').addClass('active')
         carousel.css('margin-left', targetCount * -100 + '%')

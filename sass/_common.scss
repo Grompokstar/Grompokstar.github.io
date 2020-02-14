@@ -663,14 +663,39 @@ ul.boodet-list {
       font-size: 19px;
       line-height: 24px;
       border-left: 3px solid transparent;
+      position: relative;
 
       &.active {
         border-left: 3px solid $boodet-blue-brand-color;
         font-weight: 500;
       }
 
-    }
+      @media (max-width: 767px) {
+        font-weight: 400;
 
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 22px;
+          left: 2px;
+          width: 14px;
+          height: 9px;
+          background: url(../images/vector_blue_down.svg) no-repeat;
+          background-size: contain;
+          cursor: pointer;
+        }
+
+        &.active {
+          border-left: 3px solid transparent;
+          font-weight: 400;
+
+          &::before {
+            background: url(../images/vector_blue_up.svg) no-repeat;
+          }
+        }
+      }
+    }
   }
 
   .tab-content-item {
@@ -680,6 +705,20 @@ ul.boodet-list {
 
     &.show {
       display: block;
+    }
+  }
+
+  .mobile-tab-content {
+    padding: 2px 15px 10px 30px;
+    font-size: 17px;
+    line-height: 28px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    h3 {
+      display: none;
     }
   }
 }
@@ -898,6 +937,12 @@ ul.boodet-list {
       line-height: 16px;
       text-transform: uppercase;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .m2t_120 {
+    margin-top: 60px!important;
   }
 }
 
