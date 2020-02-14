@@ -67,21 +67,22 @@ jQuery(function($){
 
     $tabNavItems.on('click', function() {
       var doc_w = $(document).width()
-      var id = $(this).attr('data-id')
+      var $clickedTab = $(this)
+      var id = $clickedTab.attr('data-id')
       var $targetContent = $(".tab-content-item[data-id='" + id + "']")
 
       if (doc_w < 768 && $(this).hasClass('active')) {
         $('.mobile-tab-content').detach()
-        $(this).removeClass('active')
+        $clickedTab.removeClass('active')
       } else if (doc_w < 768 && !$(this).hasClass('active')) {
         $('.mobile-tab-content').detach()
-        $(this).addClass('active')
+        $clickedTab.addClass('active')
         var targetHtml = '<div class="mobile-tab-content">' + $targetContent.html() + '</div>'
         $(this).after(targetHtml)
       } else {
         $tabNavItems.removeClass('active')
         $tabContentItems.removeClass('show')
-        $(this).addClass('active')
+        $clickedTab.addClass('active')
         $targetContent.addClass('show')
       }
     });
