@@ -25,6 +25,18 @@
   font-weight: 800;
   font-size: 100px;
   line-height: 1.12!important;
+
+  @media(max-width: 1200px) {
+    font-size: 86px;
+  }
+
+  @media(max-width: 959px) {
+    font-size: 76px;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 56px;
+  }
 }
 
 .title-1_5 {
