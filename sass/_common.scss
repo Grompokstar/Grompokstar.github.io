@@ -706,6 +706,10 @@ ul.boodet-list {
     &.show {
       display: block;
     }
+
+    @media (max-width: 768px) {
+      display: none!important;
+    }
   }
 
   .mobile-tab-content {
@@ -899,6 +903,15 @@ ul.boodet-list {
     top: 20px;
     left: 20px;
   }
+
+  @media (max-width: 767px) {
+    padding: 26px 15px 22px 80px;
+
+    .card-count {
+      top: 15px;
+      left: 15px;
+    }
+  }
 }
 
 .server-image {
@@ -908,6 +921,10 @@ ul.boodet-list {
   @media (max-width: 1300px) {
     max-width: 100%;
     margin-left: 0;
+  }
+
+  @media (max-width: 1199px) {
+    display: none;
   }
 }
 

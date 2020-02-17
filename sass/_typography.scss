@@ -49,6 +49,14 @@
   font-weight: 800;
   font-size: 76px;
   line-height: 1.12!important;
+
+  @media(max-width: 959px) {
+    font-size: 70px;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 50px;
+  }
 }
 
 .title-2 {
@@ -58,6 +66,10 @@
   font-size: 48px;
   line-height: 1.2!important;
   letter-spacing: 0.02em;
+
+  @media(max-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .title-3 {

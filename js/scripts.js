@@ -62,23 +62,26 @@ jQuery(function($){
 
     //custom tab navigation
 
-    var $tabNavItems = $('.tab-nav-item')
-    var $tabContentItems = $('.tab-content-item')
+    $('.tab-nav-item').on('click', function() {
+      var $tabNavItems = $(this).closest('.tab-container').find('.tab-nav-item')
+      var $tabContentItems = $(this).closest('.tab-container').find('.tab-content-item')
+      var $tabMobileContent = $(this).closest('.tab-container').find('.mobile-tab-content')
 
-    $tabNavItems.on('click', function() {
       var doc_w = $(document).width()
       var $clickedTab = $(this)
       var id = $clickedTab.attr('data-id')
-      var $targetContent = $(".tab-content-item[data-id='" + id + "']")
+      var $targetContent = $tabContentItems.filter("[data-id='" + id + "']")
 
       if (doc_w < 768 && $(this).hasClass('active')) {
-        $('.mobile-tab-content').detach()
+        $tabMobileContent.detach()
+        $tabNavItems.removeClass('active')
         $clickedTab.removeClass('active')
       } else if (doc_w < 768 && !$(this).hasClass('active')) {
-        $('.mobile-tab-content').detach()
+        $tabMobileContent.detach()
+        $tabNavItems.removeClass('active')
         $clickedTab.addClass('active')
         var targetHtml = '<div class="mobile-tab-content">' + $targetContent.html() + '</div>'
-        $(this).after(targetHtml)
+        $clickedTab.after(targetHtml)
       } else {
         $tabNavItems.removeClass('active')
         $tabContentItems.removeClass('show')
