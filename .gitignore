@@ -1,9 +1,0 @@
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
-
-# Others
-package-lock.json
-.idea/

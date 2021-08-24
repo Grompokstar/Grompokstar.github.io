@@ -2,23 +2,146 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="mobile styles">
+      <change afterPath="$PROJECT_DIR$/images/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/152-f3.html" beforeDir="false" afterPath="$PROJECT_DIR$/152-f3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1c.html" beforeDir="false" afterPath="$PROJECT_DIR$/1c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_storage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forex_server.html" beforeDir="false" afterPath="$PROJECT_DIR$/forex_server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftp_storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ftp_storage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual_server.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtual_server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/152-f3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_storage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fullpage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fullpage.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy_script/.params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy_script/.stage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy_script/deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/dictionaries/ProductPrices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/dictionaries/RamCpuDiscounts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/services/RamCpuPriceService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gilroy-ExtraBold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gilroy-Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forex_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ftp_storage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iaas_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Cross.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow_button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg_configurator_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/boodet-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/boodet-video-bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/boodet_online2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/boodet_online22.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/burger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cam_d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/camera_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/camera_mobile@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cloud_store.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clouds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/common-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dark_bg_section.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/database.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default-more-image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ellipse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/activation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/guarantees.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/optimization.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/payments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/reability.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/reability.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/remote.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/speed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/support.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icons/time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index_bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/laptop-phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_grad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_grad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_grad_short.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_rgb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo_white_short.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/map_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mouse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/play_triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/quote.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sertificate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/server_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/server_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/server_mobile@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slider-left-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slider-right-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/support_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/support_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vector_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vector_blue_down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vector_blue_up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/website.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/windows.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-alt-conf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_old2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contacts-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contest-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fullpage.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fullpage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mainpage_scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/zammad-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_bootstrap-overwrite.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_contacts-page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_contest-page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_fixConflicts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_form-controls.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_mainpage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_price-configurator.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_ui.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_vuetify-overwrite.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtual_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vps_vds_servers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/white-bg-header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows_virtual_server.html" beforeDir="false" />
     </list>
-    <ignored path="WebGL_test.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,152 +150,8 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1481796772">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="html" value="10" />
-          <entry key="js" value="1" />
-          <entry key="scss" value="5" />
-          <entry key="svg" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="10" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SCSS" value="5" />
-          <entry key="SVG" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="509" />
-          <entry key="js" value="379" />
-          <entry key="scss" value="564" />
-          <entry key="txt" value="28" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="509" />
-          <entry key="JavaScript" value="379" />
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="SCSS" value="564" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="WebGL_test" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtual_server.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="136" column="80" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1c.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="488" column="26" selection-start-line="488" selection-start-column="26" selection-end-line="488" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/152-f3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="210" column="35" selection-start-line="210" selection-start-column="22" selection-end-line="210" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forex_server.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="483" column="111" lean-forward="true" selection-start-line="483" selection-start-column="111" selection-end-line="483" selection-end-column="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ftp_storage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="510" column="105" lean-forward="true" selection-start-line="510" selection-start-column="105" selection-end-line="510" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iaas_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1555">
-              <caret line="18" column="70" lean-forward="true" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/_typography.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="65" column="18" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="65" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud_storage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="355" column="42" selection-start-line="355" selection-start-column="28" selection-end-line="355" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -199,6 +178,7 @@
       <find>tab-content-item</find>
       <find>tab-container</find>
       <find>tab-navigation</find>
+      <find>.more-cases-row</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/scss</dir>
@@ -226,7 +206,6 @@
         <option value="$PROJECT_DIR$/conference2.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sass/_vps-page.scss" />
-        <option value="$PROJECT_DIR$/vps_vds_servers.html" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/virtual_server.html" />
@@ -239,6 +218,11 @@
         <option value="$PROJECT_DIR$/forex_server.html" />
         <option value="$PROJECT_DIR$/ftp_storage.html" />
         <option value="$PROJECT_DIR$/sass/_typography.scss" />
+        <option value="$PROJECT_DIR$/sass/_mainpage.scss" />
+        <option value="$PROJECT_DIR$/windows_virtual_server.html" />
+        <option value="$PROJECT_DIR$/sass/_footer.scss" />
+        <option value="$PROJECT_DIR$/vps_vds_servers.html" />
+        <option value="$PROJECT_DIR$/robots.txt" />
       </list>
     </option>
   </component>
@@ -274,6 +258,7 @@
     <option name="width" value="2493" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectId" id="1xBrILspH0eBGpPxbS4kLYM88mM" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -287,21 +272,15 @@
               <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebGL_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grompokstar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -324,9 +303,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -343,20 +327,8 @@
       <recent name="C:\Users\romac\PhpstormProjects\WebGL_test" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
@@ -366,6 +338,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
@@ -433,28 +406,10 @@
       <workItem from="1581783895252" duration="626000" />
       <workItem from="1581846597950" duration="657000" />
       <workItem from="1581874429236" duration="57000" />
-      <workItem from="1581925962106" duration="3357000" />
-    </task>
-    <task id="LOCAL-00073" summary="fixes">
-      <created>1564392352032</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1564392352032</updated>
-    </task>
-    <task id="LOCAL-00074" summary="fixes">
-      <created>1564392801719</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1564392801719</updated>
-    </task>
-    <task id="LOCAL-00075" summary="fixes">
-      <created>1564393911261</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1564393911261</updated>
+      <workItem from="1581925962106" duration="7244000" />
+      <workItem from="1586513240707" duration="717000" />
+      <workItem from="1586773940895" duration="68000" />
+      <workItem from="1629839243060" duration="4014000" />
     </task>
     <task id="LOCAL-00076" summary="fixes">
       <created>1564396531621</created>
@@ -778,31 +733,51 @@
       <option name="project" value="LOCAL" />
       <updated>1581696648497</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="mobile styles">
+      <created>1581929516039</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1581929516040</updated>
+    </task>
+    <task id="LOCAL-00123" summary="mobile styles">
+      <created>1581930756070</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1581930756070</updated>
+    </task>
+    <task id="LOCAL-00124" summary="закрыть индексацию">
+      <created>1586513339520</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1586513339520</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109645000" />
+    <option name="totallyTimeSpent" value="114317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="2493" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26963562" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17165992" />
       <window_info id="Structure" order="1" weight="0.28502023" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.31027028" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919027" visible="true" weight="0.14918919" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49838057" weight="0.43243244" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49757084" visible="true" weight="0.38054055" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4951417" visible="true" weight="0.35135135" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5048583" side_tool="true" visible="true" weight="0.35135135" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4951417" weight="0.35135135" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024291" side_tool="true" visible="true" weight="0.38054055" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -813,33 +788,19 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -848,9 +809,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="наработки" />
@@ -872,7 +830,8 @@
     <MESSAGE value="new pages" />
     <MESSAGE value="fix" />
     <MESSAGE value="mobile styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="mobile styles" />
+    <MESSAGE value="закрыть индексацию" />
+    <option name="LAST_COMMIT_MESSAGE" value="закрыть индексацию" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />
@@ -935,34 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/windows_virtual_server.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vps_vds_servers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="562" column="44" selection-start-line="562" selection-start-column="28" selection-end-line="562" selection-end-column="44" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtual_server.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="136" column="80" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,43 +924,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        <state relative-caret-position="1422">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vps_vds_servers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#2;n#div#0;n#div#3;n#v-app#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forex_server.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="483" column="111" lean-forward="true" selection-start-line="483" selection-start-column="111" selection-end-line="483" selection-end-column="111" />
+        <state relative-caret-position="8694">
+          <caret line="483" column="111" selection-start-line="483" selection-start-column="111" selection-end-line="483" selection-end-column="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ftp_storage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="510" column="105" lean-forward="true" selection-start-line="510" selection-start-column="105" selection-end-line="510" selection-end-column="105" />
+        <state relative-caret-position="9180">
+          <caret line="510" column="105" selection-start-line="510" selection-start-column="105" selection-end-line="510" selection-end-column="105" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iaas_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1555">
-          <caret line="18" column="70" lean-forward="true" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+        <state relative-caret-position="90">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="65" selection-end-column="18" />
+        <state relative-caret-position="1170">
+          <caret line="65" column="18" selection-start-line="64" selection-start-column="19" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_mainpage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13950">
+          <caret line="775" column="24" selection-start-line="775" selection-start-column="24" selection-end-line="775" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows_virtual_server.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8622">
+          <caret line="479" column="25" selection-start-line="479" selection-start-column="25" selection-end-line="479" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
