@@ -1,146 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="mobile styles">
-      <change afterPath="$PROJECT_DIR$/images/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="253df288-0932-4a46-92c1-481cdab0c30f" name="Default" comment="personal profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/152-f3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1c.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_storage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fullpage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fullpage.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_script/.params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_script/.stage" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_script/deploy.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/dictionaries/ProductPrices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/dictionaries/RamCpuDiscounts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/services/RamCpuPriceService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Gilroy-ExtraBold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Gilroy-Light.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forex_server.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftp_storage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/1c.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Cross.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/arrow_button.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg_configurator_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boodet-b.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boodet-video-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boodet_online2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boodet_online22.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/burger.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cam_d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/camera_mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/camera_mobile@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/checked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cloud_store.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clouds.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/common-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dark_bg_section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dashboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/database.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/default-more-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ellipse.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/activation.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/guarantees.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/optimization.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/payments.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/reability.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/reability.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/remote.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/settings.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/speed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/support.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/time.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/index.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/index_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/key.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/laptop-phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_grad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_grad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_grad_short.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_gray.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_rgb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_white_short.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mouse.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/play_triangle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/quote.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sertificate.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/server.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/server_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/server_mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/server_mobile@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/slider-left-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/slider-right-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/support_chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/support_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/unchecked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/vector_2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/vector_blue_down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/vector_blue_up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/website.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/windows.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-alt-conf.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_old2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/contacts-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/contest-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/fullpage.extensions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/fullpage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mainpage_scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/zammad-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_bootstrap-overwrite.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_contacts-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_contest-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_fixConflicts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_form-controls.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_mainpage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_price-configurator.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_ui.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_vuetify-overwrite.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual_server.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vps_vds_servers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/white-bg-header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows_virtual_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +167,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -409,14 +273,8 @@
       <workItem from="1581925962106" duration="7244000" />
       <workItem from="1586513240707" duration="717000" />
       <workItem from="1586773940895" duration="68000" />
-      <workItem from="1629839243060" duration="4014000" />
-    </task>
-    <task id="LOCAL-00076" summary="fixes">
-      <created>1564396531621</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1564396531621</updated>
+      <workItem from="1629839243060" duration="4130000" />
+      <workItem from="1629922692008" duration="2138000" />
     </task>
     <task id="LOCAL-00077" summary="fixes">
       <created>1564397334853</created>
@@ -754,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586513339520</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="personal profile">
+      <created>1629843276497</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1629843276497</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -831,7 +696,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="mobile styles" />
     <MESSAGE value="закрыть индексацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="закрыть индексацию" />
+    <MESSAGE value="personal profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="personal profile" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/libs/jquery-3.1.0.min.js" />

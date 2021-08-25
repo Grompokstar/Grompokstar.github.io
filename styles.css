@@ -2,6 +2,12 @@ html body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -25,6 +31,7 @@ p {
   background-color: #fff;
   padding: 10px;
   margin-right: 15px;
+  margin-bottom: 15px;
   align-self: flex-start;
 }
 
@@ -74,4 +81,25 @@ p {
 
 .row-section .section-title {
   min-width: 100px;
+}
+
+@media (max-width: 980px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding: 0;
+  }
+
+  .profile-container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .photo-block {
+    margin-right: auto;
+  }
 }
